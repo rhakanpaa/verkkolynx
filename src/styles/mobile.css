@@ -9,6 +9,7 @@
   }
   h2 {
     line-height: 1.18;
+    hyphens: manual;
   }
 
   /* ---- lists that used to be ruled documents ---- */
@@ -181,5 +182,184 @@
   .cta__buttons .btn {
     justify-content: center;
     text-align: center;
+  }
+
+  /* examples open on demand */
+  .row__ex {
+    margin-top: 0.5rem;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .row__ex-disc .disc__sum {
+    min-height: 2.5rem;
+    justify-content: flex-start;
+    gap: 0.6rem;
+  }
+  .row__ex-label,
+  .row__ex-disc .disc__title {
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--blue-brand);
+  }
+  .row__ex-disc .disc__body {
+    padding: 0 0 0.25rem 0.85rem;
+    border-left: 2px solid var(--blue-brand);
+  }
+
+  /* ---- service pages: photograph as a real pause, differentiators and outcomes with more air ---- */
+  .edge__media {
+    aspect-ratio: 4 / 3;
+    margin-inline: calc(var(--gutter) * -1);
+  }
+  .edge {
+    gap: 1.75rem;
+  }
+  .ticks {
+    border-top: 0;
+  }
+  .ticks li {
+    padding-block: 0.7rem;
+    border-bottom: 0;
+  }
+  .ticks li::before {
+    top: 1.15rem;
+  }
+  .outcomes {
+    gap: 1.5rem;
+  }
+  .outcomes li {
+    padding-left: 0.9rem;
+    border-left: 2px solid var(--dark-line-strong);
+  }
+
+  /* ---- capability flow: one compact line of stages ---- */
+  .flow__chain {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .flow__down {
+    transform: rotate(-90deg);
+    font-size: 0.9rem;
+  }
+  .flow__chain .flow__box,
+  .flow__related .flow__box {
+    text-align: center;
+    font-size: 0.9375rem;
+    padding-inline: 0.2rem;
+    overflow-wrap: anywhere;
+  }
+  .flow__related {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.25rem;
+  }
+  .flow__related .flow__box {
+    padding-inline: 0;
+    font-size: 0.875rem;
+    overflow-wrap: normal;
+    border-left: 0;
+    border-bottom: 2px solid var(--dark-line-strong);
+  }
+  .flow__related .flow__box[data-linked],
+  .flow__related .flow__box[data-active] {
+    border-bottom-color: var(--white);
+  }
+  .flow__arrow {
+    line-height: 1;
+  }
+  .flow__readout {
+    padding: 0.75rem 0.9rem;
+  }
+
+  /* ---- sole traders: photograph first, then the offer ---- */
+  .sole__media {
+    order: -1;
+    aspect-ratio: 4 / 3;
+    margin-inline: calc(var(--gutter) * -1);
+    margin-top: calc(var(--s-section) * -1);
+  }
+  .sole__items {
+    border-top: 0;
+  }
+  .sole__items li {
+    border-bottom: 0;
+    padding-block: 0.6rem;
+  }
+
+  /* ---- values: numbered, scannable ---- */
+  .values__list {
+    counter-reset: value;
+    border-top: 0;
+  }
+  .value {
+    border-bottom: 0;
+  }
+  .value + .value {
+    border-top: 1px solid var(--dark-line);
+  }
+  .value__btn {
+    align-items: center;
+    min-height: 3.25rem;
+  }
+  .value__title {
+    display: flex;
+    gap: 0.9rem;
+    align-items: baseline;
+    font-size: 1.1875rem;
+  }
+  .value__title::before {
+    counter-increment: value;
+    content: '0' counter(value);
+    flex: none;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--dark-text-dim);
+  }
+  .values__media {
+    margin-inline: calc(var(--gutter) * -1);
+  }
+  .values__frame {
+    aspect-ratio: 4 / 3;
+    border-inline: 0;
+  }
+
+  /* ---- about: each chapter gets its own rhythm ---- */
+  .chapter:nth-child(1) .chapter__lead {
+    font-size: 1.3125rem;
+    line-height: 1.45;
+  }
+  .chapter__figure {
+    margin-inline: calc(var(--gutter) * -1);
+  }
+  .chapter__photo {
+    aspect-ratio: 4 / 3;
+  }
+  .chapter__figure figcaption {
+    padding-inline: var(--gutter);
+  }
+  .chapter:nth-child(3) {
+    margin-inline: calc(var(--gutter) * -1);
+    padding: 2rem var(--gutter);
+    background: var(--light-bg-tint);
+  }
+  .chapter:nth-child(3) .chapter__lead {
+    padding-left: 0.9rem;
+    border-left: 2px solid var(--blue-brand);
+  }
+  .chapter:nth-child(4) {
+    padding-top: 1.75rem;
+    border-top: 2px solid var(--blue-brand);
+  }
+
+  /* page hero photograph runs edge to edge */
+  .phero__photo {
+    margin-inline: calc(var(--gutter) * -1);
+  }
+}
+
+/* the smallest phones: the three related stages stack so long words never clip */
+@media (max-width: 359px) {
+  .flow__related {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

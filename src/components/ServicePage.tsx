@@ -164,10 +164,11 @@ export function ServicePage({
                 <h3>{c.t}</h3>
                 <p className="row__d dim">{c.d}</p>
                 {c.ex && (
-                  <p className="row__ex">
-                    <span className="row__ex-label">{dict.labels.example}</span>
-                    {c.ex}
-                  </p>
+                  <div className="row__ex">
+                    <Disclosure summary={dict.labels.example} className="row__ex-disc">
+                      <p>{c.ex}</p>
+                    </Disclosure>
+                  </div>
                 )}
               </li>
             ))}
