@@ -207,6 +207,8 @@ export const servicesSv: Service[] = [
       'Inloggning och rollbaserade behörigheter',
       'Integrationer med e-handelsplattformar, interna system och tredjepartstjänster',
       'Dokumentation och utbildning vid överlämningen samt underhåll och vidareutveckling',
+      'Rapporteringsflöden, tidsstyrda processer och datasynkronisering mellan system',
+      'Arbetsflöden för innehållshantering och digitalisering av processer som lätta affärsprogram',
     ],
     bridge: [
       { text: 'Behöver du bara en publik webbplats?', to: 'web' },
@@ -230,10 +232,16 @@ export const servicesSv: Service[] = [
     line: 'Analys, prognoser och beslutsverktyg.',
     summary:
       'Vi analyserar data och gör vid behov resultatet till ett verktyg: en prognos, en uppföljning eller ett beslutsstöd.',
-    tags: ['Försäljningstrender', 'Prognoser', 'Beslutsverktyg', 'Automatisk analys'],
+    tags: [
+      'Rapportering och instrumentpaneler',
+      'KPI:er',
+      'Prognoser',
+      'Dataintegration',
+      'Beslutsverktyg',
+    ],
     photo: 'sunset',
     heroTitle: 'Data som blir beslut och, vid behov, verktyg.',
-    lede: 'Verkkolynx analyserar data från försäljningstrender till kundbeteende och hjälper till att hitta dolda möjligheter. När en analys behöver användas kontinuerligt kan den byggas in i ett program.',
+    lede: 'Verkkolynx bygger analys av data om verksamheten, kunderna, försäljningen, lagret och processerna: från KPI:er och rapportering till prognoser och beslutsverktyg. När en analys behöver användas kontinuerligt kan den byggas in i ett program.',
     intro: [
       'Analys behöver inte sluta i en rapport. Vi identifierar de mönster och trender som förbättrar beslutsfattandet inom lagerhållning, kundsegmentering, prissättning och marknadsbedömning.',
       'Ofta räcker en tydlig rapport. När samma analys görs om och om igen kan den bli en prognos, ett uppföljningssystem eller ett beslutsverktyg som teamet använder själv.',
@@ -282,6 +290,16 @@ export const servicesSv: Service[] = [
         d: 'När en analys behövs återkommande kan den byggas till ett beslutsstödsprogram, ett uppföljningssystem eller en algoritm i arbetsflödet.',
         ex: 'Ett prognosverktyg, en poängmodell eller en automatisk övervakning som teamet använder dagligen.',
       },
+      {
+        t: 'Rapportering och business intelligence',
+        d: 'Instrumentpaneler och rapporter som samlar data från flera källor och uppdateras automatiskt.',
+        ex: 'Till exempel en månadsrapport för ledningen vars siffror hämtas direkt ur systemen.',
+      },
+      {
+        t: 'Operativ analys',
+        d: 'Uppföljning av processer, lager, prissättning och prestanda med pålitliga nyckeltal.',
+        ex: 'Till exempel uppföljning av ledtider, lagersaldon eller effekten av prisändringar.',
+      },
     ],
     outcomesTitle: 'Vad analysen kan leda till',
     outcomes: [
@@ -304,7 +322,7 @@ export const servicesSv: Service[] = [
     ],
     edgeTitle: 'Vad som skiljer Verkkolynx',
     edge: [
-      'Analytisk kompetens i kombination med erfarenhet av stora datamaterial om sportprodukter.',
+      'Analytisk kompetens i kombination med erfarenhet av stora datamaterial från flera källor: produkt-, transaktions-, kund- och webbeteendedata. Erfarenheten är djupast inom data från sporthandel på nätet.',
       'Analysen kan föras in i programvara av samma team som gjorde den: modelleringen och genomförandet hålls samman.',
       'Rekommendationer som utgår från din situation, inte från generella antaganden.',
       'Tydliga rapporter och visualiseringar.',
@@ -316,6 +334,11 @@ export const servicesSv: Service[] = [
       'Datakvalitet: rensning, ordning och standardisering',
       'Nyckeltal i realtid för försäljning, lager och webbplatsens prestanda',
       'Utbildning, så att ditt team själv kan tolka analysverktygen',
+      'Utformning av KPI:er och instrumentpaneler',
+      'Rensning, omvandling och modellering av data',
+      'Sammanslagning av data från flera källor och API:er',
+      'Segmentering, upptäckt av avvikelser och uppföljning av prestanda',
+      'Automatisering av återkommande rapportering',
     ],
     bridge: [{ text: 'Vill du ha analysen som ett verktyg?', to: 'software' }],
     related: ['software', 'ecommerce', 'marketing'],
@@ -325,7 +348,7 @@ export const servicesSv: Service[] = [
     meta: {
       title: 'Dataanalys och insikter',
       description:
-        'Försäljningstrender, kundbeteende, prognoser och marknadsanalys. Analysen kan vid behov göras till beslutsstöd eller ett verktyg. Verkkolynx, Tammerfors.',
+        'Dataanalys, rapportering och instrumentpaneler, KPI:er, prognoser, segmentering och marknadsanalys. Analysen kan bli ett beslutsverktyg. Verkkolynx, Tammerfors.',
     },
   },
   {
@@ -348,7 +371,7 @@ export const servicesSv: Service[] = [
     lede: 'Vi utvecklar webbutikens produktdata, katalogstruktur, prissättning, sökning och integrationer och bygger vid behov interna verktyg för att hantera dem.',
     intro: [
       'En webbutiks resultat avgörs ofta bakom kulisserna: är produktdatan korrekt, går produkterna att hitta, följer prissättningen marknaden och rör sig informationen mellan systemen utan manuellt arbete?',
-      'Bakom arbetet finns historiska och aktuella datamaterial som vi har sammanställt och ordnat inom olika branscher, till exempel sport, detaljhandel och teknik.',
+      'Arbetet bygger på erfarenhet av stora produkt-, pris- och transaktionsmaterial inom olika branscher. Erfarenheten är djupast inom sporthandel på nätet, men metoderna passar vilken produktkatalog som helst.',
     ],
     problemsTitle: 'Vad det här ger svar på',
     problems: [
@@ -416,6 +439,14 @@ export const servicesSv: Service[] = [
         t: 'Optimering av kundresan',
         d: 'Tydlig navigering, en smidig kassa och mobilvänlig utformning, så att färre köp lämnas ofullbordade.',
       },
+      {
+        t: 'Konverteringsanalys och mätning av kundresan',
+        d: 'Vi tar reda på var köpprocessen bryts och vilka ändringar som påverkar konverteringen.',
+      },
+      {
+        t: 'Marknadsplatsdata och prisuppföljning',
+        d: 'Insamling och användning av pris- och produktdata från marknadsplatser och konkurrenter i prissättningen och sortimentet.',
+      },
     ],
     outcomesTitle: 'Vad uppdaterad produktinformation ger',
     outcomes: [
@@ -443,6 +474,9 @@ export const servicesSv: Service[] = [
       'E-handelsfunktioner till en befintlig webbplats: varukorgar, betalningar, lagerhantering och kundkonton',
       'Innehållsproduktion för produktbeskrivningar och marknadsföringsmaterial',
       'Betalningssäkerhet och hänsyn till PCI DSS-kraven på e-handelsplattformar',
+      'Produktrekommendationer, filtrering och jämförelsefunktioner',
+      'Lagersignaler som stöd för prissättning och sortiment',
+      'Operativa verktyg för den dagliga driften av webbutiken',
     ],
     bridge: [
       {
@@ -458,7 +492,7 @@ export const servicesSv: Service[] = [
     meta: {
       title: 'E-handelssystem och optimering',
       description:
-        'Produktdata, taxonomi, prissättningsalgoritmer, sökning, rekommendationer och integrationer. E-handelssystem och optimering från Tammerfors, Finland.',
+        'Produktinformationsarkitektur, taxonomi, prissättning, sökning, rekommendationer, marknadsplatsdata och integrationer. E-handelssystem och optimering från Tammerfors, Finland.',
     },
   },
   {
@@ -471,14 +505,15 @@ export const servicesSv: Service[] = [
       'Vi planerar och bygger publika webbplatser och gränssnitt som är snabba, tillgängliga och läsbara för sökmotorer.',
     tags: [
       'Företagswebbplatser',
+      'Flerspråkiga webbplatser',
+      'Landningssidor',
       'Webbutikens gränssnitt',
-      'Kampanjsidor',
       'Tillgänglighet',
       'Prestanda',
     ],
     photo: 'finlayson',
     heroTitle: 'Webbplatser som fungerar och går att hitta.',
-    lede: 'Vi planerar och bygger företagswebbplatser, webbutikens gränssnitt, kampanjsidor och innehållsplattformar. Webbplatserna fungerar på alla enheter, är tillgängliga och läsbara för sökmotorer.',
+    lede: 'Vi planerar och bygger företagswebbplatser, tjänste- och informationstunga webbplatser, flerspråkiga webbplatser, landningssidor och vid behov webbutikens gränssnitt. Webbplatserna fungerar på alla enheter, är tillgängliga och läsbara för sökmotorer.',
     intro: [
       'En webbplats är det första kunden ser. Vi förenar datadriven design, förståelse för användarnas beteende och teknisk kvalitet.',
       'Vi bygger webbplatsen enligt Googles E-E-A-T-principer (erfarenhet, expertis, auktoritet, trovärdighet) så att den förmedlar trovärdighet.',
@@ -553,6 +588,9 @@ export const servicesSv: Service[] = [
       'Förnyelser, flytt till en ny plattform och underhåll efter lanseringen',
       'Tredjepartstjänster: betalningar, sociala medier och analysverktyg',
       'Webbhotell erbjuder vi inte själva, men vi hjälper dig att välja leverantör och ta i bruk professionell e-post',
+      'Företags- och tjänstewebbplatser samt informationstunga webbplatser där innehållsstrukturen är viktig',
+      'Skräddarsydda interaktiva funktioner, integrationer och analys',
+      'Interna portaler vid behov',
     ],
     bridge: [{ text: 'Behöver du ett större system än en webbplats?', to: 'software' }],
     related: ['software', 'marketing', 'ecommerce'],
@@ -562,7 +600,7 @@ export const servicesSv: Service[] = [
     meta: {
       title: 'Webbplatser och digitala upplevelser',
       description:
-        'Företagswebbplatser, webbutikens gränssnitt och kampanjsidor: snabba, tillgängliga och sökmotorvänliga. Verkkolynx, Tammerfors.',
+        'Företagswebbplatser, flerspråkiga och informationstunga webbplatser, landningssidor och webbutikens gränssnitt: snabba, tillgängliga och sökmotorvänliga. Verkkolynx, Tammerfors.',
     },
   },
   {
@@ -573,7 +611,13 @@ export const servicesSv: Service[] = [
     line: 'Synlighet i sökmotorer, kampanjer och innehåll.',
     summary:
       'Vi kompletterar de tekniska lösningarna med synlighet: sökmotoroptimering, riktade kampanjer och innehåll vars effekt mäts.',
-    tags: ['SEO', 'Digitala kampanjer', 'Innehållsmarknadsföring', 'E-post'],
+    tags: [
+      'Teknisk SEO och innehålls-SEO',
+      'Innehållsstrategi',
+      'Betalda kampanjer',
+      'E-post och livscykelkommunikation',
+      'Mätning och rapportering',
+    ],
     photo: 'nasinneula',
     heroTitle: 'Synlighet för rätt personer.',
     lede: 'Vi kombinerar sökmotoroptimering, riktade kampanjer och innehåll, så att ditt företag hittas i rätt stund och effekten går att mäta.',
@@ -604,21 +648,25 @@ export const servicesSv: Service[] = [
     capabilities: [
       {
         t: 'Sökmotoroptimering (SEO)',
-        d: 'Förbättra synligheten med riktade nyckelordsstrategier.',
-        ex: 'Till exempel en sportaffär som vill att produkterna ska hittas vid sökningar som ”hockeyskridskor”.',
+        d: 'Nyckelords- och sökintentionsanalys, teknisk SEO, optimering av enskilda sidor, innehållsarkitektur, metadata, strukturerad data och intern länkning.',
+        ex: 'Till exempel ett tjänsteföretags webbplats där varje tjänst har en egen sida som motsvarar en sökintention.',
       },
       {
         t: 'Riktade digitala kampanjer',
-        d: 'Betalda sök- och sociala mediekampanjer som motsvarar dina mål.',
-        ex: 'Tidsbegränsade erbjudanden på hockeyutrustning till rätt målgrupp.',
+        d: 'Betald sökning och betalda sociala medier: kampanjstruktur, målgruppssegmentering och löpande testning mot dina mål.',
+        ex: 'Till exempel lansering av en ny tjänst eller produkt för olika målgruppssegment.',
       },
       {
         t: 'Innehållsmarknadsföring',
-        d: 'Datadrivet och detaljerat innehåll med grund i datamaterial om sportprodukter: bloggartiklar, produktjämförelser och nischade guider.',
+        d: 'Innehållsstrategi, landningssidor och konverteringsinriktat innehåll med grund i sökdata samt produkt- eller kundmaterial: artiklar, jämförelser och guider.',
       },
       {
         t: 'E-postmarknadsföring',
-        d: 'Flöden för övergivna varukorgar, säsongskampanjer och engagemang hos stamkunder.',
+        d: 'E-post och livscykelkommunikation: segmentering, övergivna varukorgar, säsongskampanjer och kundengagemang.',
+      },
+      {
+        t: 'Mätning, testning och rapportering',
+        d: 'Uppföljning, konverteringsmätning, A/B-tester och bevakning av synligheten i sökmotorer, vilket ger regelbundna rapporter och förbättringsförslag.',
       },
     ],
     outcomesTitle: 'Varför synlighet är viktig',
@@ -638,7 +686,7 @@ export const servicesSv: Service[] = [
     ],
     edgeTitle: 'Vad som skiljer Verkkolynx',
     edge: [
-      'Erfarenhet av stora datamaterial om sportprodukter ger innehållet och kampanjerna konkreta insikter.',
+      'Analys, webbplats och innehåll i samma team: sökdata, användardata och produktdata styr samma beslut. Vi har också erfarenhet av stora datamaterial om sportprodukter.',
       'SEO är en del av den tekniska strukturen: webbplatsen, produktdatan och innehållet planeras tillsammans.',
       'Vi mäter det som påverkar verksamheten och optimerar fortlöpande.',
     ],
@@ -648,6 +696,8 @@ export const servicesSv: Service[] = [
       'Betalda kampanjer på Google Ads, Facebook Ads och LinkedIn Ads',
       'Marknadsföring i sociala medier, influencersamarbeten och varumärkesstrategi',
       'Regelbundna rapporter: trafik, konverteringar, klick och engagemang',
+      'Innehållsarkitektur, metadata och strukturerad data',
+      'Bevakning och testning av synligheten i sökmotorer',
     ],
     bridge: [{ text: 'Behöver du automatisera rapportering eller datainsamling?', to: 'software' }],
     related: ['web', 'analytics', 'ecommerce'],
@@ -657,7 +707,7 @@ export const servicesSv: Service[] = [
     meta: {
       title: 'Marknadsföring och SEO',
       description:
-        'Sökmotoroptimering, riktade digitala kampanjer, innehållsmarknadsföring och e-postmarknadsföring, datadrivet. Verkkolynx, Tammerfors.',
+        'Teknisk SEO, innehållsstrategi, flerspråkig och lokal SEO, betalda kampanjer, e-post och mätning. Datadriven marknadsföring från Verkkolynx, Tammerfors.',
     },
   },
   {
@@ -668,14 +718,20 @@ export const servicesSv: Service[] = [
     nav: 'Tjänster för egenföretagare',
     line: 'Webbplatser, synlighet och små verktyg.',
     summary:
-      'Prisvärda och personliga tjänster för egenföretagare: webbplatser, sökmotorsynlighet, flerspråkigt innehåll, rådgivning och vid behov ett litet verktyg eller en automation.',
-    tags: ['Webbplatser', 'SEO', 'Flerspråkigt innehåll', 'Små automationer', 'Rådgivning'],
+      'Prisvärda och personliga tjänster för egenföretagare: webbplatser och webbutiker, rapportering och analys, automation och integrationer, innehåll, SEO och marknadsföring samt rådgivning.',
+    tags: [
+      'Webbplatser och webbutiker',
+      'Rapportering',
+      'Automation och integrationer',
+      'SEO och innehåll',
+      'Rådgivning',
+    ],
     photo: 'lakePortrait',
     heroTitle: 'Tjänster som anpassas efter dig.',
     lede: 'Som egenföretagare har du fullt upp, och det finns sällan tid över för synlighet på nätet eller rutinuppgifter. Vi erbjuder personlig och prisvärd service utifrån just dina behov.',
     intro: [
       'För en egenföretagare spelar priset roll. Vi anpassar arbetet så att det förblir prisvärt.',
-      'Oavsett om du håller på att starta en egen webbutik, vill ha en modern webbplats eller söker vägar in på den nordamerikanska marknaden finns vi vid din sida. När en upprepad arbetsuppgift tar för mycket tid kan vi också bygga ett litet verktyg eller en automation.',
+      'Ett litet företag har mycket praktiskt arbete att göra: webbplatser och webbutiker, rapportering och analys, automation och integrationer, innehåll, SEO och marknadsföring samt att lösa tekniska problem och förbättra processer. När en upprepad arbetsuppgift tar för mycket tid kan vi också bygga ett litet verktyg eller en automation.',
     ],
     problemsTitle: 'Välbekanta utmaningar',
     problems: [
@@ -711,7 +767,7 @@ export const servicesSv: Service[] = [
       {
         t: 'Flerspråkigt innehåll',
         d: 'Sakkunnig innehållsproduktion på finska och engelska, och på franska på begäran.',
-        ex: 'Bloggartiklar, produktpresentationer eller riktat annonsinnehåll, till exempel för en nordamerikansk målgrupp.',
+        ex: 'Till exempel en flerspråkig tjänstewebbplats, bloggartiklar eller produktpresentationer.',
       },
       {
         t: 'Små verktyg och automationer',
@@ -725,6 +781,16 @@ export const servicesSv: Service[] = [
       {
         t: 'Personlig rådgivning och handledning',
         d: 'Individuellt arbete med en expert är kärnan i den här tjänsten: vi vägleder dig och tar fram lösningar för just dina behov.',
+      },
+      {
+        t: 'Rapportering och analys',
+        d: 'En tydlig sammanställning av försäljning, besökare eller kostnader utan manuellt kalkylarbete.',
+        ex: 'Till exempel en veckorapport över försäljning och besökare på webbplatsen.',
+      },
+      {
+        t: 'Integrationer och processförbättring',
+        d: 'Vi kopplar ihop de system du använder och tar bort onödiga arbetsmoment.',
+        ex: 'Till exempel order, fakturering och lager i samma informationsflöde.',
       },
     ],
     outcomesTitle: 'Varför välja Verkkolynx',

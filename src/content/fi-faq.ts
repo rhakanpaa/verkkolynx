@@ -66,7 +66,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'toimialat',
         'Mihin toimialoihin Verkkolynx on erikoistunut?',
-        'Palvelut sopivat eri toimialoille, mutta kokemusta on erityisesti verkkokaupasta, vähittäiskaupasta, urheiludatasta ja digitaalisista palveluista. Erityisosaamistamme on urheiluverkkokauppa, kuten jääkiekkovarusteiden, baseball-tarvikkeiden ja jalkapallotarvikkeiden myynti.',
+        'Palvelut sopivat monenlaisille yrityksille ja toimialoille: palveluyrityksille, verkkokaupoille ja tietopainotteisille sivustoille sekä sisäisten prosessien ja raportoinnin kehittämiseen. Kokemusta on erityisesti verkkokaupasta, vähittäiskaupasta, urheiludatasta ja digitaalisista palveluista, ja urheiluverkkokauppa on yksi syvimmistä osaamisalueistamme.',
       ),
       i(
         'ulkomaat',
@@ -216,7 +216,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'analytiikan-toimialat',
         'Mitä toimialoja data-analytiikkapalvelut hyödyttävät eniten?',
-        'Asiantuntemuksemme on erityisen hyödyllistä verkkokaupassa, vähittäiskaupassa, urheiludatassa ja digitaalisissa palveluissa. Menetelmämme ovat kuitenkin räätälöitävissä minkä tahansa toimialan tarpeisiin.',
+        'Analytiikka soveltuu mille tahansa toimialalle, jolla on dataa myynnistä, asiakkaista, varastosta tai prosesseista. Kokemusta on erityisesti verkkokaupasta, vähittäiskaupasta, urheiludatasta ja digitaalisista palveluista.',
       ),
       i(
         'tekoaly',
@@ -404,7 +404,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'ei-urheilua',
         'Minulla ei ole urheiluun liittyvää verkkokauppaa – sopiiko Verkkolynx silti?',
-        'Kyllä. Data on dataa, ja osaamisemme data-analytiikassa, verkkosivustokehityksessä, SEO:ssa ja verkkokaupan optimoinnissa voidaan mukauttaa vähittäiskaupan, matkailun, digitaalisten palvelujen tai minkä tahansa muun alan tarpeisiin.',
+        'Kyllä. Data-analytiikka, ohjelmistokehitys, automaatio, verkkosivut, SEO ja verkkokauppa toimivat myös muilla aloilla, esimerkiksi palveluyrityksissä, tietopainotteisilla sivustoilla ja sisäisten prosessien parantamisessa.',
       ),
       i(
         'tulokset',

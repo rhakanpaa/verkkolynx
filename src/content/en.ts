@@ -411,7 +411,7 @@ export const en: Dict = {
         'Verkkolynx Ratkaisut Oy is a Tampere-based technical digital company: software development, data, automation, ecommerce and web. Our story, way of working and values.',
     },
     title: 'Finnish precision, global perspective.',
-    lede: 'Verkkolynx Ratkaisut Oy is a Tampere-based technical company that builds software, automations and data solutions.',
+    lede: 'Verkkolynx Ratkaisut Oy is a Tampere-based digital and technical partner: data, software, automation, websites, ecommerce, SEO and marketing in one team.',
     chapters: [
       {
         id: 'who',

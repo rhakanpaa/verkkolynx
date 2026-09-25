@@ -212,6 +212,8 @@ export const servicesEn: Service[] = [
       'Authentication and role-based permissions',
       'Integrations with ecommerce platforms, internal systems and third-party services',
       'Documentation and training at handover, plus maintenance and further development',
+      'Reporting pipelines, scheduled processes and data synchronisation between systems',
+      'Content management workflows and process digitisation as lightweight business applications',
     ],
     bridge: [
       { text: 'Do you only need a public website?', to: 'web' },
@@ -235,10 +237,10 @@ export const servicesEn: Service[] = [
     line: 'Analysis, forecasts and decision tools.',
     summary:
       'We analyse data and, when it makes sense, turn the result into a tool: a forecast, monitoring or decision support.',
-    tags: ['Sales trends', 'Forecasts', 'Decision tools', 'Automated analysis'],
+    tags: ['Reporting and dashboards', 'KPIs', 'Forecasts', 'Data integration', 'Decision tools'],
     photo: 'sunset',
     heroTitle: 'Data that becomes decisions, and when needed, tools.',
-    lede: 'Verkkolynx analyses data from sales trends to customer behaviour and helps find hidden opportunities. When an analysis needs continuous use, it can be built into an application.',
+    lede: 'Verkkolynx builds analytics from business, customer, sales, inventory and process data: from KPIs and reporting to forecasts and decision tools. When an analysis needs continuous use, it can be built into an application.',
     intro: [
       'Analysis does not have to end in a report. We identify the patterns and trends that improve decisions in inventory management, customer segmentation, pricing and market assessment.',
       'Often a clear report is enough. When the same analysis is repeated over and over, it can become a forecast, a monitoring system or a decision tool your team uses itself.',
@@ -290,6 +292,16 @@ export const servicesEn: Service[] = [
         d: 'When an analysis is needed repeatedly, it can be built into a decision-support application, a monitoring system or an algorithm inside the workflow.',
         ex: 'A forecasting tool, scoring model or automated monitoring that the team uses daily.',
       },
+      {
+        t: 'Reporting and business intelligence',
+        d: 'Dashboards and reports that combine data from several sources and update automatically.',
+        ex: 'For example a monthly management report whose figures are pulled straight from the systems.',
+      },
+      {
+        t: 'Operational analytics',
+        d: 'Monitoring of processes, inventory, pricing and performance with reliable metrics.',
+        ex: 'For example tracking lead times, stock levels or the effect of price changes.',
+      },
     ],
     outcomesTitle: 'Where analysis can lead',
     outcomes: [
@@ -312,7 +324,7 @@ export const servicesEn: Service[] = [
     ],
     edgeTitle: 'The Verkkolynx difference',
     edge: [
-      'Analytics skills combined with experience of large sports product datasets.',
+      'Analytics skills combined with experience of large multi-source datasets: product, transaction, customer and web behaviour data. Sports ecommerce data is where our experience runs deepest.',
       'Analysis can be carried into software by the same team that did it: modelling and implementation stay together.',
       'Recommendations based on your situation rather than generic assumptions.',
       'Clear reports and visualisations.',
@@ -324,6 +336,11 @@ export const servicesEn: Service[] = [
       'Data quality: cleaning, organising and standardising',
       'Real-time metrics for sales, inventory and website performance',
       'Training, so your team can interpret analytics tools on its own',
+      'KPI design and dashboards',
+      'Data cleaning, transformation and modelling',
+      'Combining data from several sources and APIs',
+      'Segmentation, anomaly detection and performance monitoring',
+      'Automating recurring reporting',
     ],
     bridge: [{ text: 'Want the analysis available as a tool?', to: 'software' }],
     related: ['software', 'ecommerce', 'marketing'],
@@ -333,7 +350,7 @@ export const servicesEn: Service[] = [
     meta: {
       title: 'Data analytics and insights',
       description:
-        'Sales trends, customer behaviour, forecasts and market analysis. Analysis can be turned into decision support or a tool when needed. Verkkolynx, Tampere, Finland.',
+        'Data analytics, reporting and dashboards, KPIs, forecasts, segmentation and market analysis. Analysis can become a decision tool when needed. Verkkolynx, Tampere, Finland.',
     },
   },
   {
@@ -356,7 +373,7 @@ export const servicesEn: Service[] = [
     lede: 'We develop a store’s product data, catalog structure, pricing, search and integrations, and build internal tools to manage them when needed.',
     intro: [
       'An online store’s results are often decided behind the scenes: is the product data accurate, can products be found, does pricing follow the market, and does information move between systems without manual work.',
-      'Behind the work are historical and current datasets we have compiled and organised across industries such as sports, retail and technology.',
+      'The work draws on experience with large product, pricing and transaction datasets across industries. Our experience runs deepest in sports ecommerce, but the methods suit any product catalogue.',
     ],
     problemsTitle: 'What this answers',
     problems: [
@@ -421,6 +438,14 @@ export const servicesEn: Service[] = [
         t: 'Customer journey optimisation',
         d: 'Easy navigation, fewer abandoned purchases, mobile-friendly design and intuitive checkout.',
       },
+      {
+        t: 'Conversion analysis and journey measurement',
+        d: 'We find where the purchase path breaks and which changes affect conversion.',
+      },
+      {
+        t: 'Marketplace data and price monitoring',
+        d: 'Collecting and using marketplace and competitor price and product data in pricing and assortment decisions.',
+      },
     ],
     outcomesTitle: 'Why staying current matters',
     outcomes: [
@@ -445,6 +470,9 @@ export const servicesEn: Service[] = [
       'Adding ecommerce features to an existing site: carts, payments, inventory management and customer accounts',
       'Content production for product descriptions and marketing materials',
       'Payment security and PCI DSS requirements on ecommerce platforms',
+      'Product recommendations, filtering and comparison features',
+      'Using inventory signals in pricing and assortment',
+      'Operational tools for running the store day to day',
     ],
     bridge: [
       { text: 'Need an internal product management tool or automation?', to: 'software' },
@@ -457,7 +485,7 @@ export const servicesEn: Service[] = [
     meta: {
       title: 'Ecommerce systems and optimisation',
       description:
-        'Product data, taxonomy, pricing algorithms, search, recommendations and integrations. Ecommerce systems and optimisation from Tampere, Finland.',
+        'Product information architecture, taxonomy, pricing, search, recommendations, marketplace data and integrations. Ecommerce systems and optimisation from Tampere, Finland.',
     },
   },
   {
@@ -468,10 +496,17 @@ export const servicesEn: Service[] = [
     line: 'Company sites, store front ends and content platforms.',
     summary:
       'We design and build public websites and interfaces that are fast, accessible and readable to search engines.',
-    tags: ['Company sites', 'Store front ends', 'Campaign sites', 'Accessibility', 'Performance'],
+    tags: [
+      'Company sites',
+      'Multilingual sites',
+      'Landing pages',
+      'Store front ends',
+      'Accessibility',
+      'Performance',
+    ],
     photo: 'finlayson',
     heroTitle: 'Websites that work and get found.',
-    lede: 'We design and build company sites, store front ends, campaign sites and content platforms. They work on every device, are accessible and are built to be readable by search engines.',
+    lede: 'We design and build company sites, service and information-heavy sites, multilingual sites, landing pages and, where needed, store front ends. They work on every device, are accessible and are built to be readable by search engines.',
     intro: [
       'A website is the first thing a customer sees. We combine data-driven design, an understanding of user behaviour and technical quality.',
       'We build the site around Google’s E-E-A-T principles (experience, expertise, authoritativeness, trustworthiness) so it communicates credibility.',
@@ -543,6 +578,9 @@ export const servicesEn: Service[] = [
       'Redesigns, migrations to a new platform and maintenance after launch',
       'Third-party services: payments, social media and analytics tools',
       'We do not provide hosting ourselves, but help you choose a provider and set up professional email',
+      'Company and service sites, and information-heavy sites where content structure matters',
+      'Custom interactive features, integrations and analytics',
+      'Internal portals where needed',
     ],
     bridge: [{ text: 'Need a system larger than a website?', to: 'software' }],
     related: ['software', 'marketing', 'ecommerce'],
@@ -552,7 +590,7 @@ export const servicesEn: Service[] = [
     meta: {
       title: 'Websites and digital experiences',
       description:
-        'Company sites, store front ends and campaign sites: fast, accessible and search-friendly. Verkkolynx, Tampere, Finland.',
+        'Company sites, multilingual and information-heavy sites, landing pages and store front ends: fast, accessible and search-friendly. Verkkolynx, Tampere, Finland.',
     },
   },
   {
@@ -563,7 +601,13 @@ export const servicesEn: Service[] = [
     line: 'Search visibility, campaigns and content.',
     summary:
       'We complement the technical work with visibility: search optimisation, targeted campaigns and content whose impact is measured.',
-    tags: ['SEO', 'Digital campaigns', 'Content marketing', 'Email'],
+    tags: [
+      'Technical and content SEO',
+      'Content strategy',
+      'Paid campaigns',
+      'Email and lifecycle messaging',
+      'Measurement and reporting',
+    ],
     photo: 'nasinneula',
     heroTitle: 'Visibility for the right people.',
     lede: 'We combine search optimisation, targeted campaigns and content so your business is found at the right moment and the impact can be measured.',
@@ -585,21 +629,25 @@ export const servicesEn: Service[] = [
     capabilities: [
       {
         t: 'Search engine optimisation (SEO)',
-        d: 'Improve visibility with targeted keyword strategies.',
-        ex: 'A sports equipment retailer that wants its products to appear for searches such as “hockey skates”.',
+        d: 'Keyword and search-intent research, technical SEO, on-page optimisation, content architecture, metadata, structured data and internal linking.',
+        ex: 'For example a service company’s site where each service has its own page matching a search intent.',
       },
       {
         t: 'Targeted digital campaigns',
-        d: 'Paid search and social media campaigns that match your goals.',
-        ex: 'Limited-time hockey equipment offers to the right audience.',
+        d: 'Paid search and paid social: campaign structure, audience segmentation and continuous testing against your goals.',
+        ex: 'For example launching a new service or product to different audience segments.',
       },
       {
         t: 'Content marketing',
-        d: 'Data-driven, detailed content built on sports product datasets: blog articles, product comparisons and niche guides.',
+        d: 'Content strategy, landing pages and conversion-focused content built on search data and product or customer material: articles, comparisons and guides.',
       },
       {
         t: 'Email marketing',
-        d: 'Flows for abandoned carts, seasonal campaigns and loyal-customer engagement.',
+        d: 'Email and lifecycle messaging: segmentation, abandoned carts, seasonal campaigns and customer engagement.',
+      },
+      {
+        t: 'Measurement, testing and reporting',
+        d: 'Tracking, conversion measurement, A/B tests and search visibility monitoring, resulting in regular reports and improvement proposals.',
       },
     ],
     outcomesTitle: 'Why visibility matters',
@@ -619,7 +667,7 @@ export const servicesEn: Service[] = [
     ],
     edgeTitle: 'The Verkkolynx difference',
     edge: [
-      'Experience of large sports product datasets gives content and campaigns concrete insight.',
+      'Analytics, website and content in one team: search data, user data and product data guide the same decisions. We also have experience of large sports product datasets.',
       'SEO is part of the technical structure: site, product data and content are designed together.',
       'We measure what affects the business and optimise continuously.',
     ],
@@ -629,6 +677,8 @@ export const servicesEn: Service[] = [
       'Paid campaigns on Google Ads, Facebook Ads and LinkedIn Ads',
       'Social media marketing, influencer collaboration and brand strategy',
       'Regular reports: traffic, conversions, clicks and engagement',
+      'Content architecture, metadata and structured data',
+      'Search visibility monitoring and testing',
     ],
     bridge: [{ text: 'Need reporting or data collection automated?', to: 'software' }],
     related: ['web', 'analytics', 'ecommerce'],
@@ -638,7 +688,7 @@ export const servicesEn: Service[] = [
     meta: {
       title: 'Marketing and SEO',
       description:
-        'Search engine optimisation, targeted digital campaigns, content marketing and email marketing, driven by data. Verkkolynx, Tampere, Finland.',
+        'Technical SEO, content strategy, multilingual and local SEO, paid campaigns, email and measurement. Data-driven marketing from Verkkolynx, Tampere, Finland.',
     },
   },
   {
@@ -649,14 +699,20 @@ export const servicesEn: Service[] = [
     nav: 'Services for sole traders',
     line: 'Websites, visibility and small tools.',
     summary:
-      'Affordable, personal services for sole traders: websites, search visibility, multilingual content, personal advice and, when it makes sense, a small tool or automation.',
-    tags: ['Websites', 'SEO', 'Multilingual content', 'Small automations', 'Personal advice'],
+      'Affordable, personal services for sole traders: websites and online shops, reporting and analytics, automation and integrations, content, SEO and marketing, and personal advice.',
+    tags: [
+      'Websites and online shops',
+      'Reporting',
+      'Automation and integrations',
+      'SEO and content',
+      'Personal advice',
+    ],
     photo: 'lakePortrait',
     heroTitle: 'Services sized for you.',
     lede: 'As a sole trader your hands are full, and there is rarely time to build online visibility or handle routine work. We offer personal, affordable service built around your needs.',
     intro: [
       'For a sole trader, price matters. We size the work so it stays affordable.',
-      'Whether you are setting up an online shop, want a modern website or are looking for a way into the North American market, we are by your side. When a repetitive task eats your time, we can also build a small tool or automation.',
+      'A small business has plenty of practical work to do: websites and online shops, reporting and analytics, automation and integrations, content, SEO and marketing, and solving technical problems and improving processes. When a repetitive task eats your time, we can also build a small tool or automation.',
     ],
     problemsTitle: 'Familiar challenges',
     problems: [
@@ -689,7 +745,7 @@ export const servicesEn: Service[] = [
       {
         t: 'Multilingual content',
         d: 'Expert content production in Finnish and English, and in French on request.',
-        ex: 'Blog articles, product presentations or targeted ad content, for example for a North American audience.',
+        ex: 'For example a multilingual service site, blog articles or product presentations.',
       },
       {
         t: 'Small tools and automations',
@@ -703,6 +759,16 @@ export const servicesEn: Service[] = [
       {
         t: 'Personal advice and guidance',
         d: 'One-to-one expert work is at the heart of this service: we guide you and provide solutions for your needs.',
+      },
+      {
+        t: 'Reporting and analytics',
+        d: 'A clear summary of sales, visitors or costs without manual spreadsheet work.',
+        ex: 'For example a weekly report on sales and website visitors.',
+      },
+      {
+        t: 'Integrations and process improvement',
+        d: 'We connect the systems you use and remove unnecessary steps.',
+        ex: 'For example orders, invoicing and inventory in one flow of information.',
       },
     ],
     outcomesTitle: 'Why choose Verkkolynx',

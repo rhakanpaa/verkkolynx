@@ -66,7 +66,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'industries',
         'Which industries does Verkkolynx specialise in?',
-        'Our services suit many industries, but our experience is strongest in ecommerce, retail, sports data and digital services. Sports ecommerce is a particular strength, for example hockey equipment, baseball supplies and soccer accessories.',
+        'Our services suit a wide range of companies and industries: service businesses, online stores, information-heavy sites, and internal processes and reporting. Our experience is strongest in ecommerce, retail, sports data and digital services, and sports ecommerce is one of our deepest areas of expertise.',
       ),
       i(
         'abroad',
@@ -216,7 +216,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'analytics-industries',
         'Which industries benefit most from your data analytics services?',
-        'Our expertise is especially useful in ecommerce, retail, sports data and digital services. Our methods can be tailored to the needs of any industry.',
+        'Analytics applies to any industry that has data on sales, customers, inventory or processes. Our experience is strongest in ecommerce, retail, sports data and digital services.',
       ),
       i(
         'ai',
@@ -404,7 +404,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'not-sports',
         'I do not run a sports-related online store. Is Verkkolynx still a fit?',
-        'Yes. Data is data, and our skills in data analytics, web development, SEO and ecommerce optimisation can be adapted to retail, travel, digital services or any other field.',
+        'Yes. Data analytics, software development, automation, websites, SEO and ecommerce work in other fields too, for example service businesses, information-heavy sites and improving internal processes.',
       ),
       i(
         'results',

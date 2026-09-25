@@ -418,7 +418,7 @@ export const fi: Dict = {
         'Verkkolynx Ratkaisut Oy on tamperelainen tekninen digitaalinen yritys: ohjelmistokehitys, data, automaatio, verkkokauppa ja web. Tarina, toimintatapa ja arvot.',
     },
     title: 'Suomalainen tarkkuus, globaali näkökulma.',
-    lede: 'Verkkolynx Ratkaisut Oy on tamperelainen tekninen yritys, joka rakentaa ohjelmistoja, automaatioita ja dataratkaisuja.',
+    lede: 'Verkkolynx Ratkaisut Oy on tamperelainen digitaalinen ja tekninen kumppani: data, ohjelmistot, automaatio, verkkosivut, verkkokauppa, SEO ja markkinointi samassa tiimissä.',
     chapters: [
       {
         id: 'kuka',

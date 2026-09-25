@@ -433,7 +433,7 @@ export const sv: Dict = {
         'Verkkolynx Ratkaisut Oy är ett tekniskt digitalt företag i Tammerfors: programutveckling, data, automation, e-handel och webb. Vår historia, vårt arbetssätt och våra värderingar.',
     },
     title: 'Finländsk noggrannhet, globalt perspektiv.',
-    lede: 'Verkkolynx Ratkaisut Oy är ett tekniskt företag i Tammerfors som bygger programvara, automationer och datalösningar.',
+    lede: 'Verkkolynx Ratkaisut Oy är en digital och teknisk partner i Tammerfors: data, programvara, automation, webbplatser, e-handel, SEO och marknadsföring i samma team.',
     chapters: [
       {
         id: 'vilka',

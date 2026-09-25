@@ -66,7 +66,7 @@ export const faqSv: FaqCategory[] = [
       i(
         'branscher',
         'Vilka branscher är Verkkolynx specialiserat på?',
-        'Våra tjänster passar många branscher, men vår erfarenhet är starkast inom e-handel, detaljhandel, sportdata och digitala tjänster. Sporthandel på nätet är en särskild styrka, till exempel hockeyutrustning, basebollartiklar och fotbollstillbehör.',
+        'Våra tjänster passar många slags företag och branscher: tjänsteföretag, webbutiker och informationstunga webbplatser samt utveckling av interna processer och rapportering. Erfarenheten är starkast inom e-handel, detaljhandel, sportdata och digitala tjänster, och sporthandel på nätet är ett av våra djupaste kompetensområden.',
       ),
       i(
         'utomlands',
@@ -216,7 +216,7 @@ export const faqSv: FaqCategory[] = [
       i(
         'analysens-branscher',
         'Vilka branscher har mest nytta av era dataanalystjänster?',
-        'Vår kompetens är särskilt användbar inom e-handel, detaljhandel, sportdata och digitala tjänster. Våra metoder kan ändå anpassas efter behoven i vilken bransch som helst.',
+        'Analys passar vilken bransch som helst som har data om försäljning, kunder, lager eller processer. Erfarenheten är starkast inom e-handel, detaljhandel, sportdata och digitala tjänster.',
       ),
       i(
         'ai',
@@ -404,7 +404,7 @@ export const faqSv: FaqCategory[] = [
       i(
         'inte-sport',
         'Jag har ingen sportrelaterad webbutik. Passar Verkkolynx ändå?',
-        'Ja. Data är data, och vår kompetens inom dataanalys, webbutveckling, SEO och optimering av e-handel kan anpassas till detaljhandel, turism, digitala tjänster eller vilken annan bransch som helst.',
+        'Ja. Dataanalys, programutveckling, automation, webbplatser, SEO och e-handel fungerar också inom andra områden, till exempel för tjänsteföretag, informationstunga webbplatser och utveckling av interna processer.',
       ),
       i(
         'resultat',

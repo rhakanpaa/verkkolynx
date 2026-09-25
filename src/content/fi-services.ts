@@ -201,6 +201,8 @@ export const servicesFi: Service[] = [
       'Tunnistautuminen ja roolipohjaiset käyttöoikeudet',
       'Integraatiot verkkokauppa-alustoihin, sisäisiin järjestelmiin ja kolmansien osapuolten palveluihin',
       'Dokumentaatio ja koulutus käyttöönoton yhteydessä sekä ylläpito ja jatkokehitys',
+      'Raportointiputket, ajastetut prosessit ja datan synkronointi järjestelmien välillä',
+      'Sisällönhallinnan työnkulut ja prosessien digitalisointi kevyinä liiketoimintasovelluksina',
     ],
     bridge: [
       { text: 'Tarvitsetko vain julkisen verkkosivuston?', to: 'web' },
@@ -224,10 +226,16 @@ export const servicesFi: Service[] = [
     line: 'Analyysi, ennusteet ja päätöstyökalut.',
     summary:
       'Analysoimme datan ja muutamme tuloksen tarvittaessa työkaluksi: ennusteeksi, seurannaksi tai päätöstueksi.',
-    tags: ['Myyntitrendit', 'Ennusteet', 'Päätöstyökalut', 'Automaattinen analyysi'],
+    tags: [
+      'Raportointi ja mittaristot',
+      'KPI-mittarit',
+      'Ennusteet',
+      'Data-integraatiot',
+      'Päätöstyökalut',
+    ],
     photo: 'sunset',
     heroTitle: 'Data, josta tulee päätöksiä ja tarvittaessa työkaluja.',
-    lede: 'Verkkolynx analysoi dataa myyntitrendeistä asiakaskäyttäytymiseen ja auttaa löytämään piileviä mahdollisuuksia. Kun analyysi tarvitsee jatkuvaa käyttöä, siitä voidaan rakentaa sovellus.',
+    lede: 'Verkkolynx rakentaa analytiikkaa liiketoiminnan, asiakkaiden, myynnin, varaston ja prosessien datasta: KPI-mittareista ja raportoinnista ennusteisiin ja päätöstyökaluihin. Kun analyysi tarvitsee jatkuvaa käyttöä, siitä voidaan rakentaa sovellus.',
     intro: [
       'Analyysi ei tarkoita vain raporttia. Tunnistamme kuviot ja trendit, jotka parantavat päätöksentekoa varastonhallinnassa, asiakassegmentoinnissa, hinnoittelussa ja markkinoiden arvioinnissa.',
       'Usein selkeä raportti riittää. Kun sama analyysi tehdään yhä uudelleen, se voi muuttua ennusteeksi, seurantajärjestelmäksi tai päätöstyökaluksi, jota tiimi käyttää itse.',
@@ -276,6 +284,16 @@ export const servicesFi: Service[] = [
         d: 'Kun analyysiä tarvitaan toistuvasti, siitä voidaan rakentaa päätöstukisovellus, seurantajärjestelmä tai algoritmi osaksi työnkulkua.',
         ex: 'Ennustetyökalu, pisteytysmalli tai automaattinen valvonta, jota tiimi käyttää päivittäin.',
       },
+      {
+        t: 'Raportointi ja business intelligence',
+        d: 'Mittaristot ja raportit, jotka kokoavat eri lähteiden datan yhteen ja päivittyvät automaattisesti.',
+        ex: 'Esimerkiksi kuukausittainen johdon raportti, jonka luvut haetaan suoraan järjestelmistä.',
+      },
+      {
+        t: 'Operatiivinen analytiikka',
+        d: 'Prosessien, varaston, hinnoittelun ja suorituskyvyn seuranta luotettavilla mittareilla.',
+        ex: 'Esimerkiksi läpimenoaikojen, varastosaldojen tai hintamuutosten vaikutusten seuranta.',
+      },
     ],
     outcomesTitle: 'Mihin analyysi voi johtaa',
     outcomes: [
@@ -298,7 +316,7 @@ export const servicesFi: Service[] = [
     ],
     edgeTitle: 'Verkkolynxin ero',
     edge: [
-      'Analytiikkaosaaminen yhdistettynä kokemukseen laajoista urheilutuoteaineistoista.',
+      'Analytiikkaosaaminen yhdistettynä kokemukseen laajoista, monilähteisistä aineistoista: tuote-, transaktio-, asiakas- ja verkkokäyttäytymisdatasta. Syvintä kokemusta on urheiluverkkokaupan datasta.',
       'Analyysi voidaan viedä ohjelmistoksi samalla tiimillä, joka sen teki: mallinnus ja toteutus pysyvät yhdessä.',
       'Suositukset perustuvat sinun tilanteeseesi, eivät yleisiin oletuksiin.',
       'Selkeät raportit ja visualisoinnit.',
@@ -310,6 +328,11 @@ export const servicesFi: Service[] = [
       'Datan laadun parantaminen: puhdistus, järjestäminen ja standardointi',
       'Reaaliaikaiset mittarit myynnistä, varastosta ja verkkosivuston suorituskyvystä',
       'Koulutus, jonka jälkeen tiimisi tulkitsee analytiikkatyökaluja itsenäisesti',
+      'KPI-mittareiden suunnittelu ja mittaristot',
+      'Datan puhdistus, muunnos ja mallinnus',
+      'Usean lähteen ja rajapinnan datan yhdistäminen',
+      'Segmentointi, poikkeamien havaitseminen ja suorituskyvyn seuranta',
+      'Toistuvan raportoinnin automatisointi',
     ],
     bridge: [{ text: 'Haluatko analyysin käyttöön työkaluna?', to: 'software' }],
     related: ['software', 'ecommerce', 'marketing'],
@@ -319,7 +342,7 @@ export const servicesFi: Service[] = [
     meta: {
       title: 'Data-analytiikka ja oivallukset',
       description:
-        'Myyntitrendit, asiakaskäyttäytyminen, ennusteet ja markkina-analyysi. Analyysi voidaan tarvittaessa muuttaa päätöstueksi tai työkaluksi. Verkkolynx, Tampere.',
+        'Data-analytiikka, raportointi ja mittaristot, KPI-mittarit, ennusteet, segmentointi ja markkina-analyysi. Analyysistä tarvittaessa päätöstyökalu. Verkkolynx, Tampere.',
     },
   },
   {
@@ -342,7 +365,7 @@ export const servicesFi: Service[] = [
     lede: 'Kehitämme verkkokaupan tuotedatan, katalogirakenteen, hinnoittelun, haun ja integraatiot ja rakennamme tarvittaessa sisäiset työkalut niiden hallintaan.',
     intro: [
       'Verkkokaupan tulos ratkeaa usein taustalla: onko tuotedata tarkkaa, löytyvätkö tuotteet, seuraako hinnoittelu markkinaa ja liikkuuko tieto järjestelmien välillä ilman käsityötä.',
-      'Työmme tukena on laajoja historiallisia ja ajantasaisia tietoaineistoja useilta toimialoilta, kuten urheilusta, vähittäiskaupasta ja teknologiasta.',
+      'Työtä tukee kokemus laajoista tuote-, hinnoittelu- ja transaktioaineistoista useilta toimialoilta. Syvintä osaamista on urheiluverkkokaupasta, mutta menetelmät sopivat mille tahansa tuotekatalogille.',
     ],
     problemsTitle: 'Mihin tämä vastaa',
     problems: [
@@ -404,6 +427,14 @@ export const servicesFi: Service[] = [
         t: 'Asiakaspolun optimointi',
         d: 'Selkeä navigointi, sujuva kassa ja mobiiliystävällinen suunnittelu, jotta ostoksia jää vähemmän kesken.',
       },
+      {
+        t: 'Konversioanalyysi ja asiakaspolkujen mittaus',
+        d: 'Selvitämme, missä ostopolku katkeaa ja mitkä muutokset vaikuttavat konversioon.',
+      },
+      {
+        t: 'Markkinapaikkadata ja hintaseuranta',
+        d: 'Markkinapaikkojen ja kilpailijoiden hinta- ja tuotedatan kerääminen ja hyödyntäminen hinnoittelussa ja valikoimassa.',
+      },
     ],
     outcomesTitle: 'Mitä ajantasainen tuotetieto tuo',
     outcomes: [
@@ -425,6 +456,9 @@ export const servicesFi: Service[] = [
       'Verkkokauppaominaisuuksien lisääminen olemassa olevalle sivustolle: ostoskorit, maksut, varastonhallinta ja asiakastilit',
       'Sisällöntuotanto tuotekuvauksiin ja markkinointimateriaaleihin',
       'Maksuturvallisuus ja PCI DSS -vaatimusten huomiointi verkkokauppa-alustoilla',
+      'Tuotesuositukset, suodatus ja vertailutoiminnot',
+      'Varastosignaalien hyödyntäminen hinnoittelussa ja valikoimassa',
+      'Operatiiviset työkalut verkkokaupan päivittäiseen hallintaan',
     ],
     bridge: [
       { text: 'Tarvitsetko sisäisen tuotehallintatyökalun tai automaation?', to: 'software' },
@@ -437,7 +471,7 @@ export const servicesFi: Service[] = [
     meta: {
       title: 'Verkkokaupan järjestelmät ja optimointi',
       description:
-        'Tuotedata, taksonomia, hinnoittelualgoritmit, haku, suositukset ja integraatiot. Verkkokaupan järjestelmiä ja optimointia Tampereelta.',
+        'Tuotetietoarkkitehtuuri, taksonomia, hinnoittelu, haku, suositukset, markkinapaikkadata ja integraatiot. Verkkokaupan järjestelmät ja optimointi Tampereelta.',
     },
   },
   {
@@ -450,14 +484,15 @@ export const servicesFi: Service[] = [
       'Suunnittelemme ja toteutamme julkiset verkkosivut ja käyttöliittymät, jotka ovat nopeita, saavutettavia ja hakukoneille luettavia.',
     tags: [
       'Yrityssivut',
+      'Monikieliset sivustot',
+      'Laskeutumissivut',
       'Verkkokaupan käyttöliittymä',
-      'Kampanjasivut',
       'Saavutettavuus',
       'Suorituskyky',
     ],
     photo: 'finlayson',
     heroTitle: 'Verkkosivut, jotka toimivat ja löytyvät.',
-    lede: 'Suunnittelemme ja toteutamme yrityssivustot, verkkokaupan käyttöliittymät, kampanjasivut ja sisältöalustat. Sivustot toimivat kaikilla laitteilla, ovat saavutettavia ja hakukoneiden luettavissa.',
+    lede: 'Suunnittelemme ja toteutamme yrityssivustot, palvelu- ja tietopainotteiset sivustot, monikieliset sivustot, laskeutumissivut ja tarvittaessa verkkokaupan käyttöliittymät. Sivustot toimivat kaikilla laitteilla, ovat saavutettavia ja hakukoneiden luettavissa.',
     intro: [
       'Verkkosivusto on ensimmäinen asia, jonka asiakas näkee. Yhdistämme datalähtöisen suunnittelun, käyttäjäkäyttäytymisen ymmärtämisen ja teknisen laadun.',
       'Rakennamme sivuston Googlen E-E-A-T-periaatteiden (kokemus, asiantuntemus, auktoriteetti, luotettavuus) mukaisesti, jotta se välittää uskottavuutta.',
@@ -529,6 +564,9 @@ export const servicesFi: Service[] = [
       'Uudistukset, siirrot uudelle alustalle ja ylläpito julkaisun jälkeen',
       'Kolmannen osapuolen palvelut: maksut, sosiaalinen media ja analytiikkatyökalut',
       'Hostingia emme tarjoa itse, mutta autamme valitsemaan palveluntarjoajan ja ottamaan käyttöön ammattimaisen sähköpostin',
+      'Yritys- ja palvelusivustot sekä tietopainotteiset sivustot, joissa sisältörakenne on tärkeä',
+      'Mukautetut interaktiiviset toiminnot, integraatiot ja analytiikka',
+      'Sisäiset portaalit tarvittaessa',
     ],
     bridge: [{ text: 'Tarvitsetko verkkosivustoa laajemman järjestelmän?', to: 'software' }],
     related: ['software', 'marketing', 'ecommerce'],
@@ -538,7 +576,7 @@ export const servicesFi: Service[] = [
     meta: {
       title: 'Verkkosivut ja digitaaliset kokemukset',
       description:
-        'Yrityssivut, verkkokaupan käyttöliittymät ja kampanjasivut: nopeat, saavutettavat ja hakukoneystävälliset. Verkkolynx, Tampere.',
+        'Yrityssivut, monikieliset ja tietopainotteiset sivustot, laskeutumissivut ja verkkokaupan käyttöliittymät: nopeat, saavutettavat ja hakukoneystävälliset. Verkkolynx, Tampere.',
     },
   },
   {
@@ -549,7 +587,13 @@ export const servicesFi: Service[] = [
     line: 'Hakukonenäkyvyys, kampanjat ja sisältö.',
     summary:
       'Täydennämme tekniset ratkaisut näkyvyydellä: hakukoneoptimointi, kohdennetut kampanjat ja sisältö, jonka vaikutus mitataan.',
-    tags: ['SEO', 'Digikampanjat', 'Sisältömarkkinointi', 'Sähköposti'],
+    tags: [
+      'Tekninen ja sisällöllinen SEO',
+      'Sisältöstrategia',
+      'Maksetut kampanjat',
+      'Sähköposti ja elinkaariviestintä',
+      'Mittaus ja raportointi',
+    ],
     photo: 'nasinneula',
     heroTitle: 'Näkyvyyttä oikeille ihmisille.',
     lede: 'Yhdistämme hakukoneoptimoinnin, kohdennetut kampanjat ja sisällön, jotta yrityksesi löytyy oikealla hetkellä ja vaikutus on mitattavissa.',
@@ -571,21 +615,25 @@ export const servicesFi: Service[] = [
     capabilities: [
       {
         t: 'Hakukoneoptimointi (SEO)',
-        d: 'Paranna näkyvyyttä kohdennetuilla avainsanastrategioilla.',
-        ex: 'Esimerkiksi urheiluvälinekauppa, jonka tuotteiden halutaan löytyvän hauilla kuten ”jääkiekkoluistimet”.',
+        d: 'Hakusana- ja hakuintentiotutkimus, tekninen SEO, sivukohtainen optimointi, sisältöarkkitehtuuri, metadata, jäsennelty data ja sisäinen linkitys.',
+        ex: 'Esimerkiksi palveluyrityksen sivusto, jossa jokaisella palvelulla on oma, hakuintentiota vastaava sivu.',
       },
       {
         t: 'Kohdennetut digikampanjat',
-        d: 'Maksetut haku- ja sosiaalisen median kampanjat, jotka vastaavat tavoitteitasi.',
-        ex: 'Rajoitetun ajan jääkiekkovarustetarjoukset oikealle yleisölle.',
+        d: 'Maksettu haku ja sosiaalinen media: kampanjarakenne, yleisösegmentointi ja jatkuva testaus tavoitteidesi mukaan.',
+        ex: 'Esimerkiksi uuden palvelun tai tuotteen lanseeraus eri yleisösegmenteille.',
       },
       {
         t: 'Sisältömarkkinointi',
-        d: 'Datalähtöistä ja yksityiskohtaista sisältöä urheilutuoteaineistojen pohjalta: blogiartikkeleita, tuotevertailuja ja tarkasti kohdennettuja oppaita.',
+        d: 'Sisältöstrategia, laskeutumissivut ja konversiolähtöinen sisältö hakudatan ja tuote- tai asiakasaineistojen pohjalta: artikkelit, vertailut ja oppaat.',
       },
       {
         t: 'Sähköpostimarkkinointi',
-        d: 'Prosessit hylättyihin ostoskoreihin, kausikampanjoihin ja kanta-asiakkaiden sitouttamiseen.',
+        d: 'Sähköposti ja elinkaariviestintä: segmentointi, hylätyt ostoskorit, kausikampanjat ja asiakkaiden sitouttaminen.',
+      },
+      {
+        t: 'Mittaus, testaus ja raportointi',
+        d: 'Seuranta, konversiomittaus, A/B-testit ja hakunäkyvyyden seuranta, joista syntyy säännöllinen raportti ja parannusehdotukset.',
       },
     ],
     outcomesTitle: 'Miksi näkyvyys on tärkeää',
@@ -599,7 +647,7 @@ export const servicesFi: Service[] = [
     ],
     edgeTitle: 'Verkkolynxin ero',
     edge: [
-      'Kokemus laajoista urheilutuoteaineistoista tuo sisältöön ja kampanjoihin konkreettisia oivalluksia.',
+      'Analytiikka, sivusto ja sisältö samassa tiimissä: hakudata, käyttäjädata ja tuotedata ohjaavat samoja päätöksiä. Kokemusta on myös laajoista urheilutuoteaineistoista.',
       'SEO on osa teknistä rakennetta: sivusto, tuotedata ja sisältö suunnitellaan yhdessä.',
       'Mittaamme sitä, mikä vaikuttaa liiketoimintaan, ja optimoimme jatkuvasti.',
     ],
@@ -609,6 +657,8 @@ export const servicesFi: Service[] = [
       'Maksetut kampanjat Google Ads-, Facebook Ads- ja LinkedIn Ads -alustoilla',
       'Sosiaalisen median markkinointi, vaikuttajayhteistyö ja brändistrategia',
       'Säännölliset raportit: liikenne, konversiot, klikkaukset ja sitoutuminen',
+      'Sisältöarkkitehtuuri, metadata ja jäsennelty data',
+      'Hakunäkyvyyden seuranta ja testaus',
     ],
     bridge: [{ text: 'Tarvitsetko raportoinnin tai datankeruun automaation?', to: 'software' }],
     related: ['web', 'analytics', 'ecommerce'],
@@ -618,7 +668,7 @@ export const servicesFi: Service[] = [
     meta: {
       title: 'Markkinointi ja SEO',
       description:
-        'Hakukoneoptimointi, kohdennetut digikampanjat, sisältömarkkinointi ja sähköpostimarkkinointi datalähtöisesti. Verkkolynx, Tampere.',
+        'Tekninen SEO, sisältöstrategia, monikielinen ja paikallinen SEO, maksetut kampanjat, sähköposti ja mittaus. Datalähtöistä markkinointia, Verkkolynx, Tampere.',
     },
   },
   {
@@ -629,14 +679,20 @@ export const servicesFi: Service[] = [
     nav: 'Palvelut toiminimiyrittäjille',
     line: 'Verkkosivut, näkyvyys ja pienet työkalut.',
     summary:
-      'Edullisia ja henkilökohtaisia palveluita toiminimiyrittäjälle: verkkosivut, hakukonenäkyvyys, monikielinen sisältö, sparraus ja tarvittaessa pieni työkalu tai automaatio.',
-    tags: ['Verkkosivut', 'SEO', 'Monikielinen sisältö', 'Pienet automaatiot', 'Sparraus'],
+      'Edullisia ja henkilökohtaisia palveluita toiminimiyrittäjälle: verkkosivut ja verkkokauppa, raportointi ja analytiikka, automaatio ja integraatiot, sisältö, SEO ja markkinointi sekä sparraus.',
+    tags: [
+      'Verkkosivut ja verkkokauppa',
+      'Raportointi',
+      'Automaatio ja integraatiot',
+      'SEO ja sisältö',
+      'Sparraus',
+    ],
     photo: 'lakePortrait',
     heroTitle: 'Palvelut, jotka mitoitetaan sinulle.',
     lede: 'Toiminimiyrittäjänä sinulla on kädet täynnä töitä, eikä aikaa verkkonäkyvyyden tai rutiinitöiden hoitamiseen ole usein tarpeeksi. Tarjoamme yksilöllistä ja kohtuuhintaista palvelua juuri sinun tarpeisiisi.',
     intro: [
       'Toiminimiyrittäjälle hinnalla on väliä. Mitoitamme työn niin, että se pysyy kohtuuhintaisena.',
-      'Olitpa perustamassa omaa verkkokauppaa, haluamassa modernia verkkosivustoa tai etsimässä keinoja Pohjois-Amerikan markkinoille, olemme rinnallasi. Kun toistuva työvaihe syö aikaasi, voimme rakentaa myös pienen työkalun tai automaation.',
+      'Pienyrityksen käytännön työhön mahtuu paljon: verkkosivuja ja verkkokauppaa, raportointia ja analytiikkaa, automaatiota ja integraatioita, sisältöä, SEO:ta ja markkinointia sekä teknisten ongelmien ratkaisua ja prosessien parantamista. Kun toistuva työvaihe syö aikaasi, voimme rakentaa myös pienen työkalun tai automaation.',
     ],
     problemsTitle: 'Tuttuja haasteita',
     problems: [
@@ -669,7 +725,7 @@ export const servicesFi: Service[] = [
       {
         t: 'Monikielinen sisältö',
         d: 'Asiantunteva sisällöntuotanto suomeksi ja englanniksi, pyynnöstä myös ranskaksi.',
-        ex: 'Blogiartikkeleita, tuote-esittelyjä tai kohdennettua mainossisältöä esimerkiksi Pohjois-Amerikan yleisölle.',
+        ex: 'Esimerkiksi monikielinen palvelusivusto, blogiartikkeleita tai tuote-esittelyjä.',
       },
       {
         t: 'Pienet työkalut ja automaatiot',
@@ -683,6 +739,16 @@ export const servicesFi: Service[] = [
       {
         t: 'Henkilökohtainen sparraus ja opastus',
         d: 'Kahdenkeskinen asiantuntijatyö on tämän palvelun ydin: opastamme ja tarjoamme ratkaisuja juuri sinun tarpeisiisi.',
+      },
+      {
+        t: 'Raportointi ja analytiikka',
+        d: 'Selkeä yhteenveto myynnistä, kävijöistä tai kuluista ilman käsin tehtyä taulukointia.',
+        ex: 'Esimerkiksi viikoittain päivittyvä raportti myynnistä ja verkkosivun kävijöistä.',
+      },
+      {
+        t: 'Integraatiot ja prosessien parantaminen',
+        d: 'Yhdistämme käyttämäsi järjestelmät ja poistamme turhia työvaiheita.',
+        ex: 'Esimerkiksi tilaukset, laskutus ja varasto samaan tiedonkulkuun.',
       },
     ],
     outcomesTitle: 'Miksi valita Verkkolynx',
