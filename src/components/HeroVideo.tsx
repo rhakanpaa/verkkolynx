@@ -10,17 +10,12 @@ import { useEffect, useState } from 'react';
 export function HeroVideo() {
   const [play, setPlay] = useState(false);
   useEffect(() => {
-    // phones keep the still poster: the hero is tall and narrow there, so moving footage would sit
-    // right behind the text and cost data
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const wide = window.matchMedia('(min-width: 900px)');
-    const update = () => setPlay(!reduce.matches && wide.matches);
+    const update = () => setPlay(!reduce.matches);
     update();
     reduce.addEventListener('change', update);
-    wide.addEventListener('change', update);
     return () => {
       reduce.removeEventListener('change', update);
-      wide.removeEventListener('change', update);
     };
   }, []);
   if (!play) return null;
@@ -38,8 +33,8 @@ export function HeroVideo() {
       disablePictureInPicture
       disableRemotePlayback
     >
-      <source src="/video/lynx-video.webm" type="video/webm" />
-      <source src="/video/lynx-video.mp4" type="video/mp4" />
+      <source src="/video/lynx-video.webm#t=4.4" type="video/webm" />
+      <source src="/video/lynx-video.mp4#t=4.4" type="video/mp4" />
     </video>
   );
 }
