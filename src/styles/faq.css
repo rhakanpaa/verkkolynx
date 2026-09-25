@@ -95,6 +95,7 @@
   color: var(--light-text-dim);
 }
 .faq__toggle {
+  min-height: 2.75rem;
   padding: 0.5rem 0;
   font-size: var(--fs-small);
   text-decoration: underline;
@@ -123,6 +124,8 @@
   line-height: 1.4;
 }
 .qa__btn {
+  min-width: 0;
+  overflow-wrap: anywhere;
   display: flex;
   width: 100%;
   align-items: flex-start;

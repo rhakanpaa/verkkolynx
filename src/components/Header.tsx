@@ -223,7 +223,7 @@ export function Header({ locale, data }: { locale: Locale; data: HeaderData }) {
               hrefLang="fi"
               lang="fi"
               aria-current={locale === 'fi' ? 'true' : undefined}
-              aria-label={locale === 'fi' ? 'Suomi' : 'Vaihda kieleksi suomi'}
+              aria-label={locale === 'fi' ? 'FI, suomi' : 'FI, vaihda kieleksi suomi'}
             >
               FI
             </Link>
@@ -233,7 +233,7 @@ export function Header({ locale, data }: { locale: Locale; data: HeaderData }) {
               hrefLang="en"
               lang="en"
               aria-current={locale === 'en' ? 'true' : undefined}
-              aria-label={locale === 'en' ? 'English' : 'Switch to English'}
+              aria-label={locale === 'en' ? 'EN, English' : 'EN, switch to English'}
             >
               EN
             </Link>
@@ -262,57 +262,59 @@ export function Header({ locale, data }: { locale: Locale; data: HeaderData }) {
         <div className="container sheet__inner">
           <nav aria-label={nav.primary}>
             <ul className="sheet__list">
-              {nav.items.map((item) =>
-                item.key === 'services' ? (
-                  <li key={item.key}>
-                    <button
-                      type="button"
-                      className="sheet__link"
-                      aria-expanded={mobileServices}
-                      aria-controls="sheet-services"
-                      onClick={() => setMobileServices((v) => !v)}
-                    >
-                      {item.label}
-                      <span
-                        className="sheet__plus"
-                        aria-hidden="true"
-                        data-open={mobileServices || undefined}
-                      />
-                    </button>
-                    <ul id="sheet-services" className="sheet__sub" hidden={!mobileServices}>
-                      {core.map((s) => (
-                        <li key={s.key}>
-                          <Link href={pathFor(s.key, locale)} className="sheet__sublink">
-                            {s.nav}
+              {nav.items
+                .filter((i) => i.key !== 'contact') // the contact button below is the CTA
+                .map((item) =>
+                  item.key === 'services' ? (
+                    <li key={item.key}>
+                      <button
+                        type="button"
+                        className="sheet__link"
+                        aria-expanded={mobileServices}
+                        aria-controls="sheet-services"
+                        onClick={() => setMobileServices((v) => !v)}
+                      >
+                        {item.label}
+                        <span
+                          className="sheet__plus"
+                          aria-hidden="true"
+                          data-open={mobileServices || undefined}
+                        />
+                      </button>
+                      <ul id="sheet-services" className="sheet__sub" hidden={!mobileServices}>
+                        {core.map((s) => (
+                          <li key={s.key}>
+                            <Link href={pathFor(s.key, locale)} className="sheet__sublink">
+                              {s.nav}
+                            </Link>
+                          </li>
+                        ))}
+                        {audience.map((s) => (
+                          <li key={s.key} className="sheet__divided">
+                            <Link href={pathFor(s.key, locale)} className="sheet__sublink">
+                              {s.nav}
+                            </Link>
+                          </li>
+                        ))}
+                        <li>
+                          <Link href={pathFor('services', locale)} className="sheet__sublink">
+                            {nav.allServices}
                           </Link>
                         </li>
-                      ))}
-                      {audience.map((s) => (
-                        <li key={s.key} className="sheet__divided">
-                          <Link href={pathFor(s.key, locale)} className="sheet__sublink">
-                            {s.nav}
-                          </Link>
-                        </li>
-                      ))}
-                      <li>
-                        <Link href={pathFor('services', locale)} className="sheet__sublink">
-                          {nav.allServices}
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                ) : (
-                  <li key={item.key}>
-                    <Link
-                      href={pathFor(item.key, locale)}
-                      className="sheet__link"
-                      aria-current={isActive(item.key) ? 'page' : undefined}
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ),
-              )}
+                      </ul>
+                    </li>
+                  ) : (
+                    <li key={item.key}>
+                      <Link
+                        href={pathFor(item.key, locale)}
+                        className="sheet__link"
+                        aria-current={isActive(item.key) ? 'page' : undefined}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ),
+                )}
             </ul>
           </nav>
           <div className="sheet__foot">

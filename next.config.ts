@@ -3,13 +3,22 @@ import { REDIRECTS } from './src/lib/routes';
 
 const config: NextConfig = {
   reactStrictMode: true,
+  experimental: { globalNotFound: true },
   poweredByHeader: false,
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [420, 640, 828, 1080, 1440, 1920, 2400],
   },
   async redirects() {
-    return REDIRECTS.map((r) => ({ ...r, permanent: true }));
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.verkkolynx.fi' }],
+        destination: 'https://verkkolynx.fi/:path*',
+        permanent: true,
+      },
+      ...REDIRECTS.map((r) => ({ ...r, permanent: true })),
+    ];
   },
   async headers() {
     return [

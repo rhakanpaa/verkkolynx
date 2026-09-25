@@ -335,3 +335,10 @@
   font-weight: 600;
   color: var(--dark-text-dim);
 }
+.notfound__alt {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: start;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--dark-line);
+}

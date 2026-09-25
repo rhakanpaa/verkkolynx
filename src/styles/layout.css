@@ -102,6 +102,7 @@
 
 /* text link, with an arrow where it points to another page */
 .tlink {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -109,6 +110,12 @@
   border-bottom: 1px solid currentColor;
   font-weight: 500;
   text-decoration: none;
+}
+/* touch: enlarge the hit area to 44px without moving the visible underline */
+.tlink::before {
+  content: '';
+  position: absolute;
+  inset: -0.75rem 0;
 }
 .tlink .arrow {
   transition: transform var(--t-base) var(--ease);
@@ -185,4 +192,18 @@
     top: calc(var(--header-h) + 2rem);
     align-self: start;
   }
+}
+
+/* standalone links whose text is shorter than a fingertip: enlarge the hit area only */
+.cap__link,
+.cta__mail,
+.footer__mail {
+  position: relative;
+}
+.cap__link::after,
+.cta__mail::after,
+.footer__mail::after {
+  content: '';
+  position: absolute;
+  inset: -0.7rem 0;
 }

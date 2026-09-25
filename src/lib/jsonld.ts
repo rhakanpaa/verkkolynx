@@ -13,7 +13,12 @@ export function organizationLd(locale: Locale) {
     name: SITE.legalName,
     alternateName: SITE.name,
     url: SITE.url,
-    logo: absoluteUrl('/assets/brand/verkkolynx-wordmark-blue.svg'),
+    logo: {
+      '@type': 'ImageObject',
+      url: absoluteUrl('/icon-512.png'),
+      width: 512,
+      height: 512,
+    },
     email: SITE.email,
     description: d.schemaDescription,
     foundingDate: String(SITE.founded),

@@ -170,3 +170,27 @@ describe('content', () => {
     }
   });
 });
+
+describe('production URLs', () => {
+  it('uses the bare https domain for every absolute URL', async () => {
+    const { SITE } = await import('@/lib/site');
+    expect(SITE.url).toBe('https://verkkolynx.fi');
+  });
+
+  it('lists every route in both languages in the sitemap, with reciprocal alternates', async () => {
+    const sitemap = (await import('@/app/sitemap')).default;
+    const entries = sitemap();
+    expect(entries).toHaveLength(ROUTE_KEYS.length * 2);
+    const urls = entries.map((e) => e.url);
+    expect(new Set(urls).size).toBe(urls.length);
+    for (const e of entries) {
+      expect(e.url.startsWith('https://verkkolynx.fi')).toBe(true);
+      expect(Object.values(e.alternates?.languages ?? {})).toContain(e.url);
+    }
+  });
+
+  it('points robots at the production sitemap', async () => {
+    const robots = (await import('@/app/robots')).default();
+    expect(robots.sitemap).toBe('https://verkkolynx.fi/sitemap.xml');
+  });
+});

@@ -1,5 +1,6 @@
 export const SITE = {
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.verkkolynx.fi',
+  // canonical production origin: non-www, https. Every absolute URL is built from this.
+  url: 'https://verkkolynx.fi',
   name: 'Verkkolynx',
   legalName: 'Verkkolynx Ratkaisut Oy',
   businessId: '3486845-7',

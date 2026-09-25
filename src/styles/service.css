@@ -21,7 +21,13 @@
   margin-right: 0.5rem;
 }
 .crumbs a {
+  position: relative;
   text-decoration: none;
+}
+.crumbs a::after {
+  content: '';
+  position: absolute;
+  inset: -0.75rem -0.4rem; /* 44px touch target */
 }
 .crumbs a:hover {
   color: var(--white);

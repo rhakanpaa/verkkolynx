@@ -10,7 +10,14 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dict }) {
   return (
     <section className="hero section--dark" aria-labelledby="hero-title">
       <div className="hero__photo" aria-hidden="true">
-        <Photo name="tammerkoski" locale={locale} sizes="100vw" priority position="50% 62%" />
+        <Photo
+          name="tammerkoski"
+          locale={locale}
+          sizes="100vw"
+          priority
+          quality={60}
+          position="50% 62%"
+        />
       </div>
       <div className="container hero__grid">
         <div className="hero__copy">

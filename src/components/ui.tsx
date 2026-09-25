@@ -40,6 +40,7 @@ export function Photo({
   priority,
   className,
   position,
+  quality,
 }: {
   name: PhotoKey;
   locale: Locale;
@@ -48,6 +49,7 @@ export function Photo({
   className?: string;
   /** CSS object-position, used to choose a deliberate crop */
   position?: string;
+  quality?: number;
 }) {
   const p = PHOTOS[name];
   return (
@@ -55,6 +57,7 @@ export function Photo({
       src={p.src}
       alt={p.alt[locale]}
       sizes={sizes}
+      quality={quality}
       loading={priority ? 'eager' : undefined}
       fetchPriority={priority ? 'high' : undefined}
       placeholder="blur"
