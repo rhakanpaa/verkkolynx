@@ -140,6 +140,9 @@ export function WhyPage({ locale, dict }: P) {
 }
 
 /* ------------------------------------------------------------------ about */
+/** anchor of the values section; matches the redirects for the old /verkkolynxin-arvot and /en/values URLs */
+const VALUES_ID: Record<Locale, string> = { fi: 'arvot', en: 'values', sv: 'vardering' };
+
 export function AboutPage({ locale, dict }: P) {
   const a = dict.aboutPage;
   return (
@@ -187,7 +190,7 @@ export function AboutPage({ locale, dict }: P) {
                         position="50% 55%"
                       />
                     </div>
-                    <figcaption>Tampere, {locale === 'fi' ? 'Suomi' : 'Finland'}</figcaption>
+                    <figcaption>{dict.footer.location}</figcaption>
                   </figure>
                 )}
               </article>
@@ -235,7 +238,7 @@ export function AboutPage({ locale, dict }: P) {
       <ValuesTrail
         locale={locale}
         values={dict.values}
-        id="arvot"
+        id={VALUES_ID[locale]}
         heading={a.valuesTitle}
         intro={a.valuesIntro}
       />
@@ -270,7 +273,7 @@ export function FaqPage({ locale, dict }: P) {
               expandAll: f.expandAll,
               collapseAll: f.collapseAll,
             }}
-            resultsLabel={locale === 'fi' ? 'kysymystä' : 'questions'}
+            resultsLabel={f.resultsLabel}
             locale={locale}
           />
           <p className="faq-more dim">
@@ -329,7 +332,7 @@ export function ContactPage({ locale, dict }: P) {
                 </div>
               ))}
               <div>
-                <dt>{locale === 'fi' ? 'Aukioloajat' : 'Hours'}</dt>
+                <dt>{c.hoursLabel}</dt>
                 <dd>{c.hours}</dd>
               </div>
             </dl>

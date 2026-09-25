@@ -97,7 +97,7 @@ export interface LegalSection {
 }
 
 export interface Dict {
-  lang: 'fi' | 'en';
+  lang: 'fi' | 'en' | 'sv';
   htmlLang: string;
   ogLocale: string;
   skip: string;
@@ -204,6 +204,7 @@ export interface Dict {
     expandAll: string;
     collapseAll: string;
     stillQuestions: string;
+    resultsLabel: string;
     categoriesData: FaqCategory[];
   };
   contactPage: {
@@ -218,6 +219,7 @@ export interface Dict {
     details: { k: string; v: string }[];
     startTitle: string;
     start: string[];
+    hoursLabel: string;
     hours: string;
   };
   legal: {
@@ -240,6 +242,7 @@ export interface Dict {
     terms: string;
     rights: string;
     location: string;
+    businessId: string;
   };
   notFound: { title: string; text: string; back: string };
   homeMeta: Meta;

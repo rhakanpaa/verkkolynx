@@ -2,10 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import type { Dict } from '@/content/types';
 import { keyFromSlug, pathFor, SERVICE_KEYS, type RouteKey } from '@/lib/routes';
-import type { Locale } from '@/lib/site';
+import { LOCALES, LOCALE_PREFIX, type Locale } from '@/lib/site';
+
+/** each language is named in itself, so the label reads correctly whichever page it appears on */
+const LANGUAGE_NAME: Record<Locale, string> = { fi: 'suomi', en: 'English', sv: 'svenska' };
 import { Logo } from './ui';
 
 export interface HeaderData {
@@ -15,7 +18,8 @@ export interface HeaderData {
 }
 
 function currentKey(pathname: string, locale: Locale): RouteKey {
-  const p = locale === 'en' ? pathname.replace(/^\/en/, '') : pathname;
+  const prefix = LOCALE_PREFIX[locale];
+  const p = prefix && pathname.startsWith(prefix) ? pathname.slice(prefix.length) : pathname;
   const slug = p.split('/').filter(Boolean);
   return keyFromSlug(slug, locale) ?? 'home';
 }
@@ -218,25 +222,20 @@ export function Header({ locale, data }: { locale: Locale; data: HeaderData }) {
 
         <div className="site-header__right">
           <div className="lang" role="group" aria-label={nav.language}>
-            <Link
-              href={pathFor(key, 'fi')}
-              hrefLang="fi"
-              lang="fi"
-              aria-current={locale === 'fi' ? 'true' : undefined}
-              aria-label={locale === 'fi' ? 'FI, suomi' : 'FI, vaihda kieleksi suomi'}
-            >
-              FI
-            </Link>
-            <span aria-hidden="true">/</span>
-            <Link
-              href={pathFor(key, 'en')}
-              hrefLang="en"
-              lang="en"
-              aria-current={locale === 'en' ? 'true' : undefined}
-              aria-label={locale === 'en' ? 'EN, English' : 'EN, switch to English'}
-            >
-              EN
-            </Link>
+            {LOCALES.map((l, i) => (
+              <Fragment key={l}>
+                {i > 0 && <span aria-hidden="true">/</span>}
+                <Link
+                  href={pathFor(key, l)}
+                  hrefLang={l}
+                  lang={l}
+                  aria-current={locale === l ? 'true' : undefined}
+                  aria-label={`${l.toUpperCase()}, ${LANGUAGE_NAME[l]}`}
+                >
+                  {l.toUpperCase()}
+                </Link>
+              </Fragment>
+            ))}
           </div>
           <Link
             className="header-cta"

@@ -525,7 +525,7 @@ export const servicesFi: Service[] = [
     extraTitle: 'Käytännössä',
     extra: [
       'Alustat: WordPress, Shopify, Magento ja räätälöidyt järjestelmät; suositus tehdään tarpeidesi mukaan',
-      'Monikielisyys: suomi, englanti ja ranska sekä hakukoneoptimointi eri kielille',
+      'Monikielisyys: suomi ja englanti, pyynnöstä ranska, sekä hakukoneoptimointi eri kielille',
       'Uudistukset, siirrot uudelle alustalle ja ylläpito julkaisun jälkeen',
       'Kolmannen osapuolen palvelut: maksut, sosiaalinen media ja analytiikkatyökalut',
       'Hostingia emme tarjoa itse, mutta autamme valitsemaan palveluntarjoajan ja ottamaan käyttöön ammattimaisen sähköpostin',
@@ -605,7 +605,7 @@ export const servicesFi: Service[] = [
     ],
     extraTitle: 'Käytännössä',
     extra: [
-      'Monikielinen SEO suomeksi, englanniksi ja ranskaksi sekä paikallinen näkyvyys',
+      'Monikielinen SEO suomeksi ja englanniksi, pyynnöstä ranskaksi, sekä paikallinen näkyvyys',
       'Maksetut kampanjat Google Ads-, Facebook Ads- ja LinkedIn Ads -alustoilla',
       'Sosiaalisen median markkinointi, vaikuttajayhteistyö ja brändistrategia',
       'Säännölliset raportit: liikenne, konversiot, klikkaukset ja sitoutuminen',
@@ -630,7 +630,7 @@ export const servicesFi: Service[] = [
     line: 'Verkkosivut, näkyvyys ja pienet työkalut.',
     summary:
       'Edullisia ja henkilökohtaisia palveluita toiminimiyrittäjälle: verkkosivut, hakukonenäkyvyys, monikielinen sisältö, sparraus ja tarvittaessa pieni työkalu tai automaatio.',
-    tags: ['Verkkosivut', 'SEO', 'Sisältö kolmella kielellä', 'Pienet automaatiot', 'Sparraus'],
+    tags: ['Verkkosivut', 'SEO', 'Monikielinen sisältö', 'Pienet automaatiot', 'Sparraus'],
     photo: 'lakePortrait',
     heroTitle: 'Palvelut, jotka mitoitetaan sinulle.',
     lede: 'Toiminimiyrittäjänä sinulla on kädet täynnä töitä, eikä aikaa verkkonäkyvyyden tai rutiinitöiden hoitamiseen ole usein tarpeeksi. Tarjoamme yksilöllistä ja kohtuuhintaista palvelua juuri sinun tarpeisiisi.',
@@ -667,8 +667,8 @@ export const servicesFi: Service[] = [
         ex: 'Näkyminen hauilla kuten ”digituotteet Suomessa”.',
       },
       {
-        t: 'Sisältö kolmella kielellä',
-        d: 'Asiantunteva sisällöntuotanto suomeksi, englanniksi ja ranskaksi.',
+        t: 'Monikielinen sisältö',
+        d: 'Asiantunteva sisällöntuotanto suomeksi ja englanniksi, pyynnöstä myös ranskaksi.',
         ex: 'Blogiartikkeleita, tuote-esittelyjä tai kohdennettua mainossisältöä esimerkiksi Pohjois-Amerikan yleisölle.',
       },
       {

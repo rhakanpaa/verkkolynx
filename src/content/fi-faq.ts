@@ -31,7 +31,7 @@ export const faqFi: FaqCategory[] = [
         [
           'Verkkosivut ja verkkokaupat: edullisia ja helppokäyttöisiä ratkaisuja.',
           'Hakukoneoptimointi (SEO) tärkeillä avainsanoilla.',
-          'Monikielinen sisällöntuotanto suomeksi, englanniksi ja ranskaksi.',
+          'Monikielinen sisällöntuotanto suomeksi ja englanniksi, pyynnöstä myös ranskaksi.',
           'Brändäys ja digitaalinen läsnäolo: sosiaalisen median kanavat, verkkotunnukset ja brändin rakentaminen.',
           'Pienet työkalut ja automaatiot, kun toistuva työ vie liikaa aikaa.',
           'Henkilökohtainen sparraus ja tuki.',
@@ -71,7 +71,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'ulkomaat',
         'Voiko Verkkolynx työskennellä yritysten kanssa Suomen ulkopuolella?',
-        'Kyllä. Meillä on kokemusta kansainvälisten asiakkaiden kanssa työskentelystä. Nykyiset asiakkaamme sijaitsevat Suomessa, Kanadassa ja Yhdysvalloissa, ja tunnemme näiden alueiden erityispiirteet.',
+        'Kyllä. Meillä on kokemusta kansainvälisten asiakkaiden kanssa työskentelystä. Asiakkaitamme ja yhteistyökumppaneitamme on Suomessa, Kanadassa, Yhdysvalloissa ja Euroopassa, ja tunnemme näiden alueiden erityispiirteet.',
       ),
       i(
         'historia',
@@ -231,7 +231,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'datan-turvallisuus',
         'Kuinka turvallista datani on analytiikkapalveluissa?',
-        'Tietoturva on analytiikkapalveluidemme keskiössä. Suojaamme datasi analytiikkaprosessin aikana esimerkiksi salauksella ja käyttöoikeusvalvonnalla.',
+        'Tietoturva huomioidaan analytiikkapalveluissa alusta asti. Suojaamme datasi asianmukaisilla toimenpiteillä, kuten käyttöoikeuksien rajaamisella ja tarvittaessa salauksella.',
       ),
       i(
         'analytiikkakoulutus',
@@ -252,7 +252,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'monikielisyys',
         'Tarjoaako Verkkolynx monikielistä verkkosivusuunnittelua ja SEO:ta?',
-        'Kyllä. Suunnittelemme monikielisiä verkkosivuja ja optimoimme ne hakukoneille eri alueille ja kielille. Pääkielemme ovat suomi, englanti ja ranska.',
+        'Kyllä. Suunnittelemme monikielisiä verkkosivuja ja optimoimme ne hakukoneille eri alueille ja kielille. Pääkielemme ovat suomi ja englanti, ja ranskaksi työskentelemme pyynnöstä.',
       ),
       i(
         'alustat',
@@ -287,7 +287,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'sivujen-turvallisuus',
         'Miten Verkkolynx varmistaa verkkosivujen turvallisuuden?',
-        'Toteutamme alan standardien mukaisia toimenpiteitä, kuten SSL-sertifikaatteja, turvallisia koodauskäytäntöjä ja säännöllisiä päivityksiä. Tarjoamme myös jatkuvaa seurantaa ja ylläpitoa.',
+        'Toteutamme alan yleisiä toimenpiteitä, kuten SSL-sertifikaatteja, turvallisia koodauskäytäntöjä ja säännöllisiä päivityksiä. Ylläpito ja seuranta sovitaan tarpeen mukaan.',
       ),
       i(
         'yllapito',
@@ -312,7 +312,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'sivujen-sisalto',
         'Miten Verkkolynx käsittelee verkkosivujen sisällöntuotantoa?',
-        'Tarjoamme sisällöntuotantoa, kuten tekstien kirjoittamista ja multimediaa, suomeksi, englanniksi ja ranskaksi.',
+        'Tarjoamme sisällöntuotantoa, kuten tekstien kirjoittamista ja multimediaa, suomeksi ja englanniksi, pyynnöstä myös ranskaksi.',
       ),
       i(
         'cms',
@@ -363,7 +363,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'monikielinen-seo',
         'Tarjoaako Verkkolynx monikielisiä SEO-palveluja?',
-        'Kyllä. Optimoimme sivustosi eri kielille ja alueille suomeksi, englanniksi ja ranskaksi.',
+        'Kyllä. Optimoimme sivustosi eri kielille ja alueille suomeksi ja englanniksi, pyynnöstä myös ranskaksi.',
       ),
       i(
         'paikallinen-seo',
@@ -450,7 +450,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'varmuuskopiot',
         'Tarjoaako Verkkolynx varmuuskopiointi- ja palautuspalveluja?',
-        'Kyllä. Toteutamme säännölliset varmuuskopiointiaikataulut ja turvalliset tallennuskäytännöt, jotta tietosi voidaan palauttaa nopeasti tietojen katoamisen tai vahingoittumisen sattuessa.',
+        'Kyllä. Varmuuskopiointi ja palautus suunnitellaan projektin tarpeiden mukaan, jotta tiedot voidaan palauttaa tietojen katoamisen tai vahingoittumisen sattuessa.',
       ),
       i(
         'tietosuojalait',
@@ -460,17 +460,17 @@ export const faqFi: FaqCategory[] = [
       i(
         'tietomurrot',
         'Mitä toimenpiteitä Verkkolynx tekee tietomurtojen estämiseksi?',
-        'Käytämme useita suojauskerroksia, kuten palomuureja, salausta, tunkeutumisen havaitsemisjärjestelmiä ja säännöllisiä tietoturvatarkastuksia.',
+        'Suojaamme ratkaisut asianmukaisilla teknisillä ja organisatorisilla toimenpiteillä. Suojaustoimet valitaan projektin tarpeiden ja käsiteltävien tietojen arkaluonteisuuden mukaan.',
       ),
       i(
         'pci-dss',
         'Onko Verkkolynxillä kokemusta PCI DSS -vaatimustenmukaisuudesta verkkokaupoissa?',
-        'Kyllä. Autamme verkkokauppa-alustoja toteuttamaan tarvittavat suojaustoimenpiteet luottokorttitietojen turvalliseen käsittelyyn PCI DSS -standardin mukaisesti.',
+        'Kyllä. Autamme verkkokauppa-alustoilla huomioimaan PCI DSS -vaatimukset luottokorttitietojen turvallisessa käsittelyssä.',
       ),
       i(
         'turvallinen-koodaus',
         'Miten varmistatte kehittämienne verkkosivustojen ja sovellusten turvallisuuden?',
-        'Noudatamme turvallisia koodauskäytäntöjä ja suoritamme perusteellista testausta, mukaan lukien haavoittuvuuksien arviointeja. Tietoturva on mukana kehitysprosessin jokaisessa vaiheessa.',
+        'Noudatamme turvallisia koodauskäytäntöjä ja testaamme ratkaisut huolellisesti. Tietoturva huomioidaan kehitysprosessin jokaisessa vaiheessa.',
       ),
       i(
         'tietosuojakaytanto',
@@ -480,7 +480,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'kayttooikeudet',
         'Miten Verkkolynx hallitsee käyttäjäoikeuksia ja pääsynvalvontaa?',
-        'Toteutamme pääsynvalvonnan niin, että vain valtuutetuilla henkilöillä on pääsy arkaluonteisiin tietoihin: roolipohjaiset käyttöoikeudet, monivaiheinen todennus ja säännölliset käyttöoikeustarkastukset.',
+        'Suunnittelemme käyttöoikeudet niin, että arkaluonteisiin tietoihin on pääsy vain valtuutetuilla henkilöillä, esimerkiksi roolipohjaisilla käyttöoikeuksilla ja tunnistautumisella. Tarkemmat vaatimukset sovitaan projektikohtaisesti.',
       ),
       i(
         'gdpr',

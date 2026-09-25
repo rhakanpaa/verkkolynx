@@ -12,7 +12,7 @@ export const viewport: Viewport = shellViewport;
 export default function GlobalNotFound() {
   return (
     <RootShell locale="fi">
-      <NotFound locale="fi" alt="en" />
+      <NotFound locale="fi" alts={['en', 'sv']} />
     </RootShell>
   );
 }

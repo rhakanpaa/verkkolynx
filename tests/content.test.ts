@@ -54,10 +54,12 @@ describe('routes', () => {
 });
 
 describe('content', () => {
-  it('has equal FAQ size and category structure in both languages', () => {
-    const [fi, en] = LOCALES.map((l) => dictionaries[l].faqPage.categoriesData);
-    expect(fi.length).toBe(en.length);
-    fi.forEach((c, i) => expect(c.items.length).toBe(en[i].items.length));
+  it('has equal FAQ size and category structure in every language', () => {
+    const [fi, ...others] = LOCALES.map((l) => dictionaries[l].faqPage.categoriesData);
+    for (const other of others) {
+      expect(other.length).toBe(fi.length);
+      fi.forEach((c, i) => expect(other[i].items.length).toBe(c.items.length));
+    }
   });
 
   it('has unique FAQ ids within each language', () => {
@@ -184,7 +186,7 @@ describe('production URLs', () => {
   it('lists every route in both languages in the sitemap, with reciprocal alternates', async () => {
     const sitemap = (await import('@/app/sitemap')).default;
     const entries = sitemap();
-    expect(entries).toHaveLength(ROUTE_KEYS.length * 2);
+    expect(entries).toHaveLength(ROUTE_KEYS.length * LOCALES.length);
     const urls = entries.map((e) => e.url);
     expect(new Set(urls).size).toBe(urls.length);
     for (const e of entries) {
@@ -209,11 +211,15 @@ describe('language-specific 404', () => {
     expect(target(run('/ei-ole-olemassa'))).toContain('/sivua-ei-loytynyt');
     expect(target(run('/en/does-not-exist'))).toContain('/en/page-not-found');
     expect(target(run('/en/palvelut'))).toContain('/en/page-not-found');
+    expect(target(run('/sv/finns-inte'))).toContain('/sv/sidan-hittades-inte');
+    expect(target(run('/sv/tjanster/x'))).toContain('/sv/sidan-hittades-inte');
     expect(target(run('/palvelut/x'))).toContain('/sivua-ei-loytynyt');
     // real pages pass straight through
     expect(target(run('/palvelut'))).toBe('');
     expect(target(run('/en/services'))).toBe('');
     expect(target(run('/'))).toBe('');
     expect(target(run('/en'))).toBe('');
+    expect(target(run('/sv'))).toBe('');
+    expect(target(run('/sv/tjanster'))).toBe('');
   });
 });

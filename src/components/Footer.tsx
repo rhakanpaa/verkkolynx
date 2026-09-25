@@ -48,7 +48,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dict }) {
             <ul>
               <li>{SITE.legalName}</li>
               <li>
-                {locale === 'fi' ? 'Y-tunnus' : 'Business ID'}: {SITE.businessId}
+                {f.businessId}: {SITE.businessId}
               </li>
               <li>{f.location}</li>
             </ul>

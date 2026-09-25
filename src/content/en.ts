@@ -251,7 +251,7 @@ export const en: Dict = {
         t: 'From Tampere, internationally',
         d: 'Clients and partners in Finland, Canada, the United States and Europe.',
       },
-      { t: 'Multilingual', d: 'Content and SEO in Finnish, English and French.' },
+      { t: 'Multilingual', d: 'Content and SEO in Finnish and English, and in French on request.' },
       { t: 'Large and small', d: 'Services suited to companies and sole traders alike.' },
     ],
     facts: [
@@ -311,7 +311,7 @@ export const en: Dict = {
       'Websites and online shops',
       'Small tools and automations',
       'Search engine optimisation',
-      'Content in Finnish, English and French',
+      'Content in Finnish and English, and in French on request',
       'Personal advice',
     ],
     cta: 'Services for sole traders',
@@ -389,7 +389,7 @@ export const en: Dict = {
         you: 'Services adapt to your needs and the size of your business.',
       },
       {
-        t: 'Based in Finland, serving a global market',
+        t: 'Based in Finland, with international experience',
         d: 'Finland is home, and we have clients and partners in Canada, the United States and Europe.',
         you: 'Finnish precision and international experience in the same team.',
       },
@@ -444,7 +444,7 @@ export const en: Dict = {
         n: '04',
         t: 'International perspective',
         p: [
-          'Our clients and partners are in Finland, Canada, the United States and Europe. We understand the differences between markets and schedule meetings flexibly across time zones. We produce content and SEO in Finnish, English and French.',
+          'Our clients and partners are in Finland, Canada, the United States and Europe. We understand the differences between markets and schedule meetings flexibly across time zones. We produce content and SEO in Finnish and English, and in French on request.',
         ],
       },
     ],
@@ -483,6 +483,7 @@ export const en: Dict = {
     expandAll: 'Expand all',
     collapseAll: 'Collapse all',
     stillQuestions: 'Did not find your answer?',
+    resultsLabel: 'questions',
     categoriesData: faqEn,
   },
   contactPage: {
@@ -517,6 +518,7 @@ export const en: Dict = {
       'We arrange an initial consultation.',
       'You receive a proposal covering scope, schedule and price.',
     ],
+    hoursLabel: 'Available',
     hours: 'Mon–Fri 9:00–17:00 (EET). Meetings can be arranged flexibly outside these hours.',
   },
   legal: {
@@ -553,6 +555,7 @@ export const en: Dict = {
     terms: 'Terms of use',
     rights: 'Verkkolynx Ratkaisut Oy',
     location: 'Tampere, Finland',
+    businessId: 'Business ID',
   },
   notFound: {
     title: 'Page not found',

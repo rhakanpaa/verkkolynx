@@ -8,7 +8,7 @@ export const privacyFi: { intro: string; sections: LegalSection[] } = {
       h: '1. Rekisterinpitäjä',
       p: [
         'Henkilötietojesi rekisterinpitäjä on:',
-        'Verkkolynx Ratkaisut Oy, Takamaanrinne, Tampere, Suomi. Sähköposti: asiakaspalvelu@verkkolynx.fi',
+        'Verkkolynx Ratkaisut Oy, Takamaanrinne 9B 59, Tampere, Suomi. Sähköposti: asiakaspalvelu@verkkolynx.fi',
       ],
     },
     {
@@ -113,7 +113,7 @@ export const privacyFi: { intro: string; sections: LegalSection[] } = {
     {
       h: '13. Ota yhteyttä',
       p: [
-        'Jos sinulla on kysyttävää tai huolenaiheita tästä tietosuojaselosteesta tai tietojesi käsittelystä, ota yhteyttä: Verkkolynx Ratkaisut Oy, Takamaanrinne, Tampere, Suomi. Sähköposti: asiakaspalvelu@verkkolynx.fi.',
+        'Jos sinulla on kysyttävää tai huolenaiheita tästä tietosuojaselosteesta tai tietojesi käsittelystä, ota yhteyttä: Verkkolynx Ratkaisut Oy, Takamaanrinne 9B 59, Tampere, Suomi. Sähköposti: asiakaspalvelu@verkkolynx.fi.',
         'Jos et ole tyytyväinen vastaukseemme, sinulla on oikeus tehdä valitus tietosuojavaltuutetulle: tietosuoja.fi.',
       ],
     },

@@ -31,7 +31,7 @@ export const faqEn: FaqCategory[] = [
         [
           'Websites and online shops: affordable, easy-to-use solutions.',
           'Search engine optimisation (SEO) for the keywords that matter.',
-          'Multilingual content production in Finnish, English and French.',
+          'Multilingual content production in Finnish and English, and in French on request.',
           'Branding and digital presence: social media channels, domain names and building your brand.',
           'Small tools and automations, when repetitive work takes too much time.',
           'Personal advice and support.',
@@ -71,7 +71,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'abroad',
         'Can Verkkolynx work with companies outside Finland?',
-        'Yes. We have experience working with international clients. Our current clients are in Finland, Canada and the United States, and we know the particularities of these regions.',
+        'Yes. We have experience working with international clients. Our clients and partners are in Finland, Canada, the United States and Europe, and we know the particularities of these regions.',
       ),
       i(
         'history',
@@ -231,7 +231,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'data-security',
         'How secure is my data in your analytics services?',
-        'Security is central to our analytics services. We protect your data during the analytics process, for example with encryption and access control.',
+        'Security is considered in our analytics services from the start. We protect your data with appropriate measures, such as restricted access and, where needed, encryption.',
       ),
       i(
         'analytics-training',
@@ -252,7 +252,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'multilingual',
         'Does Verkkolynx offer multilingual web design and SEO?',
-        'Yes. We design multilingual websites and optimise them for search across regions and languages. Our main languages are Finnish, English and French.',
+        'Yes. We design multilingual websites and optimise them for search across regions and languages. Our main languages are Finnish and English, and we work in French on request.',
       ),
       i(
         'platforms',
@@ -287,7 +287,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'site-security',
         'How does Verkkolynx ensure the security of websites?',
-        'We apply industry-standard measures such as SSL certificates, secure coding practices and regular updates. We also offer ongoing monitoring and maintenance.',
+        'We apply common industry measures such as SSL certificates, secure coding practices and regular updates. Maintenance and monitoring are agreed as needed.',
       ),
       i(
         'maintenance',
@@ -312,7 +312,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'web-content',
         'How does Verkkolynx handle website content production?',
-        'We provide content production such as copywriting and multimedia in Finnish, English and French.',
+        'We provide content production such as copywriting and multimedia in Finnish and English, and in French on request.',
       ),
       i(
         'cms',
@@ -363,7 +363,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'multilingual-seo',
         'Does Verkkolynx offer multilingual SEO services?',
-        'Yes. We optimise your site for different languages and regions in Finnish, English and French.',
+        'Yes. We optimise your site for different languages and regions in Finnish and English, and in French on request.',
       ),
       i(
         'local-seo',
@@ -450,7 +450,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'backups',
         'Does Verkkolynx offer backup and recovery services?',
-        'Yes. We implement regular backup schedules and secure storage practices so your data can be restored quickly if it is lost or damaged.',
+        'Yes. Backup and recovery are planned to suit the project, so that data can be restored if it is lost or damaged.',
       ),
       i(
         'privacy-laws',
@@ -460,17 +460,17 @@ export const faqEn: FaqCategory[] = [
       i(
         'breaches',
         'What measures does Verkkolynx take to prevent data breaches?',
-        'We use multiple layers of protection such as firewalls, encryption, intrusion detection systems and regular security audits.',
+        'We protect solutions with appropriate technical and organisational measures. The safeguards are chosen to suit the project and the sensitivity of the data being handled.',
       ),
       i(
         'pci-dss',
         'Does Verkkolynx have experience with PCI DSS compliance in online stores?',
-        'Yes. We help ecommerce platforms implement the safeguards needed to handle card data securely in line with the PCI DSS standard.',
+        'Yes. We help ecommerce platforms take PCI DSS requirements into account when handling card data securely.',
       ),
       i(
         'secure-coding',
         'How do you make sure the sites and applications you build are secure?',
-        'We follow secure coding practices and run thorough testing, including vulnerability assessments. Security is part of every stage of development.',
+        'We follow secure coding practices and test solutions carefully. Security is considered at every stage of development.',
       ),
       i(
         'privacy-policy',
@@ -480,7 +480,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'access-control',
         'How does Verkkolynx manage user rights and access control?',
-        'We implement access control so that only authorised people can reach sensitive data: role-based permissions, multi-factor authentication and regular access reviews.',
+        'We design access control so that only authorised people can reach sensitive data, for example with role-based permissions and authentication. Detailed requirements are agreed per project.',
       ),
       i(
         'gdpr',

@@ -12,5 +12,8 @@ export const SITE = {
   lon: '23.761',
 } as const;
 
-export type Locale = 'fi' | 'en';
-export const LOCALES: Locale[] = ['fi', 'en'];
+export type Locale = 'fi' | 'en' | 'sv';
+export const LOCALES: Locale[] = ['fi', 'en', 'sv'];
+/** Finnish is served at the root; every other language lives under its own prefix. */
+export const LOCALE_PREFIX: Record<Locale, string> = { fi: '', en: '/en', sv: '/sv' };
+export const DEFAULT_LOCALE: Locale = 'fi';

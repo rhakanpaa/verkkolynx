@@ -9,8 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE.url}${pathFor(key, locale)}`,
       alternates: {
         languages: {
-          fi: `${SITE.url}${pathFor(key, 'fi')}`,
-          en: `${SITE.url}${pathFor(key, 'en')}`,
+          ...Object.fromEntries(LOCALES.map((l) => [l, `${SITE.url}${pathFor(key, l)}`])),
           'x-default': `${SITE.url}${pathFor(key, 'fi')}`,
         },
       },

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { SITE, type Locale } from './site';
+import { LOCALES, SITE, type Locale } from './site';
 import { pathFor, type RouteKey } from './routes';
 import { getDict } from '@/content';
 import type { Meta } from '@/content/types';
@@ -36,7 +36,6 @@ export function buildMetadata(key: RouteKey, locale: Locale): Metadata {
   const d = getDict(locale);
   const m = metaFor(key, locale);
   const path = pathFor(key, locale);
-  const other: Locale = locale === 'fi' ? 'en' : 'fi';
   const isHome = key === 'home';
   const title = isHome
     ? `${SITE.name} | ${m.title}`
@@ -50,8 +49,7 @@ export function buildMetadata(key: RouteKey, locale: Locale): Metadata {
     alternates: {
       canonical: path,
       languages: {
-        [locale]: path,
-        [other]: pathFor(key, other),
+        ...Object.fromEntries(LOCALES.map((l) => [l, pathFor(key, l)])),
         'x-default': pathFor(key, 'fi'),
       },
     },
@@ -62,7 +60,7 @@ export function buildMetadata(key: RouteKey, locale: Locale): Metadata {
       description: m.description,
       url: path,
       locale: d.ogLocale,
-      alternateLocale: other === 'fi' ? 'fi_FI' : 'en_GB',
+      alternateLocale: LOCALES.filter((l) => l !== locale).map((l) => getDict(l).ogLocale),
       images: [{ url: '/assets/og/og-default.png', width: 1200, height: 630, alt: 'Verkkolynx' }],
     },
     twitter: {

@@ -3,10 +3,9 @@ import { getDict } from '@/content';
 import { pathFor } from '@/lib/routes';
 import type { Locale } from '@/lib/site';
 
-/** `alt` adds a second-language block so one 404 page serves both language versions. */
-export function NotFound({ locale, alt }: { locale: Locale; alt?: Locale }) {
+/** `alts` adds a block per extra language so the fallback 404 serves every language version. */
+export function NotFound({ locale, alts }: { locale: Locale; alts?: Locale[] }) {
   const d = getDict(locale);
-  const a = alt ? getDict(alt) : null;
   return (
     <section className="section section--dark notfound">
       <div className="container notfound__inner">
@@ -16,14 +15,14 @@ export function NotFound({ locale, alt }: { locale: Locale; alt?: Locale }) {
         <Link className="btn btn--solid" href={pathFor('home', locale)}>
           {d.notFound.back}
         </Link>
-        {a && alt && (
-          <div className="notfound__alt" lang={alt}>
-            <p className="dim">{a.notFound.title}.</p>
+        {alts?.map((alt) => (
+          <div className="notfound__alt" lang={alt} key={alt}>
+            <p className="dim">{getDict(alt).notFound.title}.</p>
             <Link className="tlink" href={pathFor('home', alt)}>
-              {a.notFound.back}
+              {getDict(alt).notFound.back}
             </Link>
           </div>
-        )}
+        ))}
       </div>
     </section>
   );

@@ -254,7 +254,7 @@ export const fi: Dict = {
       },
       {
         t: 'Monikielisyys',
-        d: 'Sisältöä ja hakukoneoptimointia suomeksi, englanniksi ja ranskaksi.',
+        d: 'Sisältöä ja hakukoneoptimointia suomeksi ja englanniksi, pyynnöstä myös ranskaksi.',
       },
       {
         t: 'Suurille ja pienille',
@@ -318,7 +318,7 @@ export const fi: Dict = {
       'Verkkosivustot ja verkkokaupat',
       'Pienet työkalut ja automaatiot',
       'Hakukoneoptimointi',
-      'Sisältö suomeksi, englanniksi ja ranskaksi',
+      'Sisältö suomeksi ja englanniksi, pyynnöstä ranskaksi',
       'Henkilökohtainen sparraus',
     ],
     cta: 'Palvelut toiminimiyrittäjille',
@@ -396,7 +396,7 @@ export const fi: Dict = {
         you: 'Palvelut mukautetaan tarpeisiisi ja yrityksesi kokoon.',
       },
       {
-        t: 'Pohjautuen Suomeen, palvellen globaalia markkinaa',
+        t: 'Suomesta käsin, kansainvälistä kokemusta',
         d: 'Suomi on kotimme, ja asiakkaita sekä yhteistyökumppaneita on Kanadassa, Yhdysvalloissa ja Euroopassa.',
         you: 'Suomalainen tarkkuus ja kansainvälinen kokemus samassa tiimissä.',
       },
@@ -451,7 +451,7 @@ export const fi: Dict = {
         n: '04',
         t: 'Kansainvälinen näkökulma',
         p: [
-          'Asiakkaitamme ja yhteistyökumppaneitamme on Suomessa, Kanadassa, Yhdysvalloissa ja Euroopassa. Tunnemme eri markkinoiden erityispiirteet ja sovimme tapaamiset joustavasti eri aikavyöhykkeille. Sisältöä ja hakukoneoptimointia tuotamme suomeksi, englanniksi ja ranskaksi.',
+          'Asiakkaitamme ja yhteistyökumppaneitamme on Suomessa, Kanadassa, Yhdysvalloissa ja Euroopassa. Tunnemme eri markkinoiden erityispiirteet ja sovimme tapaamiset joustavasti eri aikavyöhykkeille. Sisältöä ja hakukoneoptimointia tuotamme suomeksi ja englanniksi, pyynnöstä myös ranskaksi.',
         ],
       },
     ],
@@ -490,6 +490,7 @@ export const fi: Dict = {
     expandAll: 'Avaa kaikki',
     collapseAll: 'Sulje kaikki',
     stillQuestions: 'Etkö löytänyt vastausta?',
+    resultsLabel: 'kysymystä',
     categoriesData: faqFi,
   },
   contactPage: {
@@ -524,6 +525,7 @@ export const fi: Dict = {
       'Sovimme aloituskonsultaation.',
       'Saat ehdotuksen laajuudesta, aikataulusta ja hinnasta.',
     ],
+    hoursLabel: 'Tavoitettavissa',
     hours: 'Ma–pe klo 9–17 Suomen aikaa. Tapaamisia sovitaan joustavasti myös muina aikoina.',
   },
   legal: {
@@ -559,6 +561,7 @@ export const fi: Dict = {
     terms: 'Käyttöehdot',
     rights: 'Verkkolynx Ratkaisut Oy',
     location: 'Tampere, Suomi',
+    businessId: 'Y-tunnus',
   },
   notFound: {
     title: 'Sivua ei löytynyt',

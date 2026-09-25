@@ -25,7 +25,7 @@ function Body({ pageKey, locale }: { pageKey: RouteKey; locale: Locale }) {
           <Capabilities locale={locale} dict={dict} />
           <PhotoBand
             locale={locale}
-            photo="nasinneula"
+            photo="finlayson"
             caption={dict.footer.tagline}
             position="50% 55%"
           />

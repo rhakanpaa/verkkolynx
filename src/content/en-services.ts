@@ -539,7 +539,7 @@ export const servicesEn: Service[] = [
     extraTitle: 'In practice',
     extra: [
       'Platforms: WordPress, Shopify, Magento and custom systems; we recommend what fits your needs',
-      'Multilingual: Finnish, English and French, with search optimisation for each language',
+      'Multilingual: Finnish and English, French on request, with search optimisation for each language',
       'Redesigns, migrations to a new platform and maintenance after launch',
       'Third-party services: payments, social media and analytics tools',
       'We do not provide hosting ourselves, but help you choose a provider and set up professional email',
@@ -625,7 +625,7 @@ export const servicesEn: Service[] = [
     ],
     extraTitle: 'In practice',
     extra: [
-      'Multilingual SEO in Finnish, English and French, and local search visibility',
+      'Multilingual SEO in Finnish and English, French on request, and local search visibility',
       'Paid campaigns on Google Ads, Facebook Ads and LinkedIn Ads',
       'Social media marketing, influencer collaboration and brand strategy',
       'Regular reports: traffic, conversions, clicks and engagement',
@@ -650,7 +650,7 @@ export const servicesEn: Service[] = [
     line: 'Websites, visibility and small tools.',
     summary:
       'Affordable, personal services for sole traders: websites, search visibility, multilingual content, personal advice and, when it makes sense, a small tool or automation.',
-    tags: ['Websites', 'SEO', 'Content in three languages', 'Small automations', 'Personal advice'],
+    tags: ['Websites', 'SEO', 'Multilingual content', 'Small automations', 'Personal advice'],
     photo: 'lakePortrait',
     heroTitle: 'Services sized for you.',
     lede: 'As a sole trader your hands are full, and there is rarely time to build online visibility or handle routine work. We offer personal, affordable service built around your needs.',
@@ -687,8 +687,8 @@ export const servicesEn: Service[] = [
         ex: 'Appearing for searches such as “digital products in Finland”.',
       },
       {
-        t: 'Content in three languages',
-        d: 'Expert content production in Finnish, English and French.',
+        t: 'Multilingual content',
+        d: 'Expert content production in Finnish and English, and in French on request.',
         ex: 'Blog articles, product presentations or targeted ad content, for example for a North American audience.',
       },
       {
