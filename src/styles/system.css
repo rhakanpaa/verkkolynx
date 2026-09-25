@@ -1,0 +1,129 @@
+/* Software architecture diagram: four plain columns; selecting a component highlights one route. */
+.sysd {
+  --col-gap: clamp(2.5rem, 5vw, 4.5rem);
+}
+.sysd__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.75rem;
+}
+.sysd__lines {
+  display: none;
+}
+.sysd__col ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.sysd__title {
+  margin-bottom: 0.75rem;
+  font-size: 1.0625rem;
+  color: var(--white);
+}
+.sysd__col + .sysd__col::before {
+  /* vertical flow marker between stacked columns */
+  content: '↓';
+  display: block;
+  margin: -0.75rem 0 0.75rem;
+  color: var(--dark-text-dim);
+}
+.sysd__node {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--dark-line-strong);
+  border-radius: var(--radius);
+  background: var(--blue-850);
+  color: var(--white);
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: left;
+  transition:
+    border-color var(--t-fast) var(--ease),
+    background var(--t-fast) var(--ease),
+    opacity var(--t-base) var(--ease);
+}
+.sysd__node:hover,
+.sysd__node[data-route] {
+  border-color: var(--white);
+}
+.sysd__node[data-self] {
+  background: var(--white);
+  color: var(--blue-950);
+}
+.sysd__node[data-dim] {
+  opacity: 0.55;
+}
+.sysd__inline {
+  margin-top: 0.4rem;
+  font-size: var(--fs-small);
+  color: var(--dark-text-dim);
+}
+.sysd__inline:empty {
+  display: none;
+}
+.sysd__readout {
+  display: none;
+}
+@media (min-width: 900px) {
+  .sysd__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: var(--col-gap);
+    align-items: stretch;
+  }
+  .sysd__lines {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+  .sysd__lines path {
+    fill: none;
+    stroke: var(--white);
+    stroke-width: 2;
+  }
+  .sysd__col {
+    position: relative;
+    z-index: 1;
+  }
+  .sysd__col:not(:last-child)::after {
+    /* a quiet direction cue between columns */
+    content: '›';
+    position: absolute;
+    top: 50%;
+    right: calc(var(--col-gap) / -2);
+    transform: translate(50%, -50%);
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--dark-line-strong);
+  }
+  .sysd__col + .sysd__col::before {
+    display: none;
+  }
+  .sysd__col ul {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+  .sysd__inline {
+    display: none;
+  }
+  .sysd__readout {
+    display: block;
+    min-height: 4.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--dark-line);
+  }
+  .sysd__route {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  .sysd__readout p:not(.sysd__route) {
+    max-width: 60ch;
+    font-size: 1.0625rem;
+  }
+}

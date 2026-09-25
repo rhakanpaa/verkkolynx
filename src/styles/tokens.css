@@ -1,0 +1,71 @@
+/*
+  Verkkolynx design tokens.
+  Blues come from the supplied logo assets (#033074 mark, #0e2c6e wordmark, #00306c site navigation);
+  everything else is a tint or shade of them.
+  Breakpoints (media queries cannot read custom properties): sm 640px · md 900px · lg 1200px.
+*/
+:root {
+  /* palette */
+  --blue-1000: #030d22;
+  --blue-950: #04142f;
+  --blue-900: #061c43;
+  --blue-850: #0d2a55;
+  --blue-brand: #00306c;
+  --blue-wordmark: #0e2c6e;
+  --blue-fog: #c8d2e2;
+  --paper: #f3f5f8;
+  --white: #ffffff;
+
+  /* navy surfaces */
+  --dark-bg: var(--blue-950);
+  --dark-bg-raised: var(--blue-900);
+  --dark-text-dim: #dbe3ef;
+  --dark-line: #2b4166;
+  --dark-line-strong: #46608c;
+  --dark-scrim: rgba(4, 20, 47, 0.72); /* legibility panel over photographs */
+
+  /* light surfaces */
+  --light-bg: var(--white);
+  --light-bg-tint: var(--paper);
+  --light-text: #071b36;
+  --light-text-dim: #35465f;
+  --light-line: #d5dce8;
+  --light-line-strong: #b3bfd1;
+
+  /* typography: one sans-serif family */
+  --font-sans: var(--font-sans-loaded), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --fs-small: 0.9375rem;
+  --fs-body: 1rem;
+  --fs-lede: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --fs-h3: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
+  --fs-h2: clamp(1.625rem, 1.25rem + 1.4vw, 2.375rem);
+  --fs-h1: clamp(2rem, 1.3rem + 2.8vw, 3.5rem);
+  --lh-snug: 1.25;
+  --lh-body: 1.62;
+
+  /* spacing and widths */
+  --s-section: clamp(3rem, 2rem + 3.4vw, 5.25rem);
+  --s-section-tight: clamp(2.25rem, 1.75rem + 2.4vw, 3.75rem);
+  --gutter: clamp(1.25rem, 0.5rem + 3.6vw, 3.5rem);
+  --w-page: 1280px;
+  --w-text: 62ch;
+  --header-h: 4rem;
+  --radius: 2px;
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --t-fast: 120ms;
+  --t-base: 180ms;
+  --t-slow: 300ms;
+
+  /* keyboard focus */
+  --focus: #9fc0ff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-base: 0ms;
+    --t-slow: 0ms;
+  }
+}

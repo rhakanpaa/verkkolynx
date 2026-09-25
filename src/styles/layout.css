@@ -1,0 +1,188 @@
+/* Shared layout: container, section surfaces, buttons, links, keyword lists and the split layout. */
+.container {
+  width: min(100% - 2 * var(--gutter), var(--w-page));
+  margin-inline: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(1rem, 2vw, 2rem);
+}
+
+.section {
+  position: relative;
+  padding-block: var(--s-section);
+}
+.section--tight {
+  padding-block: var(--s-section-tight);
+}
+.section--dark {
+  background: var(--dark-bg);
+  color: var(--white);
+}
+.section--raised {
+  background: var(--dark-bg-raised);
+  color: var(--white);
+}
+.section--light {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+.section--tint {
+  background: var(--light-bg-tint);
+  color: var(--light-text);
+}
+
+/* secondary text: readable on both surfaces */
+.dim {
+  color: var(--light-text-dim);
+}
+.section--dark .dim,
+.section--raised .dim {
+  color: var(--dark-text-dim);
+}
+.lede {
+  max-width: 46rem;
+  font-size: var(--fs-lede);
+  line-height: 1.5;
+}
+.prose {
+  max-width: var(--w-text);
+}
+.prose p + p {
+  margin-top: 1em;
+}
+
+/* buttons: square, restrained */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--t-base) var(--ease),
+    color var(--t-base) var(--ease),
+    border-color var(--t-base) var(--ease);
+}
+.btn--solid {
+  background: var(--white);
+  color: var(--blue-950);
+}
+.btn--solid:hover {
+  background: var(--blue-fog);
+}
+.section--light .btn--solid,
+.section--tint .btn--solid {
+  background: var(--blue-brand);
+  color: var(--white);
+}
+.section--light .btn--solid:hover,
+.section--tint .btn--solid:hover {
+  background: var(--blue-wordmark);
+}
+.btn--line {
+  border-color: var(--dark-line-strong);
+  color: var(--white);
+}
+.btn--line:hover {
+  border-color: var(--white);
+}
+.btn--line-light {
+  border-color: var(--light-line-strong);
+  color: var(--light-text);
+}
+.btn--line-light:hover {
+  border-color: var(--light-text);
+}
+
+/* text link, with an arrow where it points to another page */
+.tlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid currentColor;
+  font-weight: 500;
+  text-decoration: none;
+}
+.tlink .arrow {
+  transition: transform var(--t-base) var(--ease);
+}
+.tlink:hover .arrow {
+  transform: translateX(4px);
+}
+.arrow {
+  display: inline-block;
+  width: 1.1em;
+  height: 1em;
+}
+
+/* keyword lists: ordinary text separated by dots */
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--blue-brand);
+}
+.keywords li:not(:last-child)::after {
+  content: '·';
+  margin: 0 0.6rem;
+  color: var(--light-text-dim);
+}
+.keywords--rule {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--light-line);
+}
+
+/* split: a heading column and a content column; the heading column stays in view on desktop */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem clamp(2rem, 4vw, 4.5rem);
+}
+.split__lead {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+.split__lead h2 {
+  max-width: 14ch;
+}
+.split__lead .split__title {
+  max-width: none;
+  font-size: var(--fs-h3);
+}
+.split--intro .split__lead {
+  position: static;
+}
+.intro__big {
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+@media (min-width: 900px) {
+  .split {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  }
+  .split--nav {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
+  }
+  .split--intro {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: start;
+  }
+  .split__lead {
+    position: sticky;
+    top: calc(var(--header-h) + 2rem);
+    align-self: start;
+  }
+}
