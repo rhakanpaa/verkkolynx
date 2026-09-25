@@ -89,6 +89,12 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .hero__video {
+    display: none;
+  }
+}
+
 /* process: a plain horizontal progression */
 .hero__steps {
   display: grid;
@@ -241,5 +247,52 @@
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
     align-items: center;
     gap: clamp(2rem, 5vw, 4.5rem);
+  }
+}
+
+/* phones: keep the capability flow compact */
+@media (max-width: 639px) {
+  .flowsec {
+    padding-block: 2rem;
+  }
+  .flow {
+    gap: 0.9rem;
+  }
+  .flow__diagram {
+    gap: 0.35rem;
+  }
+  .flow__down {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .flow__arrow {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+  .flow__chain .flow__box {
+    min-height: 2.75rem;
+    padding-block: 0.6rem;
+  }
+  .flow__related {
+    gap: 0.2rem;
+  }
+  .flow__related .flow__box {
+    min-height: 2.75rem;
+    padding-block: 0.5rem;
+  }
+  .flow__readout {
+    padding: 0.85rem 1rem;
+  }
+}
+
+/* phones and small tablets: the process steps as two roomy columns */
+@media (max-width: 899px) {
+  .hero__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+  }
+  .hero__steps li {
+    padding-block: 0.7rem;
+    border-bottom: 1px solid var(--dark-line);
   }
 }

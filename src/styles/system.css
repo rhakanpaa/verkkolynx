@@ -127,3 +127,23 @@
     font-size: 1.0625rem;
   }
 }
+
+/* phones: a tighter vertical progression (desktop keeps the four-column view) */
+@media (max-width: 899px) {
+  .sysd__grid {
+    gap: 1rem;
+  }
+  .sysd__title {
+    margin-bottom: 0.45rem;
+  }
+  .sysd__col + .sysd__col::before {
+    margin: -0.35rem 0 0.35rem;
+    line-height: 1;
+  }
+  .sysd__col ul {
+    gap: 0.4rem;
+  }
+  .sysd__node {
+    padding: 0.5rem 0.7rem;
+  }
+}
