@@ -33,7 +33,7 @@ export const fi: Dict = {
     lede: 'Verkkolynx analysoi datan, suunnittelee ratkaisun ja rakentaa ohjelmistot ja automaatiot, joita yrityksesi käyttää.',
     primary: 'Ota yhteyttä',
     secondary: 'Tutustu palveluihin',
-    mapLabel: 'Kykykartta: data, ohjelmistot, automaatio, verkkokauppa, web ja SEO',
+    mapLabel: 'Osaamiskartta: data, ohjelmistot, automaatio, verkkokauppa, web ja SEO',
     mapHint: 'Valitse piste kartalta',
     nodes: [
       {
@@ -107,7 +107,7 @@ export const fi: Dict = {
         b: 'web',
         text: 'Verkkokaupan järjestelmät liitetään käyttöliittymään rajapinnoilla.',
       },
-      { a: 'web', b: 'seo', text: 'Tekninen rakenne on alusta asti hakukoneille luettava.' },
+      { a: 'web', b: 'seo', text: 'Tekninen rakenne on alusta asti hakukoneiden luettavissa.' },
       { a: 'data', b: 'commerce', text: 'Myyntianalyysi ohjaa hinnoittelua ja valikoimaa.' },
     ],
     steps: ['Ymmärrä', 'Analysoi', 'Suunnittele', 'Rakenna', 'Automatisoi', 'Optimoi'],
@@ -140,7 +140,7 @@ export const fi: Dict = {
           },
           {
             id: 'human',
-            label: 'Ihmisen syöte',
+            label: 'Käyttäjän syöte',
             text: 'Lomakkeet, päätökset ja korjaukset, jotka käyttäjä tekee työkalussa.',
           },
         ],
@@ -216,8 +216,8 @@ export const fi: Dict = {
     kinds: [
       { t: 'Sisäiset työkalut', d: 'Sovellukset datan, tuotteiden ja työnkulkujen hallintaan.' },
       { t: 'Automaatiot', d: 'Toistuvat työvaiheet hoituvat itsestään.' },
-      { t: 'Räätälöity CMS', d: 'Järjestelmä rakenteiselle tiedolle.' },
-      { t: 'API-integraatiot', d: 'Järjestelmät keskustelemaan keskenään.' },
+      { t: 'Räätälöity CMS', d: 'Järjestelmä rakenteisen tiedon hallintaan.' },
+      { t: 'API-integraatiot', d: 'Järjestelmät, jotka keskustelevat keskenään.' },
       { t: 'Web-sovellukset', d: 'Portaalit ja sovellukset, joissa on oikea sovelluslogiikka.' },
       { t: 'Päätöstyökalut', d: 'Hinnoittelu, ennusteet, haku ja suosittelu.' },
     ],
@@ -226,7 +226,7 @@ export const fi: Dict = {
   why: {
     title: 'Analysoimme, rakennamme ja automatisoimme samalta tiimiltä.',
     intro:
-      'Ero syntyy yhteydestä: data, ohjelmistot, automaatio, verkkokauppa, web ja näkyvyys ovat samassa tiimissä, joten työ ei katkea toimijoiden rajoihin.',
+      'Ero syntyy yhteydestä: data, ohjelmistot, automaatio, verkkokauppa, web ja näkyvyys ovat samassa tiimissä, joten työ ei katkea toimijoiden välillä.',
     items: [
       {
         t: 'Analyysistä työkaluksi',
@@ -237,12 +237,12 @@ export const fi: Dict = {
         d: 'Räätälöidyt sisäiset työkalut, web-sovellukset, CMS-järjestelmät ja integraatiot.',
       },
       {
-        t: 'Syvä analytiikkaosaaminen',
+        t: 'Analytiikkaosaaminen',
         d: 'Tilastotiede ja data-analytiikka päätöksenteon tueksi.',
       },
       {
-        t: 'Laaja historiallinen data',
-        d: 'Laajat tuote- ja verkkokauppa-aineistot hinnoittelun, analytiikan ja sisältöjen pohjana.',
+        t: 'Tuote- ja verkkokauppadata',
+        d: 'Kokemusta laajoista tuote- ja verkkokauppa-aineistoista hinnoittelun, analytiikan ja sisältöjen pohjaksi.',
       },
       {
         t: 'Verkkokauppaosaaminen',
@@ -252,8 +252,14 @@ export const fi: Dict = {
         t: 'Tampereelta, kansainvälisesti',
         d: 'Asiakkaita ja yhteistyökumppaneita Suomessa, Kanadassa, Yhdysvalloissa ja Euroopassa.',
       },
-      { t: 'Monikielisyys', d: 'Sisältöä ja SEO:ta suomeksi, englanniksi ja ranskaksi.' },
-      { t: 'Suurille ja pienille', d: 'Monikansallisista yrityksistä toiminimiyrittäjiin.' },
+      {
+        t: 'Monikielisyys',
+        d: 'Sisältöä ja hakukoneoptimointia suomeksi, englanniksi ja ranskaksi.',
+      },
+      {
+        t: 'Suurille ja pienille',
+        d: 'Palvelut sopivat sekä yrityksille että toiminimiyrittäjille.',
+      },
     ],
     facts: [
       { k: 'Y-tunnus', v: '3486845-7' },
@@ -266,7 +272,7 @@ export const fi: Dict = {
   values: {
     title: 'Viisi merkkiä polulla.',
     intro:
-      'Arvomme määrittelevät, keitä olemme ja miten toimimme. Ne ovat saaneet innoituksensa suomalaisesta erinomaisuudesta sekä ilveksen ketteryydestä ja tarkkuudesta.',
+      'Arvomme määrittelevät, keitä olemme ja miten toimimme. Ne pohjautuvat suomalaiseen laatuun sekä ilveksen ketteryyteen ja tarkkuuteen.',
     items: [
       {
         n: '01',
@@ -279,7 +285,7 @@ export const fi: Dict = {
         n: '02',
         title: 'Tarkkuus, joka tuottaa tulosta',
         short: 'Kaikki projektit toteutetaan huolella ja asiakaslähtöisesti.',
-        long: 'Huomio yksityiskohtiin tekee eron. Dataohjatuista oivalluksista saumattomiin verkkokaupparatkaisuihin tarkkuus ei ole meille vain standardi vaan lupaus: tavoitteena ovat mitattavat tulokset.',
+        long: 'Huomio yksityiskohtiin tekee eron. Dataan perustuvista oivalluksista verkkokauppajärjestelmiin tarkkuus on meille lupaus eikä vain standardi: tavoitteena ovat mitattavat tulokset.',
         photo: 'tammerkoski',
       },
       {
@@ -319,14 +325,14 @@ export const fi: Dict = {
   },
   cta: {
     title: 'Kerro, mitä olet rakentamassa.',
-    text: 'Paras tapa tavoittaa meidät on sähköposti. Kirjoita rohkeasti, jos sinulla on kysyttävää, haluat tehdä tiedustelun tai kuulla lisää siitä, miten Verkkolynx voi vastata tarpeisiisi.',
+    text: 'Paras tapa tavoittaa meidät on sähköposti. Kerro lyhyesti tilanteesi, niin vastaamme.',
     button: 'Ota yhteyttä',
     or: 'tai lue ensin usein kysytyt kysymykset',
   },
   services: servicesFi,
   servicesPage: {
     title: 'Palvelut',
-    lede: 'Viisi osaamisaluetta ja erillinen palvelukokonaisuus toiminimiyrittäjille. Ne toimivat yhdessä: data ohjaa ohjelmistoja, ohjelmistot automatisoivat verkkokaupan ja verkkokauppa ja sivusto tarvitsevat näkyvyyttä.',
+    lede: 'Viisi osaamisaluetta ja erillinen palvelukokonaisuus toiminimiyrittäjille. Ne toimivat yhdessä: data ohjaa ohjelmistoja, ohjelmistot automatisoivat verkkokaupan, ja sekä kauppa että sivusto tarvitsevat näkyvyyttä.',
     overview: 'Valitse palvelu',
     meta: {
       title: 'Palvelut',
@@ -354,7 +360,7 @@ export const fi: Dict = {
     lede: 'Verkkolynx on tamperelainen tekninen digitaalinen yritys. Analysoimme, rakennamme ja automatisoimme samalta tiimiltä.',
     intro: [
       'Useimmat yritykset joutuvat yhdistelemään erillisiä toimijoita: analyytikkoa, ohjelmistokehittäjää, verkkotoimistoa ja markkinoijaa. Meillä nämä ovat samassa tiimissä, joten työ ei katkea rajapinnoissa.',
-      'Suomessa arvostamme laatua mutta myös hyvää vastinetta rahoille. Sinun menestyksesi on meidän menestyksemme.',
+      'Suomessa arvostamme laatua mutta myös hyvää vastinetta rahoille.',
     ],
     itemsTitle: 'Seitsemän syytä',
     meansForYou: 'Mitä tämä tarkoittaa sinulle',
@@ -370,8 +376,8 @@ export const fi: Dict = {
         you: 'Työkalut, joita valmiit järjestelmät eivät tarjoa, ja vähemmän käsityötä.',
       },
       {
-        t: 'Syvä analytiikkaosaaminen ja laaja data',
-        d: 'Laajat historialliset ja ajantasaiset verkkokauppa-aineistot sekä tilastollinen osaaminen.',
+        t: 'Analytiikkaosaaminen ja data',
+        d: 'Tilastollinen osaaminen ja kokemus laajoista, historiallisista ja ajantasaisista verkkokauppa-aineistoista.',
         you: 'Päätökset perustuvat dataan, ja ennusteet ovat käytettävissä.',
       },
       {
@@ -411,7 +417,7 @@ export const fi: Dict = {
       description:
         'Verkkolynx Ratkaisut Oy on tamperelainen tekninen digitaalinen yritys: ohjelmistokehitys, data, automaatio, verkkokauppa ja web. Tarina, toimintatapa ja arvot.',
     },
-    title: 'Suomalaista tarkkuutta, globaali näkökulma.',
+    title: 'Suomalainen tarkkuus, globaali näkökulma.',
     lede: 'Verkkolynx Ratkaisut Oy on tamperelainen tekninen yritys, joka rakentaa ohjelmistoja, automaatioita ja dataratkaisuja.',
     chapters: [
       {
@@ -445,7 +451,7 @@ export const fi: Dict = {
         n: '04',
         t: 'Kansainvälinen näkökulma',
         p: [
-          'Asiakkaitamme ja yhteistyökumppaneitamme on Suomessa, Kanadassa, Yhdysvalloissa ja Euroopassa. Tunnemme eri markkinoiden erityispiirteet ja sovimme tapaamiset joustavasti eri aikavyöhykkeille. Sisältöä ja SEO:ta tuotamme suomeksi, englanniksi ja ranskaksi.',
+          'Asiakkaitamme ja yhteistyökumppaneitamme on Suomessa, Kanadassa, Yhdysvalloissa ja Euroopassa. Tunnemme eri markkinoiden erityispiirteet ja sovimme tapaamiset joustavasti eri aikavyöhykkeille. Sisältöä ja hakukoneoptimointia tuotamme suomeksi, englanniksi ja ranskaksi.',
         ],
       },
     ],
@@ -457,9 +463,9 @@ export const fi: Dict = {
       { t: 'Alkuhaastattelu', d: 'Selvitämme tavoitteesi ja lähtötilanteesi.' },
       {
         t: 'Suunnittelu',
-        d: 'Aikataulu, budjetti ja tarvittaessa wireframe-mallit sekä käyttöliittymäluonnokset.',
+        d: 'Aikataulu ja budjetti sekä tarvittaessa wireframe-mallit ja käyttöliittymäluonnokset.',
       },
-      { t: 'Toteutus', d: 'Kehitys ja testaus ketterästi, sinut pidetään mukana.' },
+      { t: 'Toteutus', d: 'Kehitys ja testaus vaiheittain, ja sinä pysyt mukana.' },
       { t: 'Julkaisu', d: 'Käyttöönotto, dokumentaatio ja tarvittaessa koulutus.' },
       { t: 'Tuki', d: 'Ylläpito ja jatkokehitys liiketoimintasi kasvaessa.' },
     ],
@@ -474,7 +480,7 @@ export const fi: Dict = {
         'Vastauksia yleisimpiin kysymyksiin: palvelut, data-analytiikka, verkkosivut, markkinointi ja SEO, tuki ja koulutus, tietoturva sekä projektinhallinta.',
     },
     title: 'Usein kysytyt kysymykset',
-    lede: 'Jos sinulla on kysymyksiä, meillä on vastauksia. Jos jokin jää askarruttamaan, lähetä viesti osoitteeseen asiakaspalvelu@verkkolynx.fi.',
+    lede: 'Vastauksia yleisimpiin kysymyksiin. Jos jokin jää epäselväksi, kirjoita osoitteeseen asiakaspalvelu@verkkolynx.fi.',
     search: 'Hae kysymyksistä',
     searchPlaceholder: 'Hae esim. SEO, hinnoittelu, GDPR',
     categories: 'Aiheet',
@@ -490,17 +496,17 @@ export const fi: Dict = {
     meta: {
       title: 'Yhteystiedot',
       description:
-        'Ota yhteyttä Verkkolynxiin: asiakaspalvelu@verkkolynx.fi. Toimipiste Tampere, Suomi.',
+        'Ota yhteyttä: asiakaspalvelu@verkkolynx.fi. Verkkolynx Ratkaisut Oy, Tampere, Suomi.',
     },
     title: 'Ota yhteyttä.',
-    lede: 'Paras tapa tavoittaa meidät on sähköposti. Ota rohkeasti yhteyttä, jos sinulla on kysyttävää, haluat tehdä tiedustelun tai kuulla lisää siitä, miten Verkkolynx voi vastata tarpeisiisi.',
+    lede: 'Sähköposti on paras tapa tavoittaa meidät. Kerro lyhyesti, mitä olet tekemässä tai mitä työtä haluaisit helpottaa.',
     emailLabel: 'Sähköposti',
-    emailNote: 'Vastaamme suomeksi tai englanniksi.',
+    emailNote: 'Vastaamme suomeksi tai englanniksi, pyynnöstä myös ranskaksi.',
     topicsTitle: 'Mistä haluat puhua?',
     topics: [
       { label: 'Data-analytiikka', subject: 'Data-analytiikka ja oivallukset' },
-      { label: 'Verkkokauppa', subject: 'Verkkokaupan optimointi' },
-      { label: 'Verkkosivut', subject: 'Verkkosivujen suunnittelu ja kehitys' },
+      { label: 'Verkkokauppa', subject: 'Verkkokaupan järjestelmät ja optimointi' },
+      { label: 'Verkkosivut', subject: 'Verkkosivut ja digitaaliset kokemukset' },
       { label: 'Markkinointi ja SEO', subject: 'Markkinointi ja SEO' },
       { label: 'Toiminimiyrittäjän palvelut', subject: 'Palvelut toiminimiyrittäjille' },
       { label: 'Jokin muu', subject: 'Yhteydenotto' },
@@ -518,7 +524,7 @@ export const fi: Dict = {
       'Sovimme aloituskonsultaation.',
       'Saat ehdotuksen laajuudesta, aikataulusta ja hinnasta.',
     ],
-    hours: 'Ma–pe 9.00–17.00 (EET). Tapaamisia sovitaan joustavasti myös muina aikoina.',
+    hours: 'Ma–pe klo 9–17 Suomen aikaa. Tapaamisia sovitaan joustavasti myös muina aikoina.',
   },
   legal: {
     privacy: {

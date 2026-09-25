@@ -35,7 +35,7 @@ export const CORE_SERVICE_KEYS: ServiceKey[] = [
   'marketing',
 ];
 
-/** Finnish slugs equal the URLs of the production Wix site, so existing links keep working. */
+/** Finnish slugs match the public URLs of the previous site, so existing links keep working. */
 export const SLUGS: Record<RouteKey, Record<Locale, string>> = {
   home: { fi: '', en: '' },
   services: { fi: 'palvelut', en: 'services' },

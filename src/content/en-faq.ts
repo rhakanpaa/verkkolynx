@@ -17,26 +17,27 @@ export const faqEn: FaqCategory[] = [
         'What services does Verkkolynx offer?',
         'Verkkolynx Ratkaisut Oy offers five disciplines:',
         [
-          'Custom Software & Automation: internal tools, web applications, CMS platforms, integrations and automation.',
+          'Custom software and automation: internal tools, web applications, CMS platforms, integrations and automation.',
           'Data analytics and insights: analysis, forecasts and decision tools.',
-          'Ecommerce Systems & Optimisation: product data, taxonomy, pricing algorithms, search and integrations.',
-          'Websites & Digital Experiences: company sites, store front ends and campaign sites.',
+          'Ecommerce systems and optimisation: product data, taxonomy, pricing algorithms, search and integrations.',
+          'Websites and digital experiences: company sites, store front ends and campaign sites.',
           'Marketing and SEO: search optimisation, campaigns and content.',
         ],
       ),
       i(
         'sole-traders',
         'What services does Verkkolynx offer to sole traders?',
-        'We understand the particular challenges of sole traders. Our tailored services include:',
+        'Our services are sized to a sole trader’s needs and budget. They include:',
         [
           'Websites and online shops: affordable, easy-to-use solutions.',
           'Search engine optimisation (SEO) for the keywords that matter.',
           'Multilingual content production in Finnish, English and French.',
           'Branding and digital presence: social media channels, domain names and building your brand.',
-          'Personal coaching and support.',
+          'Small tools and automations, when repetitive work takes too much time.',
+          'Personal advice and support.',
         ],
       ),
-      i('location', 'Where is Verkkolynx located?', 'Our office is in Tampere, Finland.'),
+      i('location', 'Where is Verkkolynx located?', 'Verkkolynx operates from Tampere, Finland.'),
       i(
         'contact',
         'How can I contact Verkkolynx?',
@@ -55,7 +56,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'affordability',
         'Why are Verkkolynx’s services affordable?',
-        'Our team members cover many roles and have broad expertise. Where some agencies hire specialists solely for data analytics, branding or web design, we have experience in all of these areas. This all-round expertise makes delivery faster and more coherent.',
+        'Our team members have broad expertise. Where some agencies hire separate specialists for data analytics, branding and web design, we have experience in all of these areas. With the skills in one team, delivery is faster and more coherent.',
       ),
       i(
         'company-types',
@@ -65,37 +66,37 @@ export const faqEn: FaqCategory[] = [
       i(
         'industries',
         'Which industries does Verkkolynx specialise in?',
-        'Our services suit almost any industry, but we have extensive experience in ecommerce, retail, sports data and digital services. We specialise especially in sports ecommerce, such as selling hockey equipment, baseball supplies and soccer accessories.',
+        'Our services suit many industries, but our experience is strongest in ecommerce, retail, sports data and digital services. Sports ecommerce is a particular strength, for example hockey equipment, baseball supplies and soccer accessories.',
       ),
       i(
         'abroad',
         'Can Verkkolynx work with companies outside Finland?',
-        'Yes. We have experience working with international clients. Our current clients are in Finland, Canada and the United States, and we know the particularities of these regions. Whether you aim to succeed in Finland or expand globally, we can help.',
+        'Yes. We have experience working with international clients. Our current clients are in Finland, Canada and the United States, and we know the particularities of these regions.',
       ),
       i(
         'history',
         'What is Verkkolynx’s history?',
-        'Verkkolynx was founded in 2024 with the vision of combining advanced data analytics with practical business solutions. Our team consists of specialists in data analytics, web development and digital marketing.',
+        'Verkkolynx was founded in 2024 with the vision of combining advanced data analytics with practical business solutions. Our team consists of specialists in data analytics, software development, web development and digital marketing.',
       ),
       i(
         'team',
         'Who is behind Verkkolynx?',
-        'Our team includes professionals with backgrounds in mathematics, statistics, computer science, sports and entrepreneurship. This combined expertise supports our commitment to high-quality, data-driven solutions.',
+        'Our team includes professionals with backgrounds in mathematics, statistics, computer science, sports and entrepreneurship.',
       ),
       i(
         'name',
         'What does the name “Verkkolynx” mean?',
-        '“Verkko” is Finnish for network or the web, and “lynx” (ilves) symbolises agility and sharp vision. Together the name reflects our ability to navigate the complex networks of data with agility and precision.',
+        '“Verkko” is Finnish for network or the web, and “lynx” (ilves) symbolises agility and sharp vision. Together the name reflects our ability to navigate the complex networks of data.',
       ),
       i(
         'mission',
         'What is Verkkolynx’s mission?',
-        'We help businesses of all sizes turn data into practical insight, optimise their digital presence and drive sustainable growth through innovative solutions.',
+        'We help businesses of all sizes turn data into practical insight and practical tools.',
       ),
       i(
         'hours',
-        'What are Verkkolynx’s opening hours?',
-        'Our regular hours are Monday to Friday, 9:00–17:00 (EET). We are flexible and arrange meetings outside these hours too, so we can serve international clients in Canada and the United States.',
+        'When is Verkkolynx available?',
+        'Our working hours are Monday to Friday, 9:00–17:00 Finnish time. We arrange meetings outside these hours too, so we can serve clients in Canada and the United States.',
       ),
     ],
   },
@@ -124,7 +125,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'app-vs-site',
         'What is the difference between a web application and a website?',
-        'A website presents content to visitors. A web application has application logic, authentication, data processing and workflows, and is used to get work done. Public sites belong to Websites & Digital Experiences.',
+        'A website presents content to visitors. A web application has application logic, authentication, data processing and workflows, and is used to get work done. Public sites belong to Websites and digital experiences.',
       ),
       i(
         'automation',
@@ -154,7 +155,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'ownership-maintenance',
         'Who owns the software, and can it be maintained and developed further?',
-        'Work produced in the project transfers to you after full payment. We deliver documentation and train your team, and offer maintenance and further development.',
+        'Ownership and usage rights are agreed per project. We deliver documentation and train your team, and offer maintenance and further development.',
       ),
       i(
         'scale-security',
@@ -175,17 +176,17 @@ export const faqEn: FaqCategory[] = [
       i(
         'ecommerce-optimisation',
         'What does ecommerce optimisation mean at Verkkolynx?',
-        'Ecommerce optimisation includes developing product categories, optimising product information and creating dynamic pricing algorithms. The aim is to streamline the customer journey, improve search and maximise sales results.',
+        'Ecommerce optimisation includes developing product categories, optimising product information and creating dynamic pricing algorithms. The aim is to streamline the customer journey, improve search and support sales.',
       ),
       i(
         'little-data',
         'I do not have much data. Can you help me get more?',
-        'Yes. We specialise in building and using extensive databases tailored to your needs. Through data collection, organisation and visualisation you can access meaningful information even from a small starting point.',
+        'Yes. We can build datasets tailored to your needs by collecting, organising and visualising data. Meaningful findings are possible even from a small starting point.',
       ),
       i(
         'why-data',
         'Why does data matter?',
-        'Well-organised data not only improves your website but also simplifies bookkeeping, streamlines business management and improves your customers’ experience. Structured data is the foundation of smarter, more efficient operation.',
+        'Well-organised data supports decision-making, simplifies bookkeeping and business management, and improves the customer experience. Structured data is the foundation for reliable reports and automation.',
       ),
       i(
         'predictive',
@@ -195,7 +196,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'dynamic-pricing',
         'What is dynamic pricing, and how can Verkkolynx implement it?',
-        'Dynamic pricing adjusts the prices of products or services in real time based on demand, competition and market trends. We develop custom algorithms for your business so you can maximise results and stay competitive.',
+        'Dynamic pricing adjusts the prices of products or services in real time based on demand, competition and market trends. We develop custom algorithms for your business so that pricing stays competitive and profitable.',
       ),
       i(
         'data-quality',
@@ -205,7 +206,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'customer-behaviour',
         'How can Verkkolynx help me understand my customers’ behaviour?',
-        'We analyse customer behaviour using segmentation methods, statistical models and trend analysis. We identify patterns in purchase habits, preferences and engagement that improve retention and grow sales.',
+        'We analyse customer behaviour using segmentation methods, statistical models and trend analysis. We identify patterns in purchase habits, preferences and engagement that can be used to improve retention and sales.',
       ),
       i(
         'real-time',
@@ -220,7 +221,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'ai',
         'Can Verkkolynx help with AI-based analytics?',
-        'Yes. We integrate AI and machine learning into our analytics services to find deeper insights, automate complex processes and produce smarter recommendations.',
+        'Yes. Where it fits, we use machine learning and AI for forecasts, recommendations and process automation. The method is chosen to suit the task.',
       ),
       i(
         'big-data',
@@ -246,12 +247,12 @@ export const faqEn: FaqCategory[] = [
       i(
         'web-difference',
         'How do your web design and development services differ from others?',
-        'We focus on data-driven design to get user experience, functionality and measurable results right. We tailor sites to your needs, whether launching a new platform or updating an existing one.',
+        'We focus on data-driven design so that user experience and functionality support measurable goals. We tailor sites to your needs, whether launching a new platform or updating an existing one.',
       ),
       i(
         'multilingual',
         'Does Verkkolynx offer multilingual web design and SEO?',
-        'Yes. We specialise in designing multilingual websites and optimising them for search across regions and languages. Our main languages are Finnish, English and French.',
+        'Yes. We design multilingual websites and optimise them for search across regions and languages. Our main languages are Finnish, English and French.',
       ),
       i(
         'platforms',
@@ -266,7 +267,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'accessibility',
         'How do you make sure websites are user-friendly and accessible?',
-        'We emphasise user experience and accessibility in the design process. We follow best practices and guidelines such as WCAG (Web Content Accessibility Guidelines).',
+        'We emphasise user experience and accessibility in the design process. The goal is accessibility in line with WCAG (Web Content Accessibility Guidelines).',
       ),
       i(
         'mobile',
@@ -321,7 +322,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'seo-in-web',
         'Is search engine optimisation included in web development?',
-        'Yes. SEO is integrated into our development process from the start, so your site is optimised for search engines from the day it launches. It is part of our standard service.',
+        'Yes. Technical SEO is part of site development from the start, so the site is ready for search engines from the day it launches.',
       ),
       i(
         'migration',
@@ -337,17 +338,17 @@ export const faqEn: FaqCategory[] = [
       i(
         'visibility',
         'How do your marketing and SEO services improve my business’s visibility?',
-        'We design targeted marketing strategies and apply SEO techniques that improve search visibility, attract quality traffic and increase conversion.',
+        'We design targeted marketing strategies and apply SEO techniques that improve search visibility, bring suitable visitors to your site and support conversion.',
       ),
       i(
         'social',
         'Does Verkkolynx offer social media marketing?',
-        'Yes. We provide social media marketing services to strengthen your brand’s online visibility: meaningful reach, genuine connection and telling your story effectively.',
+        'Yes. We plan and run social media content and campaigns to strengthen your brand’s online visibility.',
       ),
       i(
         'content-marketing',
         'How does Verkkolynx approach content marketing and content production?',
-        'We believe in high-quality content that speaks to the target audience. We develop content strategies and produce blog posts, articles, infographics, videos and social media content. The content reflects your brand voice and supports SEO.',
+        'We develop content strategies and produce blog posts, articles, infographics, videos and social media content. The content is written in your brand voice for your target audience and supports SEO.',
       ),
       i(
         'paid-campaigns',
@@ -428,7 +429,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'tech-support',
         'Do you provide technical support for the solutions you deliver?',
-        'Yes. Ongoing technical support keeps the solutions we deliver working, and issues are resolved quickly.',
+        'Yes. We offer technical support for the solutions we deliver, and issues are handled as quickly as possible.',
       ),
       i(
         'change-management',
@@ -444,7 +445,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'security',
         'How does Verkkolynx ensure security in its services?',
-        'Security is a top priority. We follow industry best practices and GDPR regulations.',
+        'Security is considered from the start. We follow industry best practices and GDPR regulations.',
       ),
       i(
         'backups',
@@ -505,7 +506,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'pricing',
         'How does Verkkolynx price and budget its projects?',
-        'We offer transparent pricing tailored to the scope of the project. During initial consultation we provide a detailed proposal.',
+        'Pricing is tailored to the scope of the project. After the initial consultation you receive a proposal covering scope, schedule and price.',
       ),
       i(
         'scaling',
@@ -520,7 +521,7 @@ export const faqEn: FaqCategory[] = [
       i(
         'communication',
         'How does Verkkolynx communicate during a project?',
-        'We prioritise transparent, regular communication. You work directly with the people building the solution, and we give updates, gather feedback and answer your questions by email and video meetings.',
+        'We communicate regularly and openly. You work directly with the people building the solution, and we give updates, gather feedback and answer your questions by email and video meetings.',
       ),
       i(
         'collaboration-models',
@@ -555,17 +556,17 @@ export const faqEn: FaqCategory[] = [
       i(
         'team-size',
         'How big is the Verkkolynx team?',
-        'Our team consists of professionals specialising in data analytics, web development, digital marketing and cybersecurity. This range of skills lets us manage projects of different sizes and complexity.',
+        'We are a small, multidisciplinary team: data analytics, software development, web development and digital marketing. In a small team you work directly with the people doing the work.',
       ),
       i(
         'references',
-        'Can Verkkolynx provide references or case studies?',
-        'Yes, we can provide case studies and references on request.',
+        'Can Verkkolynx provide references?',
+        'References and examples of our work can be requested by email.',
       ),
       i(
         'documentation',
         'Do you provide project documentation and handover after completion?',
-        'Yes. We deliver comprehensive project documentation and ensure handover through training and support so your team can manage and maintain the solutions.',
+        'Yes. We deliver project documentation and handle the handover through training and support so your team can manage and maintain the solutions.',
       ),
     ],
   },

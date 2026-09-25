@@ -4,8 +4,8 @@ export const servicesEn: Service[] = [
   {
     key: 'software',
     n: '01',
-    name: 'Custom Software & Automation',
-    nav: 'Custom Software & Automation',
+    name: 'Custom software and automation',
+    nav: 'Custom software and automation',
     line: 'Internal tools, applications and automation.',
     summary:
       'We build the tools, systems and automations that off-the-shelf software does not provide.',
@@ -202,7 +202,7 @@ export const servicesEn: Service[] = [
     edge: [
       'Data, development, ecommerce and automation in one team: we analyse the workflow, model it and build the tool to run it.',
       'Development starts from the real workflow, not a generic software template.',
-      'Work produced in the project transfers to you after full payment.',
+      'Ownership and usage rights are agreed per project.',
       'Security and permissions are designed in from the start.',
     ],
     extraTitle: 'Technically',
@@ -222,7 +222,7 @@ export const servicesEn: Service[] = [
     ctaText:
       'Describe the current workflow or problem briefly. We will tell you what can be built from it and at what scale.',
     meta: {
-      title: 'Custom Software & Automation',
+      title: 'Custom software and automation',
       description:
         'Custom internal tools, web applications, CMS platforms, API integrations and automation. We build the tools that off-the-shelf systems do not. Tampere, Finland.',
     },
@@ -312,10 +312,10 @@ export const servicesEn: Service[] = [
     ],
     edgeTitle: 'The Verkkolynx difference',
     edge: [
-      'Deep analytics skills combined with extensive sports product databases.',
+      'Analytics skills combined with experience of large sports product datasets.',
       'Analysis can be carried into software by the same team that did it: modelling and implementation stay together.',
-      'Tailored recommendations for your specific challenges, not surface-level advice.',
-      'Clear reports and visualisations that are easy to understand.',
+      'Recommendations based on your situation rather than generic assumptions.',
+      'Clear reports and visualisations.',
     ],
     extraTitle: 'Methods we use',
     extra: [
@@ -339,8 +339,8 @@ export const servicesEn: Service[] = [
   {
     key: 'ecommerce',
     n: '03',
-    name: 'Ecommerce Systems & Optimisation',
-    nav: 'Ecommerce Systems & Optimisation',
+    name: 'Ecommerce systems and optimisation',
+    nav: 'Ecommerce systems and optimisation',
     line: 'Product data, pricing, search and integrations.',
     summary:
       'We build and optimise the systems behind an online store: product data, catalog structure, pricing, search and integrations.',
@@ -356,7 +356,7 @@ export const servicesEn: Service[] = [
     lede: 'We develop a store’s product data, catalog structure, pricing, search and integrations, and build internal tools to manage them when needed.',
     intro: [
       'An online store’s results are often decided behind the scenes: is the product data accurate, can products be found, does pricing follow the market, and does information move between systems without manual work.',
-      'Behind the work are extensive historical and current datasets we have compiled and organised across industries such as sports, retail and technology.',
+      'Behind the work are historical and current datasets we have compiled and organised across industries such as sports, retail and technology.',
     ],
     problemsTitle: 'What this answers',
     problems: [
@@ -403,7 +403,7 @@ export const servicesEn: Service[] = [
       },
       {
         t: 'Inventory-related analysis',
-        d: 'Accurate demand forecasting and avoiding over- or understocking.',
+        d: 'Demand forecasting and avoiding over- or understocking.',
       },
       {
         t: 'Product information automation',
@@ -455,7 +455,7 @@ export const servicesEn: Service[] = [
     ctaText:
       'Tell us what is maintained by hand in your store or what does not work. We will say what can be optimised and what is worth building.',
     meta: {
-      title: 'Ecommerce Systems & Optimisation',
+      title: 'Ecommerce systems and optimisation',
       description:
         'Product data, taxonomy, pricing algorithms, search, recommendations and integrations. Ecommerce systems and optimisation from Tampere, Finland.',
     },
@@ -463,8 +463,8 @@ export const servicesEn: Service[] = [
   {
     key: 'web',
     n: '04',
-    name: 'Websites & Digital Experiences',
-    nav: 'Websites & Digital Experiences',
+    name: 'Websites and digital experiences',
+    nav: 'Websites and digital experiences',
     line: 'Company sites, store front ends and content platforms.',
     summary:
       'We design and build public websites and interfaces that are fast, accessible and readable to search engines.',
@@ -474,7 +474,7 @@ export const servicesEn: Service[] = [
     lede: 'We design and build company sites, store front ends, campaign sites and content platforms. They work on every device, are accessible and are built to be readable by search engines.',
     intro: [
       'A website is the first thing a customer sees. We combine data-driven design, an understanding of user behaviour and technical quality.',
-      'We integrate Google’s E-E-A-T principles (experience, expertise, authoritativeness, trustworthiness) so the site builds credibility.',
+      'We build the site around Google’s E-E-A-T principles (experience, expertise, authoritativeness, trustworthiness) so it communicates credibility.',
     ],
     problemsTitle: 'What a site renewal answers',
     problems: [
@@ -484,7 +484,7 @@ export const servicesEn: Service[] = [
       },
       {
         t: 'The experience suffers on mobile',
-        d: 'The site does not work seamlessly on every device.',
+        d: 'The site does not work properly on every device.',
       },
       { t: 'The site is slow or outdated', d: 'Usability, performance or look needs updating.' },
       {
@@ -500,7 +500,7 @@ export const servicesEn: Service[] = [
       },
       {
         t: 'Store front ends',
-        d: 'Interfaces that guide customers toward considered purchase decisions.',
+        d: 'Interfaces that guide customers toward a purchase.',
       },
       {
         t: 'Campaign and landing pages',
@@ -513,7 +513,7 @@ export const servicesEn: Service[] = [
       },
       {
         t: 'Responsive design and accessibility',
-        d: 'Seamless functionality on desktop, tablet and phone. We follow the WCAG guidelines.',
+        d: 'The site works on desktop, tablet and phone. The goal is accessibility in line with the WCAG guidelines.',
       },
       {
         t: 'Performance and search-friendly structure',
@@ -525,16 +525,16 @@ export const servicesEn: Service[] = [
       { t: 'Trust', d: 'Credibility built on E-E-A-T principles.' },
       {
         t: 'Conversion',
-        d: 'Visitors become customers through intuitive, user-centred solutions.',
+        d: 'Clear, user-centred solutions help turn visitors into customers.',
       },
       { t: 'Engagement', d: 'Smooth experiences that make users want to return.' },
       { t: 'Scalability', d: 'A platform that copes with growing content and traffic.' },
     ],
-    edgeTitle: 'The Verkkolynx advantage',
+    edgeTitle: 'The Verkkolynx difference',
     edge: [
       'Web design, ecommerce expertise and data in one team.',
       'When a site needs application logic, authentication or integrations, software development is part of the same team.',
-      'A future-proof platform that can be extended.',
+      'A platform that can be extended as needs grow.',
     ],
     extraTitle: 'In practice',
     extra: [
@@ -550,7 +550,7 @@ export const servicesEn: Service[] = [
     ctaText:
       'Tell us what you are building or renewing. We will propose a structure, technical approach and schedule.',
     meta: {
-      title: 'Websites & Digital Experiences',
+      title: 'Websites and digital experiences',
       description:
         'Company sites, store front ends and campaign sites: fast, accessible and search-friendly. Verkkolynx, Tampere, Finland.',
     },
@@ -568,7 +568,7 @@ export const servicesEn: Service[] = [
     heroTitle: 'Visibility for the right people.',
     lede: 'We combine search optimisation, targeted campaigns and content so your business is found at the right moment and the impact can be measured.',
     intro: [
-      'Verkkolynx combines strategic marketing with effective SEO tools and works from the same data as our other services.',
+      'Marketing and SEO are done in the same team, and from the same data, as our other services.',
       'It is not only about clicks, but about turning visitors into customers.',
     ],
     problemsTitle: 'What marketing and SEO answer',
@@ -586,7 +586,7 @@ export const servicesEn: Service[] = [
       {
         t: 'Search engine optimisation (SEO)',
         d: 'Improve visibility with targeted keyword strategies.',
-        ex: 'We help a sports equipment retailer rank for searches such as “best hockey skates in Finland”.',
+        ex: 'A sports equipment retailer that wants its products to appear for searches such as “hockey skates”.',
       },
       {
         t: 'Targeted digital campaigns',
@@ -595,7 +595,7 @@ export const servicesEn: Service[] = [
       },
       {
         t: 'Content marketing',
-        d: 'Data-driven, detailed content built on extensive sports product databases: blog articles, product comparisons and niche guides.',
+        d: 'Data-driven, detailed content built on sports product datasets: blog articles, product comparisons and niche guides.',
       },
       {
         t: 'Email marketing',
@@ -614,12 +614,12 @@ export const servicesEn: Service[] = [
       },
       {
         t: 'Sustainability',
-        d: 'Organic visibility delivers lasting benefits beyond paid campaigns.',
+        d: 'Organic visibility lasts longer than paid campaigns.',
       },
     ],
-    edgeTitle: 'Why Verkkolynx',
+    edgeTitle: 'The Verkkolynx difference',
     edge: [
-      'Extensive sports product databases give content and campaigns precise insight.',
+      'Experience of large sports product datasets gives content and campaigns concrete insight.',
       'SEO is part of the technical structure: site, product data and content are designed together.',
       'We measure what affects the business and optimise continuously.',
     ],
@@ -649,13 +649,13 @@ export const servicesEn: Service[] = [
     nav: 'Services for sole traders',
     line: 'Websites, visibility and small tools.',
     summary:
-      'Affordable, personal services for sole traders: websites, search visibility, multilingual content, coaching and, when it makes sense, a small tool or automation.',
-    tags: ['Websites', 'SEO', 'Content in three languages', 'Small automations', 'Coaching'],
+      'Affordable, personal services for sole traders: websites, search visibility, multilingual content, personal advice and, when it makes sense, a small tool or automation.',
+    tags: ['Websites', 'SEO', 'Content in three languages', 'Small automations', 'Personal advice'],
     photo: 'lakePortrait',
     heroTitle: 'Services sized for you.',
-    lede: 'As a sole trader your hands are full, and there is rarely time to build online visibility or handle routine work. We offer personal, reasonably priced service built around your needs.',
+    lede: 'As a sole trader your hands are full, and there is rarely time to build online visibility or handle routine work. We offer personal, affordable service built around your needs.',
     intro: [
-      'We understand that affordability matters. Our services help you efficiently and sustainably without overwhelming costs.',
+      'For a sole trader, price matters. We size the work so it stays affordable.',
       'Whether you are setting up an online shop, want a modern website or are looking for a way into the North American market, we are by your side. When a repetitive task eats your time, we can also build a small tool or automation.',
     ],
     problemsTitle: 'Familiar challenges',
@@ -678,13 +678,13 @@ export const servicesEn: Service[] = [
     capabilities: [
       {
         t: 'Websites and online shops',
-        d: 'A site or shop that not only looks good but works seamlessly.',
+        d: 'A site or shop that looks good and works well.',
         ex: 'A sole trader working with digital content or products gets a shop that showcases the products.',
       },
       {
         t: 'Search engine optimisation (SEO)',
         d: 'The right keywords and effective strategies, whether you target Finnish, Canadian or American customers.',
-        ex: 'Appearing for searches such as “best digital products in Finland”.',
+        ex: 'Appearing for searches such as “digital products in Finland”.',
       },
       {
         t: 'Content in three languages',
@@ -701,34 +701,34 @@ export const servicesEn: Service[] = [
         d: 'A strong brand, social media management and an appealing domain name.',
       },
       {
-        t: 'Personal coaching and guidance',
-        d: 'One-to-one expert work is at the heart of what we do: we guide you and provide solutions for your needs.',
+        t: 'Personal advice and guidance',
+        d: 'One-to-one expert work is at the heart of this service: we guide you and provide solutions for your needs.',
       },
     ],
     outcomesTitle: 'Why choose Verkkolynx',
     outcomes: [
-      { t: 'Affordability', d: 'Cost-effective solutions without compromising on quality.' },
+      { t: 'Affordability', d: 'Affordable solutions sized to your needs.' },
       { t: 'Tailoring', d: 'Services designed around your goals.' },
       {
         t: 'Expertise',
         d: 'Strong software, SEO and data skills combined with an international perspective.',
       },
-      { t: 'Personal touch', d: 'We are beside you, coaching and doing it together.' },
+      { t: 'Personal touch', d: 'We advise you and do the work together with you.' },
     ],
     edgeTitle: 'Why our services are affordable',
     edge: [
       'Our team members cover many roles: where some agencies hire separate specialists for data, development and web design, we have skills in all of these areas.',
-      'This all-round expertise makes delivery faster and more coherent.',
+      'With the skills in one team, delivery is faster and more coherent.',
     ],
     bridge: [{ text: 'Need a custom tool?', to: 'software' }],
     related: ['web', 'software', 'marketing'],
     ctaTitle: 'Tell us where you need help.',
     ctaText:
-      'Let us build a solution that fits the size and budget of your business: easily, affordably and tailored to you.',
+      'Tell us your situation and we will propose a solution that fits the size and budget of your business.',
     meta: {
       title: 'Services for sole traders',
       description:
-        'Affordable, tailored services for sole traders: websites, SEO, multilingual content, small tools and automations, and personal coaching.',
+        'Affordable, tailored services for sole traders: websites, SEO, multilingual content, small tools and automations, and personal advice.',
     },
   },
 ];

@@ -22,7 +22,7 @@ describe('routes', () => {
     }
   });
 
-  it('keeps every production Wix URL alive, either as a page or a redirect', () => {
+  it('keeps every URL of the previous site alive, either as a page or a redirect', () => {
     const legacy = [
       '/tietoa-meista',
       '/verkkolynxin-arvot',
@@ -165,6 +165,10 @@ describe('content', () => {
       'toimialakohtaisia sertifikaatteja',
       'yli 40 vuoden',
       'Austin',
+      // ownership is agreed per project (see terms 5.2), never promised as automatic
+      'täyden maksun jälkeen',
+      'after full payment',
+      'www.verkkolynx',
     ]) {
       expect(all.includes(banned), banned).toBe(false);
     }
@@ -192,5 +196,24 @@ describe('production URLs', () => {
   it('points robots at the production sitemap', async () => {
     const robots = (await import('@/app/robots')).default();
     expect(robots.sitemap).toBe('https://verkkolynx.fi/sitemap.xml');
+  });
+});
+
+describe('language-specific 404', () => {
+  it('rewrites unknown URLs to the 404 page of their own language with status 404', async () => {
+    const { NextRequest } = await import('next/server');
+    const { proxy } = await import('@/proxy');
+    const run = (path: string) => proxy(new NextRequest(`https://verkkolynx.fi${path}`));
+    const target = (res: Response) => res.headers.get('x-middleware-rewrite') ?? '';
+
+    expect(target(run('/ei-ole-olemassa'))).toContain('/sivua-ei-loytynyt');
+    expect(target(run('/en/does-not-exist'))).toContain('/en/page-not-found');
+    expect(target(run('/en/palvelut'))).toContain('/en/page-not-found');
+    expect(target(run('/palvelut/x'))).toContain('/sivua-ei-loytynyt');
+    // real pages pass straight through
+    expect(target(run('/palvelut'))).toBe('');
+    expect(target(run('/en/services'))).toBe('');
+    expect(target(run('/'))).toBe('');
+    expect(target(run('/en'))).toBe('');
   });
 });

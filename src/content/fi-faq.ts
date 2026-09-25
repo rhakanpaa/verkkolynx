@@ -27,20 +27,17 @@ export const faqFi: FaqCategory[] = [
       i(
         'toiminimiyrittajat',
         'Mitä palveluita Verkkolynx tarjoaa yksinyrittäjille ja toiminimiyrittäjille?',
-        'Ymmärrämme yksinyrittäjien ainutlaatuiset haasteet. Räätälöityihin palveluihimme kuuluu:',
+        'Palvelut mitoitetaan yksinyrittäjän tarpeisiin ja budjettiin. Niihin kuuluu:',
         [
           'Verkkosivut ja verkkokaupat: edullisia ja helppokäyttöisiä ratkaisuja.',
           'Hakukoneoptimointi (SEO) tärkeillä avainsanoilla.',
           'Monikielinen sisällöntuotanto suomeksi, englanniksi ja ranskaksi.',
           'Brändäys ja digitaalinen läsnäolo: sosiaalisen median kanavat, verkkotunnukset ja brändin rakentaminen.',
-          'Yksilöllinen valmennus ja tuki.',
+          'Pienet työkalut ja automaatiot, kun toistuva työ vie liikaa aikaa.',
+          'Henkilökohtainen sparraus ja tuki.',
         ],
       ),
-      i(
-        'sijainti',
-        'Missä Verkkolynx sijaitsee?',
-        'Toimipisteemme sijaitsee Tampereella, Suomessa.',
-      ),
+      i('sijainti', 'Missä Verkkolynx sijaitsee?', 'Verkkolynx toimii Tampereelta, Suomesta.'),
       i(
         'yhteys',
         'Miten voin ottaa yhteyttä Verkkolynxiin?',
@@ -58,8 +55,8 @@ export const faqFi: FaqCategory[] = [
       ),
       i(
         'edullisuus',
-        'Miksi Verkkolynxin palvelut ovat edullisia?',
-        'Tiimimme jäsenet hallitsevat monia rooleja ja omaavat laaja-alaisen osaamisen. Siinä missä jotkut toimistot palkkaavat erikoistuneita asiantuntijoita pelkästään data-analytiikkaan, brändäykseen tai verkkosivusuunnitteluun, meillä on kokemusta kaikilla näillä alueilla. Kokonaisvaltainen osaaminen mahdollistaa nopeamman toteutuksen yhtenäisemmällä otteella.',
+        'Miksi Verkkolynxin palvelut ovat kohtuuhintaisia?',
+        'Tiimimme jäsenillä on laaja-alainen osaaminen. Siinä missä jotkut toimistot palkkaavat erillisiä asiantuntijoita data-analytiikkaan, brändäykseen ja verkkosivusuunnitteluun, meillä on kokemusta kaikilta näiltä alueilta. Kun osaaminen on samassa tiimissä, toteutus sujuu nopeammin ja yhtenäisemmin.',
       ),
       i(
         'yritystyypit',
@@ -69,37 +66,37 @@ export const faqFi: FaqCategory[] = [
       i(
         'toimialat',
         'Mihin toimialoihin Verkkolynx on erikoistunut?',
-        'Palvelumme sopivat lähes mille tahansa toimialalle, mutta meillä on laaja kokemus verkkokaupasta, vähittäiskaupasta, urheiludatasta ja digitaalisista palveluista. Olemme erityisen erikoistuneita urheiluverkkokauppaan, kuten jääkiekkovarusteiden, baseball-tarvikkeiden ja jalkapallotarvikkeiden myyntiin.',
+        'Palvelut sopivat eri toimialoille, mutta kokemusta on erityisesti verkkokaupasta, vähittäiskaupasta, urheiludatasta ja digitaalisista palveluista. Erityisosaamistamme on urheiluverkkokauppa, kuten jääkiekkovarusteiden, baseball-tarvikkeiden ja jalkapallotarvikkeiden myynti.',
       ),
       i(
         'ulkomaat',
         'Voiko Verkkolynx työskennellä yritysten kanssa Suomen ulkopuolella?',
-        'Kyllä. Meillä on kokemusta kansainvälisten asiakkaiden kanssa työskentelystä. Nykyiset asiakkaamme sijaitsevat Suomessa, Kanadassa ja Yhdysvalloissa, ja tunnemme näiden alueiden erityispiirteet. Olipa tavoitteesi menestyä Suomessa tai laajentua globaalisti, autamme sinua.',
+        'Kyllä. Meillä on kokemusta kansainvälisten asiakkaiden kanssa työskentelystä. Nykyiset asiakkaamme sijaitsevat Suomessa, Kanadassa ja Yhdysvalloissa, ja tunnemme näiden alueiden erityispiirteet.',
       ),
       i(
         'historia',
         'Mikä on Verkkolynxin historia?',
-        'Verkkolynx perustettiin vuonna 2024 visiolla yhdistää edistynyt data-analytiikka käytännön liiketoimintaratkaisuihin. Tiimimme koostuu data-analytiikan, verkkokehityksen ja digitaalisen markkinoinnin asiantuntijoista.',
+        'Verkkolynx perustettiin vuonna 2024 visiolla yhdistää edistynyt data-analytiikka käytännön liiketoimintaratkaisuihin. Tiimimme koostuu data-analytiikan, ohjelmistokehityksen, verkkokehityksen ja digitaalisen markkinoinnin asiantuntijoista.',
       ),
       i(
         'tiimi',
         'Keitä Verkkolynxin takana on?',
-        'Tiimiimme kuuluu ammattilaisia, joilla on taustaa matematiikassa, tilastotieteessä, tietojenkäsittelytieteessä, urheilussa ja yrittäjyydessä. Yhdistetty asiantuntemus tukee sitoutumistamme korkealaatuisiin, datalähtöisiin ratkaisuihin.',
+        'Tiimiimme kuuluu ammattilaisia, joilla on taustaa matematiikassa, tilastotieteessä, tietojenkäsittelytieteessä, urheilussa ja yrittäjyydessä.',
       ),
       i(
         'nimi',
         'Mitä nimi ”Verkkolynx” tarkoittaa?',
-        '”Verkko” tarkoittaa suomeksi verkkoa tai internetiä, ja ”lynx” (ilves) symboloi ketteryyttä ja tarkkaa näkemystä. Yhdessä nimi kuvaa kykyämme navigoida datan monimutkaisissa verkostoissa ketteryydellä ja tarkkuudella.',
+        '”Verkko” tarkoittaa suomeksi verkkoa tai internetiä, ja ”lynx” (ilves) symboloi ketteryyttä ja tarkkaa näkemystä. Yhdessä nimi kuvaa kykyämme navigoida datan monimutkaisissa verkostoissa.',
       ),
       i(
         'missio',
         'Mikä on Verkkolynxin missio?',
-        'Autamme kaiken kokoisia yrityksiä muuttamaan datan käytännön oivalluksiksi, optimoimaan digitaalista läsnäoloaan ja edistämään kestävää kasvua innovatiivisten ratkaisujen avulla.',
+        'Autamme kaiken kokoisia yrityksiä muuttamaan datan käytännön oivalluksiksi ja käytännön työkaluiksi.',
       ),
       i(
         'aukioloajat',
-        'Mitkä ovat Verkkolynxin aukioloajat?',
-        'Normaalit aukioloaikamme ovat maanantaista perjantaihin klo 9.00–17.00 (EET). Olemme joustavia ja sovimme tapaamisia myös näiden aikojen ulkopuolelle, jotta voimme palvella kansainvälisiä asiakkaitamme Kanadassa ja Yhdysvalloissa.',
+        'Milloin Verkkolynx on tavoitettavissa?',
+        'Työaikamme on maanantaista perjantaihin klo 9–17 Suomen aikaa. Sovimme tapaamisia joustavasti myös näiden aikojen ulkopuolelle, jotta voimme palvella asiakkaita Kanadassa ja Yhdysvalloissa.',
       ),
     ],
   },
@@ -158,7 +155,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'omistus-ja-yllapito',
         'Kuka omistaa ohjelmiston, ja voiko sitä ylläpitää ja kehittää?',
-        'Projektissa tuotettu työ siirtyy omistukseesi täyden maksun jälkeen. Toimitamme dokumentaation ja koulutamme tiimisi, ja tarjoamme ylläpitoa ja jatkokehitystä.',
+        'Omistus- ja käyttöoikeudet sovitaan projektikohtaisesti. Toimitamme dokumentaation ja koulutamme tiimisi, ja tarjoamme ylläpitoa ja jatkokehitystä.',
       ),
       i(
         'laajuus-ja-turva',
@@ -179,17 +176,17 @@ export const faqFi: FaqCategory[] = [
       i(
         'verkkokaupan-optimointi',
         'Mitä verkkokaupan optimointi tarkoittaa Verkkolynxin näkökulmasta?',
-        'Verkkokaupan optimointi sisältää tuotekategorioiden kehittämisen, tuotetietojen optimoinnin ja dynaamisten hinnoittelualgoritmien luomisen. Tavoitteena on sujuvoittaa asiakaspolkua, parantaa hakutoimintoja ja maksimoida myyntitulokset.',
+        'Verkkokaupan optimointi sisältää tuotekategorioiden kehittämisen, tuotetietojen optimoinnin ja dynaamisten hinnoittelualgoritmien luomisen. Tavoitteena on sujuvoittaa asiakaspolkua, parantaa hakutoimintoja ja tukea myyntiä.',
       ),
       i(
         'vahan-dataa',
         'Minulla ei ole paljon dataa – voitteko auttaa saamaan lisää?',
-        'Kyllä. Olemme erikoistuneet laajojen, tarpeisiisi räätälöityjen tietokantojen rakentamiseen ja hyödyntämiseen. Tiedonkeruun, organisoinnin ja visualisoinnin avulla pääset käsiksi merkityksellisiin tietoihin, vaikka lähtökohtana olisi vain vähän dataa.',
+        'Kyllä. Voimme rakentaa tarpeisiisi räätälöityjä aineistoja keräämällä, järjestämällä ja visualisoimalla dataa. Merkityksellisiä havaintoja voi saada, vaikka lähtökohtana olisi vain vähän dataa.',
       ),
       i(
         'miksi-data',
         'Miksi data on tärkeää?',
-        'Hyvin organisoitu data ei vain paranna verkkosivustoasi vaan myös yksinkertaistaa kirjanpitoa, tehostaa liiketoiminnan hallintaa ja parantaa asiakkaidesi kokemusta. Rakenteellinen data on älykkäämmän ja tehokkaamman toiminnan perusta.',
+        'Hyvin organisoitu data helpottaa päätöksentekoa, kirjanpitoa ja liiketoiminnan hallintaa ja parantaa asiakaskokemusta. Rakenteinen data on perusta luotettaville raporteille ja automaatiolle.',
       ),
       i(
         'ennakoiva',
@@ -199,7 +196,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'dynaaminen-hinnoittelu',
         'Mitä dynaaminen hinnoittelu on, ja miten Verkkolynx voi toteuttaa sen?',
-        'Dynaaminen hinnoittelu mukauttaa tuotteiden tai palveluiden hintoja reaaliajassa kysynnän, kilpailun ja markkinatrendien perusteella. Kehitämme yrityksellesi räätälöityjä algoritmeja, joilla voit maksimoida tuloksesi ja pysyä kilpailukykyisenä.',
+        'Dynaaminen hinnoittelu mukauttaa tuotteiden tai palveluiden hintoja reaaliajassa kysynnän, kilpailun ja markkinatrendien perusteella. Kehitämme yrityksellesi räätälöityjä algoritmeja, joiden avulla hinnoittelu pysyy kilpailukykyisenä ja kannattavana.',
       ),
       i(
         'datan-laatu',
@@ -209,7 +206,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'asiakaskayttaytyminen',
         'Miten Verkkolynx voi auttaa ymmärtämään asiakaskäyttäytymistäni?',
-        'Analysoimme asiakaskäyttäytymistä segmentointimenetelmien, tilastomallien ja trendianalyysin avulla. Tunnistamme ostotottumuksiin, mieltymyksiin ja sitoutumiseen liittyviä kaavoja, joilla parannetaan asiakaspysyvyyttä ja kasvatetaan myyntiä.',
+        'Analysoimme asiakaskäyttäytymistä segmentointimenetelmien, tilastomallien ja trendianalyysin avulla. Tunnistamme ostotottumuksiin, mieltymyksiin ja sitoutumiseen liittyviä säännönmukaisuuksia, joita voi hyödyntää asiakaspysyvyyden ja myynnin kehittämisessä.',
       ),
       i(
         'reaaliaikainen',
@@ -224,7 +221,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'tekoaly',
         'Voiko Verkkolynx auttaa tekoälyyn perustuvassa analytiikassa?',
-        'Kyllä. Integroimme tekoälyä ja koneoppimista analytiikkapalveluihimme syvempien oivallusten löytämiseksi, monimutkaisten prosessien automatisoimiseksi ja älykkäämpien suositusten tuottamiseksi.',
+        'Kyllä. Käytämme koneoppimista ja tekoälyä tarvittaessa esimerkiksi ennusteisiin, suosituksiin ja prosessien automatisointiin. Menetelmä valitaan tehtävän mukaan.',
       ),
       i(
         'suuret-datamaarat',
@@ -250,12 +247,12 @@ export const faqFi: FaqCategory[] = [
       i(
         'sivujen-ero',
         'Miten verkkosivujen suunnittelu- ja kehityspalvelumme eroavat muista?',
-        'Keskitymme datalähtöiseen suunnitteluun, jotta käyttäjäkokemus, toiminnallisuus ja mitattavat tulokset ovat kunnossa. Räätälöimme sivustot tarpeidesi mukaan, olipa kyse uuden alustan lanseerauksesta tai nykyisen päivittämisestä.',
+        'Keskitymme datalähtöiseen suunnitteluun, jotta käyttäjäkokemus ja toiminnallisuus tukevat mitattavia tavoitteita. Räätälöimme sivustot tarpeidesi mukaan, olipa kyse uuden alustan lanseerauksesta tai nykyisen päivittämisestä.',
       ),
       i(
         'monikielisyys',
         'Tarjoaako Verkkolynx monikielistä verkkosivusuunnittelua ja SEO:ta?',
-        'Kyllä. Olemme erikoistuneet monikielisten verkkosivujen suunnitteluun ja hakukoneoptimointiin eri alueille ja kielille. Pääkielemme ovat suomi, englanti ja ranska.',
+        'Kyllä. Suunnittelemme monikielisiä verkkosivuja ja optimoimme ne hakukoneille eri alueille ja kielille. Pääkielemme ovat suomi, englanti ja ranska.',
       ),
       i(
         'alustat',
@@ -270,7 +267,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'saavutettavuus',
         'Miten varmistatte, että verkkosivut ovat käyttäjäystävällisiä ja saavutettavia?',
-        'Painotamme käyttäjäkokemusta ja saavutettavuutta suunnitteluprosessissa. Noudatamme parhaita käytäntöjä ja ohjeita, kuten WCAG (Web Content Accessibility Guidelines).',
+        'Painotamme käyttäjäkokemusta ja saavutettavuutta suunnitteluprosessissa. Tavoitteena on WCAG-ohjeiden (Web Content Accessibility Guidelines) mukainen saavutettavuus.',
       ),
       i(
         'mobiili',
@@ -325,7 +322,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'seo-sivuissa',
         'Sisältyykö hakukoneoptimointi verkkosivujen kehitykseen?',
-        'Kyllä. SEO on integroitu sivujen kehitysprosessiin alusta asti, joten sivustosi on optimoitu hakukoneille jo julkaisuhetkestä. Se kuuluu vakiopalveluihimme.',
+        'Kyllä. Tekninen SEO on mukana sivuston kehityksessä alusta asti, joten sivusto on hakukoneille valmis jo julkaisuhetkellä.',
       ),
       i(
         'sivuston-siirto',
@@ -341,17 +338,17 @@ export const faqFi: FaqCategory[] = [
       i(
         'nakyvyys',
         'Miten markkinointi- ja SEO-palvelunne parantavat yritykseni näkyvyyttä?',
-        'Suunnittelemme kohdennettuja markkinointistrategioita ja toteutamme SEO-tekniikoita, jotka parantavat hakukonenäkyvyyttä, houkuttelevat laadukasta liikennettä ja lisäävät konversioita.',
+        'Suunnittelemme kohdennettuja markkinointistrategioita ja toteutamme SEO-tekniikoita, jotka parantavat hakukonenäkyvyyttä, tuovat sivustolle sopivia kävijöitä ja tukevat konversioita.',
       ),
       i(
         'some',
         'Tarjoaako Verkkolynx sosiaalisen median markkinointia?',
-        'Kyllä. Tarjoamme sosiaalisen median markkinointipalveluja brändisi verkkonäkyvyyden vahvistamiseksi: merkityksellistä kattavuutta, aitoa yhteyttä ja tarinasi tehokasta kertomista.',
+        'Kyllä. Suunnittelemme ja hoidamme sosiaalisen median sisältöä ja kampanjoita brändisi verkkonäkyvyyden vahvistamiseksi.',
       ),
       i(
         'sisaltomarkkinointi',
         'Miten Verkkolynx lähestyy sisältömarkkinointia ja sisällöntuotantoa?',
-        'Uskomme korkealaatuiseen, kohderyhmää puhuttelevaan sisältöön. Kehitämme sisältöstrategioita ja tuotamme blogikirjoituksia, artikkeleita, infografiikkaa, videoita ja sosiaalisen median sisältöä. Sisältö heijastaa brändisi ääntä ja tukee SEO:ta.',
+        'Kehitämme sisältöstrategioita ja tuotamme blogikirjoituksia, artikkeleita, infografiikkaa, videoita ja sosiaalisen median sisältöä. Sisältö kirjoitetaan brändisi äänellä kohderyhmälle ja tukee SEO:ta.',
       ),
       i(
         'maksetut-kampanjat',
@@ -432,7 +429,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'tekninen-tuki',
         'Tarjoatteko teknistä tukea toteuttamillenne ratkaisuille?',
-        'Kyllä. Jatkuva tekninen tuki varmistaa, että toteuttamamme ratkaisut toimivat, ja mahdolliset ongelmat ratkaistaan nopeasti.',
+        'Kyllä. Tarjoamme teknistä tukea toteuttamillemme ratkaisuille, ja ongelmat käsitellään mahdollisimman nopeasti.',
       ),
       i(
         'muutosjohtaminen',
@@ -448,7 +445,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'tietoturva',
         'Miten Verkkolynx varmistaa tietoturvan palveluissaan?',
-        'Tietoturva on meille ensisijainen prioriteetti. Noudatamme alan parhaita käytäntöjä ja GDPR-säädöksiä.',
+        'Tietoturva huomioidaan alusta asti. Noudatamme alan hyviä käytäntöjä ja GDPR-säädöksiä.',
       ),
       i(
         'varmuuskopiot',
@@ -509,7 +506,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'hinnoittelu',
         'Miten Verkkolynx hinnoittelee ja budjetoi projektinsa?',
-        'Tarjoamme läpinäkyvän hinnoittelun, joka räätälöidään projektin laajuuden mukaan. Alkuvaiheen konsultoinnin aikana toimitamme yksityiskohtaisen ehdotuksen.',
+        'Hinta räätälöidään projektin laajuuden mukaan. Alkukonsultaation jälkeen saat ehdotuksen laajuudesta, aikataulusta ja hinnasta.',
       ),
       i(
         'skaalautuvuus',
@@ -524,7 +521,7 @@ export const faqFi: FaqCategory[] = [
       i(
         'viestinta',
         'Miten Verkkolynx viestii projektin aikana?',
-        'Priorisoimme läpinäkyvää ja säännöllistä viestintää. Työskentelet suoraan ratkaisua rakentavien ihmisten kanssa, ja annamme päivityksiä, keräämme palautetta ja vastaamme kysymyksiisi sähköpostitse ja videokokouksissa.',
+        'Viestimme säännöllisesti ja avoimesti. Työskentelet suoraan ratkaisua rakentavien ihmisten kanssa, ja annamme päivityksiä, keräämme palautetta ja vastaamme kysymyksiisi sähköpostitse ja videokokouksissa.',
       ),
       i(
         'yhteistyomallit',
@@ -559,17 +556,17 @@ export const faqFi: FaqCategory[] = [
       i(
         'tiimin-koko',
         'Kuinka suuri Verkkolynxin tiimi on?',
-        'Tiimimme koostuu ammattilaisista, jotka ovat erikoistuneet data-analytiikkaan, verkkokehitykseen, digitaaliseen markkinointiin ja kyberturvallisuuteen. Monipuolinen osaaminen mahdollistaa erikokoisten ja -monimutkaisten projektien hallinnan.',
+        'Olemme pieni, monialainen tiimi: data-analytiikka, ohjelmistokehitys, verkkokehitys ja digitaalinen markkinointi. Pienessä tiimissä työskentelet suoraan tekijöiden kanssa.',
       ),
       i(
         'referenssit',
         'Voiko Verkkolynx tarjota referenssejä tai asiakastutkimuksia?',
-        'Kyllä, voimme toimittaa asiakastutkimuksia ja referenssejä pyynnöstä.',
+        'Referenssejä ja esimerkkejä työstämme voi pyytää sähköpostitse.',
       ),
       i(
         'dokumentaatio',
         'Tarjoatteko projektidokumentaatiota ja tietojen siirtoa projektin jälkeen?',
-        'Kyllä. Toimitamme kattavan projektidokumentaation ja varmistamme tiedonsiirron koulutuksen ja tuen avulla, jotta tiimisi voi hallita ja ylläpitää ratkaisuja.',
+        'Kyllä. Toimitamme projektidokumentaation ja huolehdimme tiedonsiirrosta koulutuksen ja tuen avulla, jotta tiimisi voi hallita ja ylläpitää ratkaisuja.',
       ),
     ],
   },

@@ -139,7 +139,7 @@ export const en: Dict = {
           },
           {
             id: 'human',
-            label: 'Human input',
+            label: 'User input',
             text: 'Forms, decisions and corrections made by users in the tool.',
           },
         ],
@@ -223,7 +223,7 @@ export const en: Dict = {
     cta: 'Explore custom software',
   },
   why: {
-    title: 'We analyse, build and automate, in the same team.',
+    title: 'We analyse, build and automate in one team.',
     intro:
       'The difference is the connection: data, software, automation, ecommerce, web and visibility sit in one team, so work does not break at the boundaries between suppliers.',
     items: [
@@ -236,12 +236,12 @@ export const en: Dict = {
         d: 'Custom internal tools, web applications, CMS platforms and integrations.',
       },
       {
-        t: 'Deep analytics capability',
+        t: 'Analytics capability',
         d: 'Statistics and data analytics in support of decision-making.',
       },
       {
-        t: 'Extensive historical data',
-        d: 'Broad product and ecommerce datasets behind pricing, analytics and content.',
+        t: 'Product and ecommerce data',
+        d: 'Experience with large product and ecommerce datasets behind pricing, analytics and content.',
       },
       {
         t: 'Ecommerce expertise',
@@ -252,7 +252,7 @@ export const en: Dict = {
         d: 'Clients and partners in Finland, Canada, the United States and Europe.',
       },
       { t: 'Multilingual', d: 'Content and SEO in Finnish, English and French.' },
-      { t: 'Large and small', d: 'From multinational companies to sole traders.' },
+      { t: 'Large and small', d: 'Services suited to companies and sole traders alike.' },
     ],
     facts: [
       { k: 'Business ID', v: '3486845-7' },
@@ -278,7 +278,7 @@ export const en: Dict = {
         n: '02',
         title: 'Precision that delivers results',
         short: 'Every project is carried out with care and with the client in mind.',
-        long: 'Attention to detail makes the difference. From data-driven insight to seamless ecommerce solutions, precision is not just a standard for us but a promise: the goal is measurable results.',
+        long: 'Attention to detail makes the difference. From data-driven insight to ecommerce systems, precision is a promise for us and not just a standard: the goal is measurable results.',
         photo: 'tammerkoski',
       },
       {
@@ -306,19 +306,19 @@ export const en: Dict = {
   },
   sole: {
     title: 'Working alone does not mean doing everything alone.',
-    text: 'There is rarely time for online visibility or routine work, and good services often feel too expensive. We offer personal, reasonably priced support from websites to search visibility, small tools and coaching.',
+    text: 'Sole traders rarely have time for online visibility and routine work, and good services often feel too expensive. We offer personal, affordable support: websites, search visibility, small tools and advice.',
     items: [
       'Websites and online shops',
       'Small tools and automations',
       'Search engine optimisation',
       'Content in Finnish, English and French',
-      'Personal coaching',
+      'Personal advice',
     ],
     cta: 'Services for sole traders',
   },
   cta: {
     title: 'Tell us what you are building.',
-    text: 'Email is the best way to reach us. Write if you have a question, want to make an enquiry or hear more about how Verkkolynx can meet your needs.',
+    text: 'Email is the best way to reach us. Tell us briefly about your situation and we will reply.',
     button: 'Contact us',
     or: 'or read the frequently asked questions first',
   },
@@ -353,7 +353,7 @@ export const en: Dict = {
     lede: 'Verkkolynx is a Tampere-based technical digital company. We analyse, build and automate, in the same team.',
     intro: [
       'Most companies end up assembling separate suppliers: an analyst, a software developer, a web agency and a marketer. Here they are one team, so work does not break at the handovers.',
-      'In Finland we value quality, but also good value for money. Your success is our success.',
+      'In Finland we value quality, but also good value for money.',
     ],
     itemsTitle: 'Seven reasons',
     meansForYou: 'What this means for you',
@@ -369,8 +369,8 @@ export const en: Dict = {
         you: 'Tools that off-the-shelf systems do not provide, and less manual work.',
       },
       {
-        t: 'Deep analytics capability and extensive data',
-        d: 'Extensive historical and current ecommerce datasets and statistical expertise.',
+        t: 'Analytics capability and data',
+        d: 'Statistical expertise and experience with large historical and current ecommerce datasets.',
         you: 'Decisions based on data, and forecasts you can use.',
       },
       {
@@ -444,7 +444,7 @@ export const en: Dict = {
         n: '04',
         t: 'International perspective',
         p: [
-          'Our clients and partners are in Finland, Canada, the United States and Europe. We know the particularities of different markets and schedule meetings flexibly across time zones. We produce content and SEO in Finnish, English and French.',
+          'Our clients and partners are in Finland, Canada, the United States and Europe. We understand the differences between markets and schedule meetings flexibly across time zones. We produce content and SEO in Finnish, English and French.',
         ],
       },
     ],
@@ -458,7 +458,7 @@ export const en: Dict = {
         t: 'Planning',
         d: 'Schedule, budget and, where needed, wireframes and interface sketches.',
       },
-      { t: 'Delivery', d: 'Development and testing in an agile way, with you involved.' },
+      { t: 'Delivery', d: 'Development and testing in stages, with you kept involved.' },
       { t: 'Launch', d: 'Rollout, documentation and training when needed.' },
       { t: 'Support', d: 'Maintenance and further development as your business grows.' },
     ],
@@ -473,7 +473,7 @@ export const en: Dict = {
         'Answers to common questions: services, data analytics, websites, marketing and SEO, support and training, security and project management.',
     },
     title: 'Frequently asked questions',
-    lede: 'If you have questions, we have answers. If something is still unclear, email asiakaspalvelu@verkkolynx.fi.',
+    lede: 'Answers to the most common questions. If something is still unclear, email asiakaspalvelu@verkkolynx.fi.',
     search: 'Search questions',
     searchPlaceholder: 'Search e.g. SEO, pricing, GDPR',
     categories: 'Topics',
@@ -488,17 +488,18 @@ export const en: Dict = {
   contactPage: {
     meta: {
       title: 'Contact',
-      description: 'Contact Verkkolynx: asiakaspalvelu@verkkolynx.fi. Office in Tampere, Finland.',
+      description:
+        'Contact Verkkolynx Ratkaisut Oy: asiakaspalvelu@verkkolynx.fi. Tampere, Finland.',
     },
     title: 'Get in touch.',
-    lede: 'Email is the best way to reach us. Write if you have a question, want to make an enquiry or hear more about how Verkkolynx can meet your needs.',
+    lede: 'Email is the best way to reach us. Tell us briefly what you are working on or which work you would like to make easier.',
     emailLabel: 'Email',
-    emailNote: 'We reply in Finnish or English.',
+    emailNote: 'We reply in Finnish or English, and in French on request.',
     topicsTitle: 'What would you like to talk about?',
     topics: [
       { label: 'Data analytics', subject: 'Data analytics and insights' },
-      { label: 'Ecommerce', subject: 'Ecommerce optimisation' },
-      { label: 'Websites', subject: 'Web design and development' },
+      { label: 'Ecommerce', subject: 'Ecommerce systems and optimisation' },
+      { label: 'Websites', subject: 'Websites and digital experiences' },
       { label: 'Marketing and SEO', subject: 'Marketing and SEO' },
       { label: 'Sole-trader services', subject: 'Services for sole traders' },
       { label: 'Something else', subject: 'Enquiry' },

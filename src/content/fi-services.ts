@@ -103,7 +103,7 @@ export const servicesFi: Service[] = [
       items: [
         {
           t: 'Rajattu työkalu',
-          d: 'Yksi selkeä tehtävä, esimerkiksi taulukon korvaava sisäinen apuohjelma tai yksittäinen automaatio. Pääsee käyttöön nopeasti.',
+          d: 'Yksi selkeä tehtävä, esimerkiksi taulukon korvaava sisäinen apuohjelma tai yksittäinen automaatio. Otetaan käyttöön nopeasti.',
         },
         {
           t: 'Kokonainen sovellus',
@@ -191,7 +191,7 @@ export const servicesFi: Service[] = [
     edge: [
       'Data, kehitys, verkkokauppa ja automaatio samalla tiimillä: analysoimme työnkulun, mallinnamme sen ja rakennamme työkalun sen ajamiseen.',
       'Kehitys lähtee todellisesta työnkulusta, ei yleisestä ohjelmistomallista.',
-      'Projektissa tuotettu työ siirtyy omistukseesi täyden maksun jälkeen.',
+      'Omistus- ja käyttöoikeudet sovitaan projektikohtaisesti.',
       'Tietoturva ja käyttöoikeudet suunnitellaan mukaan alusta asti.',
     ],
     extraTitle: 'Teknisesti',
@@ -298,10 +298,10 @@ export const servicesFi: Service[] = [
     ],
     edgeTitle: 'Verkkolynxin ero',
     edge: [
-      'Syvä analytiikkaosaaminen yhdistettynä laajoihin urheilutuotedatabaseihin.',
+      'Analytiikkaosaaminen yhdistettynä kokemukseen laajoista urheilutuoteaineistoista.',
       'Analyysi voidaan viedä ohjelmistoksi samalla tiimillä, joka sen teki: mallinnus ja toteutus pysyvät yhdessä.',
-      'Räätälöidyt suositukset juuri sinun haasteisiisi, ei pintaraapaisuja.',
-      'Selkeät raportit ja visualisoinnit, jotka ovat helposti ymmärrettäviä.',
+      'Suositukset perustuvat sinun tilanteeseesi, eivät yleisiin oletuksiin.',
+      'Selkeät raportit ja visualisoinnit.',
     ],
     extraTitle: 'Menetelmiä, joita käytämme',
     extra: [
@@ -342,7 +342,7 @@ export const servicesFi: Service[] = [
     lede: 'Kehitämme verkkokaupan tuotedatan, katalogirakenteen, hinnoittelun, haun ja integraatiot ja rakennamme tarvittaessa sisäiset työkalut niiden hallintaan.',
     intro: [
       'Verkkokaupan tulos ratkeaa usein taustalla: onko tuotedata tarkkaa, löytyvätkö tuotteet, seuraako hinnoittelu markkinaa ja liikkuuko tieto järjestelmien välillä ilman käsityötä.',
-      'Työmme tueksi olemme koonneet ja järjestäneet laajat historialliset ja ajantasaiset tietoaineistot useilta toimialoilta, kuten urheilusta, vähittäiskaupasta ja teknologiasta.',
+      'Työmme tukena on laajoja historiallisia ja ajantasaisia tietoaineistoja useilta toimialoilta, kuten urheilusta, vähittäiskaupasta ja teknologiasta.',
     ],
     problemsTitle: 'Mihin tämä vastaa',
     problems: [
@@ -386,7 +386,7 @@ export const servicesFi: Service[] = [
       },
       {
         t: 'Varastoon liittyvä analyysi',
-        d: 'Kysynnän tarkka ennustaminen ja ylivarastoinnin tai alivarastoinnin välttäminen.',
+        d: 'Kysynnän ennustaminen ja ylivarastoinnin tai alivarastoinnin välttäminen.',
       },
       {
         t: 'Tuotetietojen automaatio',
@@ -397,15 +397,15 @@ export const servicesFi: Service[] = [
         d: 'Verkkokaupan, varastojärjestelmien, markkinapaikkojen ja sisäisten työkalujen yhdistäminen rajapinnoilla.',
       },
       {
-        t: 'Sisäiset merchandising-työkalut',
+        t: 'Sisäiset valikoiman hallinnan työkalut',
         d: 'Käyttöliittymä, jolla tiimi hallitsee tuotteita, hintoja ja sisältöjä ilman käsityötä. Rakennetaan tarpeen mukaan.',
       },
       {
         t: 'Asiakaspolun optimointi',
-        d: 'Helppo navigointi, vähemmän kesken jääneitä ostoksia sekä mobiiliystävällinen suunnittelu ja intuitiiviset kassaprosessit.',
+        d: 'Selkeä navigointi, sujuva kassa ja mobiiliystävällinen suunnittelu, jotta ostoksia jää vähemmän kesken.',
       },
     ],
-    outcomesTitle: 'Miksi ajan tasalla pysyminen kannattaa',
+    outcomesTitle: 'Mitä ajantasainen tuotetieto tuo',
     outcomes: [
       {
         t: 'Uskottavuus',
@@ -457,10 +457,10 @@ export const servicesFi: Service[] = [
     ],
     photo: 'finlayson',
     heroTitle: 'Verkkosivut, jotka toimivat ja löytyvät.',
-    lede: 'Suunnittelemme ja toteutamme yrityssivustot, verkkokaupan käyttöliittymät, kampanjasivut ja sisältöalustat. Ne toimivat kaikilla laitteilla, ovat saavutettavia ja on rakennettu hakukoneille luettaviksi.',
+    lede: 'Suunnittelemme ja toteutamme yrityssivustot, verkkokaupan käyttöliittymät, kampanjasivut ja sisältöalustat. Sivustot toimivat kaikilla laitteilla, ovat saavutettavia ja hakukoneiden luettavissa.',
     intro: [
       'Verkkosivusto on ensimmäinen asia, jonka asiakas näkee. Yhdistämme datalähtöisen suunnittelun, käyttäjäkäyttäytymisen ymmärtämisen ja teknisen laadun.',
-      'Integroimme Googlen E-E-A-T-periaatteet (kokemus, asiantuntemus, auktoriteetti, luotettavuus), jotta sivusto rakentaa uskottavuutta.',
+      'Rakennamme sivuston Googlen E-E-A-T-periaatteiden (kokemus, asiantuntemus, auktoriteetti, luotettavuus) mukaisesti, jotta se välittää uskottavuutta.',
     ],
     problemsTitle: 'Mihin sivustouudistus vastaa',
     problems: [
@@ -468,7 +468,7 @@ export const servicesFi: Service[] = [
         t: 'Sivusto näyttää hyvältä mutta ei tuota',
         d: 'Rakenne ei ohjaa kävijää kohti toimintaa.',
       },
-      { t: 'Kokemus kärsii mobiilissa', d: 'Sivusto ei toimi saumattomasti kaikilla laitteilla.' },
+      { t: 'Kokemus kärsii mobiilissa', d: 'Sivusto ei toimi kunnolla kaikilla laitteilla.' },
       {
         t: 'Sivusto on hidas tai vanhentunut',
         d: 'Käytettävyys, suorituskyky tai ilme kaipaa päivitystä.',
@@ -486,7 +486,7 @@ export const servicesFi: Service[] = [
       },
       {
         t: 'Verkkokaupan käyttöliittymät',
-        d: 'Käyttöliittymät, jotka ohjaavat asiakasta harkittuihin ostopäätöksiin.',
+        d: 'Käyttöliittymät, jotka ohjaavat asiakasta kohti ostopäätöstä.',
       },
       {
         t: 'Kampanja- ja laskeutumissivut',
@@ -499,7 +499,7 @@ export const servicesFi: Service[] = [
       },
       {
         t: 'Responsiivisuus ja saavutettavuus',
-        d: 'Saumaton toiminnallisuus työpöydällä, tabletilla ja puhelimella. Noudatamme WCAG-ohjeita.',
+        d: 'Sivusto toimii työpöydällä, tabletilla ja puhelimella. Tavoitteena on WCAG-ohjeiden mukainen saavutettavuus.',
       },
       {
         t: 'Suorituskyky ja hakukoneystävällinen rakenne',
@@ -511,16 +511,16 @@ export const servicesFi: Service[] = [
       { t: 'Luottamus', d: 'Uskottavuus rakentuu E-E-A-T-periaatteiden varaan.' },
       {
         t: 'Konversiot',
-        d: 'Vierailijat muuttuvat asiakkaiksi intuitiivisilla, käyttäjäkeskeisillä ratkaisuilla.',
+        d: 'Selkeät, käyttäjälähtöiset ratkaisut auttavat muuttamaan vierailijat asiakkaiksi.',
       },
       { t: 'Sitoutuminen', d: 'Sujuvat käyttökokemukset houkuttelevat käyttäjiä palaamaan.' },
       { t: 'Skaalautuvuus', d: 'Alusta kestää sisällön ja liikenteen lisääntymisen.' },
     ],
-    edgeTitle: 'Verkkolynxin etu',
+    edgeTitle: 'Verkkolynxin ero',
     edge: [
       'Verkkosuunnittelu, verkkokauppaosaaminen ja data samassa tiimissä.',
       'Kun sivusto tarvitsee sovelluslogiikkaa, tunnistautumista tai integraatioita, samaan tiimiin kuuluu ohjelmistokehitys.',
-      'Tulevaisuudenkestävä alusta, jota voi laajentaa.',
+      'Alusta, jota voi laajentaa tarpeen mukaan.',
     ],
     extraTitle: 'Käytännössä',
     extra: [
@@ -554,7 +554,7 @@ export const servicesFi: Service[] = [
     heroTitle: 'Näkyvyyttä oikeille ihmisille.',
     lede: 'Yhdistämme hakukoneoptimoinnin, kohdennetut kampanjat ja sisällön, jotta yrityksesi löytyy oikealla hetkellä ja vaikutus on mitattavissa.',
     intro: [
-      'Verkkolynx yhdistää strategisen markkinoinnin tehokkaisiin SEO-työkaluihin ja tekee työtä samaan dataan nojaten kuin muutkin palvelumme.',
+      'Markkinointi ja SEO tehdään samassa tiimissä ja samasta datasta kuin muutkin palvelumme.',
       'Kyse ei ole vain klikeistä vaan siitä, että vierailijoista tulee asiakkaita.',
     ],
     problemsTitle: 'Mihin markkinointi ja SEO vastaavat',
@@ -572,7 +572,7 @@ export const servicesFi: Service[] = [
       {
         t: 'Hakukoneoptimointi (SEO)',
         d: 'Paranna näkyvyyttä kohdennetuilla avainsanastrategioilla.',
-        ex: 'Autamme urheiluvälinekauppiasta sijoittumaan hauilla kuten ”parhaat jääkiekkoluistimet Suomessa”.',
+        ex: 'Esimerkiksi urheiluvälinekauppa, jonka tuotteiden halutaan löytyvän hauilla kuten ”jääkiekkoluistimet”.',
       },
       {
         t: 'Kohdennetut digikampanjat',
@@ -581,7 +581,7 @@ export const servicesFi: Service[] = [
       },
       {
         t: 'Sisältömarkkinointi',
-        d: 'Datalähtöistä ja yksityiskohtaista sisältöä laajojen urheilutuotedatabasejen pohjalta: blogiartikkeleita, tuotevertailuja ja niche-oppaita.',
+        d: 'Datalähtöistä ja yksityiskohtaista sisältöä urheilutuoteaineistojen pohjalta: blogiartikkeleita, tuotevertailuja ja tarkasti kohdennettuja oppaita.',
       },
       {
         t: 'Sähköpostimarkkinointi',
@@ -594,12 +594,12 @@ export const servicesFi: Service[] = [
       { t: 'Laadukkaammat liidit', d: 'Parempi näkyvyys tuo sivustolle sopivampia kävijöitä.' },
       {
         t: 'Kestävyys',
-        d: 'Orgaaninen näkyvyys tuo pitkäaikaisia etuja maksettujen kampanjoiden ohi.',
+        d: 'Orgaaninen näkyvyys kestää pidempään kuin maksetut kampanjat.',
       },
     ],
-    edgeTitle: 'Miksi Verkkolynx',
+    edgeTitle: 'Verkkolynxin ero',
     edge: [
-      'Laajat urheilutuotedatabaset antavat sisällölle ja kampanjoille tarkkoja oivalluksia.',
+      'Kokemus laajoista urheilutuoteaineistoista tuo sisältöön ja kampanjoihin konkreettisia oivalluksia.',
       'SEO on osa teknistä rakennetta: sivusto, tuotedata ja sisältö suunnitellaan yhdessä.',
       'Mittaamme sitä, mikä vaikuttaa liiketoimintaan, ja optimoimme jatkuvasti.',
     ],
@@ -635,7 +635,7 @@ export const servicesFi: Service[] = [
     heroTitle: 'Palvelut, jotka mitoitetaan sinulle.',
     lede: 'Toiminimiyrittäjänä sinulla on kädet täynnä töitä, eikä aikaa verkkonäkyvyyden tai rutiinitöiden hoitamiseen ole usein tarpeeksi. Tarjoamme yksilöllistä ja kohtuuhintaista palvelua juuri sinun tarpeisiisi.',
     intro: [
-      'Ymmärrämme, että edullisuus on tärkeää. Palvelumme keskittyvät auttamaan sinua tehokkaasti ja kestävästi ilman ylitsepääsemättömiä kustannuksia.',
+      'Toiminimiyrittäjälle hinnalla on väliä. Mitoitamme työn niin, että se pysyy kohtuuhintaisena.',
       'Olitpa perustamassa omaa verkkokauppaa, haluamassa modernia verkkosivustoa tai etsimässä keinoja Pohjois-Amerikan markkinoille, olemme rinnallasi. Kun toistuva työvaihe syö aikaasi, voimme rakentaa myös pienen työkalun tai automaation.',
     ],
     problemsTitle: 'Tuttuja haasteita',
@@ -658,13 +658,13 @@ export const servicesFi: Service[] = [
     capabilities: [
       {
         t: 'Verkkosivustot ja verkkokaupat',
-        d: 'Sivusto tai verkkokauppa, joka ei vain näytä hyvältä vaan toimii saumattomasti.',
+        d: 'Sivusto tai verkkokauppa, joka näyttää hyvältä ja toimii.',
         ex: 'Digitaalisen sisällön tai tuotteiden parissa toimiva toiminimi saa verkkokaupan, joka nostaa tuotteet esiin.',
       },
       {
         t: 'Hakukoneoptimointi (SEO)',
         d: 'Oikeat avainsanat ja tehokkaat strategiat, olipa tavoitteena suomalaiset, kanadalaiset tai amerikkalaiset asiakkaat.',
-        ex: 'Näkyminen hauilla kuten ”parhaat digituotteet Suomessa”.',
+        ex: 'Näkyminen hauilla kuten ”digituotteet Suomessa”.',
       },
       {
         t: 'Sisältö kolmella kielellä',
@@ -682,12 +682,12 @@ export const servicesFi: Service[] = [
       },
       {
         t: 'Henkilökohtainen sparraus ja opastus',
-        d: 'Yksilöllinen 1-on-1-asiantuntijatyö on toimintamme ydin: opastamme ja tarjoamme ratkaisuja juuri sinun tarpeisiisi.',
+        d: 'Kahdenkeskinen asiantuntijatyö on tämän palvelun ydin: opastamme ja tarjoamme ratkaisuja juuri sinun tarpeisiisi.',
       },
     ],
     outcomesTitle: 'Miksi valita Verkkolynx',
     outcomes: [
-      { t: 'Edullisuus', d: 'Kustannustehokkaita ratkaisuja ilman kompromisseja laadussa.' },
+      { t: 'Edullisuus', d: 'Kohtuuhintaisia ratkaisuja, jotka mitoitetaan tarpeen mukaan.' },
       { t: 'Räätälöitävyys', d: 'Palvelut suunnitellaan sinun tavoitteidesi mukaan.' },
       {
         t: 'Asiantuntemus',
@@ -698,13 +698,13 @@ export const servicesFi: Service[] = [
     edgeTitle: 'Miksi palvelumme ovat edullisia',
     edge: [
       'Tiimimme jäsenet hallitsevat monia rooleja: siinä missä jotkut toimistot palkkaavat erillisiä asiantuntijoita dataan, kehitykseen ja verkkosuunnitteluun, meillä on osaaminen kaikilla näillä alueilla.',
-      'Kokonaisvaltainen osaaminen mahdollistaa nopeamman toteutuksen yhtenäisemmällä otteella.',
+      'Kun osaaminen on samassa tiimissä, toteutus sujuu nopeammin ja yhtenäisemmin.',
     ],
     bridge: [{ text: 'Tarvitsetko räätälöidyn työkalun?', to: 'software' }],
     related: ['web', 'software', 'marketing'],
     ctaTitle: 'Kerro, missä tarvitset apua.',
     ctaText:
-      'Rakennetaan yhdessä ratkaisu, joka sopii yrityksesi kokoon ja budjettiin: helposti, edullisesti ja räätälöidysti.',
+      'Kerro tilanteesi, niin ehdotamme ratkaisua, joka sopii yrityksesi kokoon ja budjettiin.',
     meta: {
       title: 'Palvelut toiminimiyrittäjille',
       description:
