@@ -3,6 +3,7 @@ import type { Dict, Service } from '@/content/types';
 import { pathFor } from '@/lib/routes';
 import { SITE, type Locale } from '@/lib/site';
 import { CtaBand } from './CtaBand';
+import { Disclosure } from './Disclosure';
 import { PageHero } from './PageHero';
 import { SystemDiagram } from './SystemDiagram';
 import { Arrow, Photo } from './ui';
@@ -76,14 +77,23 @@ export function ServicePage({
             <ul className="groups">
               {s.groups.map((g, i) => (
                 <li key={g.tag} className="group" data-reveal>
-                  <p className="group__tag">{g.tag}</p>
-                  <h3>{g.t}</h3>
-                  <p className="dim">{g.d}</p>
-                  <ul className="group__items">
-                    {g.items.map((it) => (
-                      <li key={it}>{it}</li>
-                    ))}
-                  </ul>
+                  <Disclosure
+                    as="h3"
+                    className="group__disc"
+                    summary={
+                      <>
+                        <span className="group__tag">{g.tag}</span>
+                        <span className="group__t">{g.t}</span>
+                      </>
+                    }
+                  >
+                    <p className="dim">{g.d}</p>
+                    <ul className="group__items">
+                      {g.items.map((it) => (
+                        <li key={it}>{it}</li>
+                      ))}
+                    </ul>
+                  </Disclosure>
                 </li>
               ))}
             </ul>
@@ -124,9 +134,10 @@ export function ServicePage({
           </div>
           <ul className="rows rows--two">
             {s.problems.map((p, i) => (
-              <li key={p.t} className="row" data-reveal>
-                <h3>{p.t}</h3>
-                <p className="row__d dim">{p.d}</p>
+              <li key={p.t} className="row row--problem" data-reveal>
+                <Disclosure summary={p.t} as="h3" className="row__disc">
+                  <p className="row__d dim">{p.d}</p>
+                </Disclosure>
               </li>
             ))}
           </ul>
@@ -194,12 +205,13 @@ export function ServicePage({
             </ul>
             {s.extra && s.extraTitle && (
               <div className="extra">
-                <h3>{s.extraTitle}</h3>
-                <ul>
-                  {s.extra.map((e) => (
-                    <li key={e}>{e}</li>
-                  ))}
-                </ul>
+                <Disclosure summary={s.extraTitle} as="h3" className="extra__disc">
+                  <ul>
+                    {s.extra.map((e) => (
+                      <li key={e}>{e}</li>
+                    ))}
+                  </ul>
+                </Disclosure>
               </div>
             )}
           </div>

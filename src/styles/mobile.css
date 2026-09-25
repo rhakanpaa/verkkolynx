@@ -1,0 +1,185 @@
+/*
+ * Phone presentation (below 900px). Desktop is not touched: every rule here lives inside the
+ * media query. Hierarchy comes from spacing, section surfaces and type, not from extra rules.
+ */
+@media (max-width: 899px) {
+  :root {
+    --s-section: 3.75rem;
+    --s-section-tight: 2.75rem;
+  }
+  h2 {
+    line-height: 1.18;
+  }
+
+  /* ---- lists that used to be ruled documents ---- */
+  .rows {
+    border-top: 0;
+  }
+  .row {
+    padding-block: 1.1rem;
+    border-bottom: 0;
+  }
+  .row + .row:not(.row--numbered) {
+    border-top: 1px solid var(--light-line);
+  }
+  .row--numbered {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    column-gap: 0.9rem;
+    padding-block: 1.4rem;
+  }
+  .row__num {
+    font-size: 1.125rem;
+    padding-top: 0.15rem;
+  }
+  /* numbered steps read as one connected sequence */
+  .row--numbered {
+    position: relative;
+  }
+  .row--numbered:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 0.3rem;
+    top: 3.1rem;
+    bottom: -0.3rem;
+    width: 1px;
+    background: var(--light-line-strong);
+  }
+  .row--numbered h3 {
+    font-size: 1.1875rem;
+    line-height: 1.3;
+  }
+  .row--numbered .row__d {
+    font-size: 1rem;
+  }
+  .row__benefit {
+    margin-top: 0.7rem;
+    padding: 0.15rem 0 0.15rem 0.85rem;
+    border-left: 2px solid var(--blue-brand);
+    font-size: var(--fs-small);
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  .row__benefit::before {
+    content: none;
+  }
+
+  /* ---- homepage ---- */
+  .hsw__kinds ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.25rem;
+    border-top: 0;
+  }
+  .hsw__kinds li {
+    padding-block: 0.7rem;
+    border-bottom: 0;
+  }
+  .hsw__kinds h3 {
+    font-size: 1rem;
+  }
+  .hsw__kinds li p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  .hsw__diagram {
+    margin-top: 2.25rem;
+    padding-top: 1.75rem;
+  }
+  .cap-list {
+    border-top: 0;
+  }
+  .cap {
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    gap: 0 0.5rem;
+    padding-block: 1.5rem;
+    border-bottom: 0;
+  }
+  .cap + .cap {
+    border-top: 1px solid var(--light-line);
+  }
+  /* the photograph column is decoration; the band below the list carries the imagery on phones */
+  .cap > div[aria-hidden='true'] {
+    display: none;
+  }
+  .cap__n {
+    padding-top: 0.25rem;
+    font-size: 1.125rem;
+  }
+  .cap__main {
+    gap: 0.6rem;
+  }
+  .cap__title::after {
+    content: '→';
+    margin-left: 0.45rem;
+    color: var(--blue-brand);
+  }
+  .why__list {
+    border-top: 0;
+  }
+  .why__list li {
+    padding-block: 0.8rem;
+    border-bottom: 0;
+  }
+  .why__list li + li {
+    border-top: 1px solid var(--light-line);
+  }
+
+  /* ---- about ---- */
+  .chapter-nav ol {
+    display: flex;
+    gap: 0.4rem 1.25rem;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .chapter-nav a {
+    white-space: nowrap;
+    border-bottom: 0;
+  }
+  .chapters {
+    counter-reset: chapter;
+  }
+  .chapter {
+    padding-block: 0.5rem 1.25rem;
+  }
+  .chapter + .chapter {
+    margin-top: 1.25rem;
+  }
+  .chapter__t::before {
+    counter-increment: chapter;
+    content: '0' counter(chapter);
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--blue-brand);
+  }
+  .process {
+    margin-left: 6px;
+  }
+  .process li {
+    padding-bottom: 1.6rem;
+  }
+  .process__pt {
+    left: -6px;
+    top: 0.4rem;
+    width: 11px;
+    height: 11px;
+  }
+
+  /* ---- closing call to action: one obvious button, quieter email and secondary link ---- */
+  .cta__copy h2 {
+    max-width: none;
+    hyphens: manual;
+  }
+  .cta__mail {
+    font-size: 1.125rem;
+  }
+  .cta__buttons {
+    display: grid;
+  }
+  .cta__buttons .btn {
+    justify-content: center;
+    text-align: center;
+  }
+}

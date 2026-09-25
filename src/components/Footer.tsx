@@ -3,6 +3,7 @@ import type { Dict } from '@/content/types';
 import { pathFor } from '@/lib/routes';
 import { SITE, type Locale } from '@/lib/site';
 import { CopyrightYear } from './client-bits';
+import { Disclosure } from './Disclosure';
 import { Logo } from './ui';
 
 export function Footer({ locale, dict }: { locale: Locale; dict: Dict }) {
@@ -22,25 +23,27 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dict }) {
           </div>
 
           <nav className="footer__col" aria-label={f.explore}>
-            <h2>{f.explore}</h2>
-            <ul>
-              {dict.nav.items.map((i) => (
-                <li key={i.key}>
-                  <Link href={pathFor(i.key, locale)}>{i.label}</Link>
-                </li>
-              ))}
-            </ul>
+            <Disclosure summary={f.explore} as="h2" className="footer__disc">
+              <ul>
+                {dict.nav.items.map((i) => (
+                  <li key={i.key}>
+                    <Link href={pathFor(i.key, locale)}>{i.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </Disclosure>
           </nav>
 
           <nav className="footer__col" aria-label={dict.nav.servicesMenuTitle}>
-            <h2>{dict.nav.servicesMenuTitle}</h2>
-            <ul>
-              {dict.services.map((s) => (
-                <li key={s.key}>
-                  <Link href={pathFor(s.key, locale)}>{s.nav}</Link>
-                </li>
-              ))}
-            </ul>
+            <Disclosure summary={dict.nav.servicesMenuTitle} as="h2" className="footer__disc">
+              <ul>
+                {dict.services.map((s) => (
+                  <li key={s.key}>
+                    <Link href={pathFor(s.key, locale)}>{s.nav}</Link>
+                  </li>
+                ))}
+              </ul>
+            </Disclosure>
           </nav>
 
           <div className="footer__col">

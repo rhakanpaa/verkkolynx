@@ -91,3 +91,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 899px) {
+  .footer__top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .footer__brand {
+    margin-bottom: 0.75rem;
+  }
+}

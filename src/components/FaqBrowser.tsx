@@ -68,12 +68,15 @@ export function FaqBrowser({
         if (categories.some((c) => c.items.some((i) => i.id === id))) {
           setQuery('');
           setItem(id, true);
+          const cat = categories.find((c) => c.items.some((i) => i.id === id));
+          if (cat) setCurrent(cat.id);
           requestAnimationFrame(() =>
             document.getElementById(hash)?.scrollIntoView({ block: 'start' }),
           );
         }
       } else if (hash.startsWith('c-')) {
         setQuery('');
+        setCurrent(hash.slice(2));
         requestAnimationFrame(() =>
           document.getElementById(hash)?.scrollIntoView({ block: 'start' }),
         );
@@ -112,7 +115,7 @@ export function FaqBrowser({
   const allOpen = allIds.length > 0 && allIds.every((id) => open.has(id));
 
   return (
-    <div className="faq">
+    <div className="faq" data-searching={q ? '' : undefined}>
       <aside className="faq__index">
         <div className="faq__search">
           <label htmlFor="faq-search">{labels.search}</label>
@@ -137,7 +140,16 @@ export function FaqBrowser({
                     href={`#c-${c.id}`}
                     aria-current={current === c.id && count > 0 ? 'location' : undefined}
                     data-empty={count === 0 || undefined}
-                    onClick={() => setCurrent(c.id)}
+                    onClick={(e) => {
+                      setCurrent(c.id);
+                      // phones show one category at a time: reveal it first, then scroll to it
+                      if (window.matchMedia('(max-width: 899px)').matches) {
+                        e.preventDefault();
+                        requestAnimationFrame(() =>
+                          document.getElementById(`c-${c.id}`)?.scrollIntoView({ block: 'start' }),
+                        );
+                      }
+                    }}
                   >
                     <span>{c.title}</span>
                     <span className="faq__count">{count}</span>
@@ -179,6 +191,7 @@ export function FaqBrowser({
               sectionRefs.current[c.id] = el;
             }}
             className="faq__cat"
+            data-current={current === c.id || undefined}
             aria-labelledby={`h-${c.id}`}
           >
             <h2 id={`h-${c.id}`}>

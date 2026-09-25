@@ -255,3 +255,22 @@
     box-shadow: inset 3px 0 0 var(--blue-brand);
   }
 }
+
+/* phones: one category at a time; a search covers all of them */
+@media (max-width: 899px) {
+  .faq:not([data-searching]) .faq__cat:not([data-current]) {
+    display: none;
+  }
+  .faq:not([data-searching]) .faq__cat {
+    padding-top: 1rem;
+  }
+  .faq__cat h2 {
+    font-size: 1.375rem;
+  }
+  .qa h3 {
+    font-size: 1.0625rem;
+  }
+  .qa__btn {
+    padding-block: 1rem;
+  }
+}
