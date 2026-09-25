@@ -4,6 +4,7 @@ import { pageLd } from '@/lib/jsonld';
 import { keyFromSlug, type RouteKey } from '@/lib/routes';
 import type { Locale } from '@/lib/site';
 import { Capabilities } from './Capabilities';
+import { CapabilityFlow } from './CapabilityFlow';
 import { CtaBand } from './CtaBand';
 import { Hero } from './Hero';
 import { HomeSoftware } from './HomeSoftware';
@@ -21,6 +22,16 @@ function Body({ pageKey, locale }: { pageKey: RouteKey; locale: Locale }) {
       return (
         <>
           <Hero locale={locale} dict={dict} />
+          <section className="section section--dark flowsec" aria-label={dict.hero.mapLabel}>
+            <div className="container">
+              <CapabilityFlow
+                locale={locale}
+                nodes={dict.hero.nodes}
+                edges={dict.hero.edges}
+                label={dict.hero.mapLabel}
+              />
+            </div>
+          </section>
           <HomeSoftware locale={locale} dict={dict} />
           <Capabilities locale={locale} dict={dict} />
           <PhotoBand

@@ -2,22 +2,25 @@ import Link from 'next/link';
 import type { Dict } from '@/content/types';
 import { pathFor } from '@/lib/routes';
 import type { Locale } from '@/lib/site';
-import { HeroMap } from './HeroMap';
-import { Photo } from './ui';
+import Image from 'next/image';
+import { HeroVideo } from './HeroVideo';
 
 export function Hero({ locale, dict }: { locale: Locale; dict: Dict }) {
   const h = dict.hero;
   return (
     <section className="hero section--dark" aria-labelledby="hero-title">
       <div className="hero__photo" aria-hidden="true">
-        <Photo
-          name="tammerkoski"
-          locale={locale}
+        <Image
+          src="/video/lynx-video-poster.jpg"
+          alt=""
+          width={1920}
+          height={1080}
           sizes="100vw"
-          priority
           quality={60}
-          position="50% 62%"
+          priority
+          fetchPriority="high"
         />
+        <HeroVideo />
       </div>
       <div className="container hero__grid">
         <div className="hero__copy">
@@ -33,7 +36,6 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dict }) {
             </Link>
           </div>
         </div>
-        <HeroMap locale={locale} nodes={h.nodes} edges={h.edges} label={h.mapLabel} />
       </div>
       <ol className="container hero__steps" aria-label={h.steps.join(', ')}>
         {h.steps.map((s, i) => (

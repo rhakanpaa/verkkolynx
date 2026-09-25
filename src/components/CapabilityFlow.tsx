@@ -11,7 +11,7 @@ const CHAIN = ['data', 'software', 'automation'];
 const RELATED = ['commerce', 'web', 'seo'];
 
 /** Data → software → automation, feeding ecommerce, web and SEO. Select a box to read what connects to it. */
-export function HeroMap({
+export function CapabilityFlow({
   locale,
   nodes,
   edges,

@@ -9,8 +9,32 @@
   inset: 0;
   z-index: -2;
 }
-.hero__photo img {
+.hero__photo img,
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: 46% 50%;
+  pointer-events: none;
+}
+@media (min-width: 900px) {
+  .hero__photo img,
+  .hero__video {
+    /* muted, cool and slightly dark so the animal reads as atmosphere, not as a documentary */
+    filter: saturate(0.6) contrast(1.05) brightness(0.78);
+    object-position: 62% 40%;
+    /* keeps the animal in the open centre-right of the frame, clear of the text column */
+    transform: translate(8%, -3%) scale(1.2);
+    transform-origin: 62% 50%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1279px) {
+  .hero__photo img,
+  .hero__video {
+    transform: translate(11%, -3%) scale(1.2);
+  }
 }
 .hero::before {
   /* keeps the headline legible over the photograph */
@@ -26,7 +50,7 @@
       rgba(4, 20, 47, 0.3) 75%,
       rgba(4, 20, 47, 0.15) 100%
     ),
-    linear-gradient(to top, var(--blue-950) 0%, transparent 22%);
+    linear-gradient(to top, var(--blue-950) 0%, transparent 22%), rgba(4, 20, 47, 0.3);
 }
 .hero__grid {
   display: grid;
@@ -35,6 +59,7 @@
   padding-bottom: clamp(1.75rem, 3.5vw, 3rem);
 }
 .hero__copy {
+  max-width: 34rem;
   display: grid;
   gap: clamp(1.25rem, 2.2vw, 2rem);
   align-content: center;
@@ -194,7 +219,7 @@
 }
 @media (min-width: 900px) {
   .hero__grid {
-    grid-template-columns: minmax(0, 6.4fr) minmax(0, 5.6fr);
+    grid-template-columns: minmax(0, 1fr);
     min-height: min(41rem, calc(100dvh - var(--header-h) - 5rem));
   }
   .hero__steps {
@@ -204,5 +229,17 @@
     padding-block: 1rem 1.1rem;
     border-bottom: 0;
     font-size: 1rem;
+  }
+}
+
+/* the capability flow as a standalone section under the hero */
+.flowsec {
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
+}
+@media (min-width: 900px) {
+  .flowsec .flow {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4.5rem);
   }
 }
